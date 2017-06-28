@@ -17,6 +17,7 @@ export default class StatusContent extends React.PureComponent {
     expanded: PropTypes.bool,
     onExpandedToggle: PropTypes.func,
     onClick: PropTypes.func,
+    children: PropTypes.element,
   };
 
   state = {
@@ -118,7 +119,7 @@ export default class StatusContent extends React.PureComponent {
   }
 
   render () {
-    const { status } = this.props;
+    const { status, children } = this.props;
 
     if (status.get('content').length === 0) {
       return null;
@@ -163,7 +164,13 @@ export default class StatusContent extends React.PureComponent {
 
           {mentionsPlaceholder}
 
-          <div tabIndex={!hidden ? 0 : null} className={`status__content__text ${!hidden ? 'status__content__text--visible' : ''}`} style={directionStyle} dangerouslySetInnerHTML={content} />
+          <div tabIndex={!hidden ? 0 : null} className={`status__content__text ${!hidden ? 'status__content__text--visible' : ''}`}>
+
+            <div style={directionStyle} dangerouslySetInnerHTML={content} />
+
+            {children}
+
+          </div>
         </div>
       );
     } else if (this.props.onClick) {
@@ -175,8 +182,10 @@ export default class StatusContent extends React.PureComponent {
           style={directionStyle}
           onMouseDown={this.handleMouseDown}
           onMouseUp={this.handleMouseUp}
-          dangerouslySetInnerHTML={content}
-        />
+        >
+          <div dangerouslySetInnerHTML={content} />
+          {children}
+        </div>
       );
     } else {
       return (
@@ -186,7 +195,10 @@ export default class StatusContent extends React.PureComponent {
           className='status__content'
           style={directionStyle}
           dangerouslySetInnerHTML={content}
-        />
+        >
+          <div dangerouslySetInnerHTML={content} />
+          {children}
+        </div>
       );
     }
   }
