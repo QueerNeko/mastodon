@@ -215,6 +215,7 @@ class Status extends ImmutablePureComponent {
     let statusAvatar, prepend, rebloggedByText;
 
     const { intl, hidden, featured, otherAccounts, unread, showThread } = this.props;
+    let mediaIcon = null;
 
     let { status, account, ...other } = this.props;
 
@@ -297,6 +298,7 @@ class Status extends ImmutablePureComponent {
             )}
           </Bundle>
         );
+        mediaIcon = 'video-camera';
       } else {
         media = (
           <Bundle fetchComponent={MediaGallery} loading={this.renderLoadingMediaGallery}>
@@ -312,6 +314,7 @@ class Status extends ImmutablePureComponent {
             )}
           </Bundle>
         );
+        mediaIcon = 'picture-o';
       }
     } else if (status.get('spoiler_text').length === 0 && status.get('card')) {
       media = (
@@ -363,9 +366,11 @@ class Status extends ImmutablePureComponent {
               </a>
             </div>
 
-            <StatusContent status={status} onClick={this.handleClick} expanded={!status.get('hidden')} onExpandedToggle={this.handleExpandedToggle} collapsable />
+            <StatusContent mediaIcon={mediaIcon} status={status} onClick={this.handleClick} expanded={!status.get('hidden')} onExpandedToggle={this.handleExpandedToggle} collapsable>
 
-            {media}
+                {media}
+
+            </StatusContent>
 
             {showThread && status.get('in_reply_to_id') && status.get('in_reply_to_account_id') === status.getIn(['account', 'id']) && (
               <button className='status__content__read-more-button' onClick={this.handleClick}>
