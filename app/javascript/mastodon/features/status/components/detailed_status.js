@@ -95,6 +95,7 @@ export default class DetailedStatus extends ImmutablePureComponent {
     }
 
     let media           = '';
+    let mediaIcon       = null;
     let applicationLink = '';
     let reblogLink = '';
     let reblogIcon = 'retweet';
@@ -122,6 +123,7 @@ export default class DetailedStatus extends ImmutablePureComponent {
             sensitive={status.get('sensitive')}
           />
         );
+        mediaIcon = 'video-camera';
       } else {
         media = (
           <MediaGallery
@@ -132,10 +134,9 @@ export default class DetailedStatus extends ImmutablePureComponent {
             onOpenMedia={this.props.onOpenMedia}
           />
         );
+        mediaIcon = 'picture-o';
       }
-    } else if (status.get('spoiler_text').length === 0) {
-      media = <Card onOpenMedia={this.props.onOpenMedia} card={status.get('card', null)} />;
-    }
+    } else media = <Card onOpenMedia={this.props.onOpenMedia} card={status.get('card', null)} />;
 
     if (status.get('application')) {
       applicationLink = <span> · <a className='detailed-status__application' href={status.getIn(['application', 'website'])} target='_blank' rel='noopener'>{status.getIn(['application', 'name'])}</a></span>;
@@ -197,9 +198,7 @@ export default class DetailedStatus extends ImmutablePureComponent {
             <DisplayName account={status.get('account')} localDomain={this.props.domain} />
           </a>
 
-          <StatusContent status={status} expanded={!status.get('hidden')} onExpandedToggle={this.handleExpandedToggle} />
-
-          {media}
+          <StatusContent status={status} expanded={!status.get('hidden')} onExpandedToggle={this.handleExpandedToggle} mediaIcon={mediaIcon}>{media}</StatusContent>
 
           <div className='detailed-status__meta'>
             <a className='detailed-status__datetime' href={status.get('url')} target='_blank' rel='noopener'>
