@@ -25,6 +25,8 @@ export default class StatusContent extends React.PureComponent {
     onClick: PropTypes.func,
     collapsable: PropTypes.bool,
     onCollapsedToggle: PropTypes.func,
+    mediaIcon: PropTypes.string,
+    children: PropTypes.element,
   };
 
   state = {
@@ -174,7 +176,7 @@ export default class StatusContent extends React.PureComponent {
   }
 
   render () {
-    const { status } = this.props;
+    const { status, children, mediaIcon } = this.props;
 
     if (status.get('content').length === 0) {
       return null;
@@ -218,7 +220,7 @@ export default class StatusContent extends React.PureComponent {
         </Permalink>
       )).reduce((aggregate, item) => [...aggregate, item, ' '], []);
 
-      const toggleText = hidden ? <FormattedMessage id='status.show_more' defaultMessage='Show more' /> : <FormattedMessage id='status.show_less' defaultMessage='Show less' />;
+      const toggleText = hidden ? [<FormattedMessage id='status.show_more' defaultMessage='Show more' key='0' />, mediaIcon ? <i className={`fa fa-fw fa-${mediaIcon} status__content__spoiler-icon`} aria-hidden='true' key='1' /> : null] : [<FormattedMessage id='status.show_less' defaultMessage='Show less' key='0' />];
 
       if (hidden) {
         mentionsPlaceholder = <div>{mentionLinks}</div>;
@@ -226,7 +228,11 @@ export default class StatusContent extends React.PureComponent {
 
       return (
         <div className={classNames} ref={this.setRef} tabIndex='0' style={directionStyle} onMouseDown={this.handleMouseDown} onMouseUp={this.handleMouseUp}>
-          <p style={{ marginBottom: hidden && status.get('mentions').isEmpty() ? '0px' : null }}>
+          <p
+            style={{ marginBottom: hidden && status.get('mentions').isEmpty() ? '0px' : null }}
+            onMouseDown={this.handleMouseDown}
+            onMouseUp={this.handleMouseUp}
+          >
             <span dangerouslySetInnerHTML={spoilerContent} />
             {' '}
             <button tabIndex='0' className={`status__content__spoiler-link ${hidden ? 'status__content__spoiler-link--show-more' : 'status__content__spoiler-link--show-less'}`} onClick={this.handleSpoilerClick}>{toggleText}</button>
@@ -234,10 +240,20 @@ export default class StatusContent extends React.PureComponent {
 
           {mentionsPlaceholder}
 
-          <div tabIndex={!hidden ? 0 : null} className={`status__content__text ${!hidden ? 'status__content__text--visible' : ''}`} style={directionStyle} dangerouslySetInnerHTML={content} />
+          {!hidden &&
+          <div tabIndex={!hidden ? 0 : null} className={`status__content__text ${!hidden ? 'status__content__text--visible' : ''}`}>
 
-          {!hidden && !!status.get('poll') && <PollContainer pollId={status.get('poll')} />}
+            <div
+              style={directionStyle}
+              onMouseDown={this.handleMouseDown}
+              onMouseUp={this.handleMouseUp}
+              dangerouslySetInnerHTML={content}
+            />
 
+            {children}
+            {!hidden && !!status.get('poll') && <PollContainer pollId={status.get('poll')} />}
+          </div>
+          }
           {renderViewThread && showThreadButton}
         </div>
       );
@@ -245,6 +261,7 @@ export default class StatusContent extends React.PureComponent {
       const output = [
         <div className={classNames} ref={this.setRef} tabIndex='0' style={directionStyle} onMouseDown={this.handleMouseDown} onMouseUp={this.handleMouseUp} key='status-content'>
           <div className='status__content__text status__content__text--visible' style={directionStyle} dangerouslySetInnerHTML={content} />
+          {children}
 
           {!!status.get('poll') && <PollContainer pollId={status.get('poll')} />}
 
@@ -261,6 +278,8 @@ export default class StatusContent extends React.PureComponent {
       return (
         <div className={classNames} ref={this.setRef} tabIndex='0' style={directionStyle}>
           <div className='status__content__text status__content__text--visible' style={directionStyle} dangerouslySetInnerHTML={content} />
+
+          {children}
 
           {!!status.get('poll') && <PollContainer pollId={status.get('poll')} />}
 
