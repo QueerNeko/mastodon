@@ -15,6 +15,7 @@
 #  visibility             :integer          default("public"), not null
 #  spoiler_text           :text             default(""), not null
 #  reply                  :boolean          default(FALSE), not null
+#  public_in_local        :boolean
 #  language               :string
 #  conversation_id        :bigint(8)
 #  local                  :boolean
