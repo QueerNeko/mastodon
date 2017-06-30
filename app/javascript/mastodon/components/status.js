@@ -159,6 +159,7 @@ export default class Status extends ImmutablePureComponent {
     let statusAvatar, prepend, rebloggedByText;
 
     const { intl, hidden, featured } = this.props;
+    let mediaIcon = null;
 
     let { status, account, ...other } = this.props;
 
@@ -240,12 +241,14 @@ export default class Status extends ImmutablePureComponent {
             )}
           </Bundle>
         );
+        mediaIcon = 'video-camera';
       } else {
         media = (
           <Bundle fetchComponent={MediaGallery} loading={this.renderLoadingMediaGallery}>
             {Component => <Component media={status.get('media_attachments')} sensitive={status.get('sensitive')} height={110} onOpenMedia={this.props.onOpenMedia} />}
           </Bundle>
         );
+        mediaIcon = 'picture-o';
       }
     }
 
@@ -285,7 +288,7 @@ export default class Status extends ImmutablePureComponent {
               </a>
             </div>
 
-            <StatusContent status={status} onClick={this.handleClick} expanded={!status.get('hidden')} onExpandedToggle={this.handleExpandedToggle}>
+            <StatusContent mediaIcon={mediaIcon} status={status} onClick={this.handleClick} expanded={!status.get('hidden')} onExpandedToggle={this.handleExpandedToggle}>
 
                 {media}
 
