@@ -1188,8 +1188,9 @@ pt-BR:
     title: Termos de Serviço e Política de Privacidade de %{instance}
   themes:
     contrast: Mastodon  (Alto contraste)
-    default: Mastodon (Noturno)
+    default: Colorides
     mastodon-light: Mastodon (Diurno)
+    mastodon: Mastodon (Noturno)
   time:
     formats:
       default: "%H:%M em %d de %b de %Y"
