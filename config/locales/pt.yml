@@ -927,8 +927,9 @@ pt:
     title: "%{instance} Termos de Serviço e Política de Privacidade"
   themes:
     contrast: Mastodon (Elevado contraste)
-    default: Mastodon
+    default: Mastodon Colorides
     mastodon-light: Mastodon (Leve)
+    mastodon: Mastodon
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
