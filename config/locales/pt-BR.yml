@@ -994,8 +994,9 @@ pt-BR:
     title: "%{instance} Termos de Serviço e Política de Privacidade"
   themes:
     contrast: Mastodon  (Alto contraste)
-    default: Mastodon (Escuro)
+    default: Colorides
     mastodon-light: Mastodon (claro)
+    mastodon: Mastodon (escuro)
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
