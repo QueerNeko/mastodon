@@ -866,8 +866,9 @@ en:
     title: "%{instance} Terms of Service and Privacy Policy"
   themes:
     contrast: High contrast
-    default: Mastodon
+    default: Mastodon Colorides
     mastodon-light: Mastodon (light)
+    mastodon: Mastodon
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
