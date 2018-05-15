@@ -869,8 +869,9 @@ pt:
     title: "%{instance} Termos de Serviço e Política de Privacidade"
   themes:
     contrast: Mastodon (Elevado contraste)
-    default: Mastodon
+    default: Mastodon Colorides
     mastodon-light: Mastodon (Leve)
+    mastodon: Mastodon
   two_factor_authentication:
     code_hint: Entre o código gerado pelo seu aplicativo para confirmar
     description_html: Se ativar a <strong>autenticação em dois passos</strong>, quando logar será necessário o seu telefone que vai gerar os tokens para validação.
