@@ -929,6 +929,8 @@ pt-BR:
     contrast: Alto contraste
     default: Mastodon
     mastodon-light: Mastodon (claro)
+    mastodon: Mastodon
+    default: Mastodon Colorides
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
