@@ -59,7 +59,7 @@ body.about-body, body.tag-body, body.admin
   background: rgb(58, 39, 125) !important;
 }
 
-.admin-wrapper .sidebar ul ul, .admin-wrapper .sidebar ul ul a:focus, .log-entry__extras
+.admin-wrapper .sidebar ul ul, .admin-wrapper .sidebar ul ul a:focus, .log-entry__extras, .media-spoiler
 {
     background-color: rgb(23, 9, 65);
     color: #f8f8f8;
@@ -68,6 +68,11 @@ body.about-body, body.tag-body, body.admin
 .admin-wrapper .sidebar ul a.selected {
         background-color: rgb(23, 9, 65);
     color: #30ddef;
+}
+
+.detailed-status__datetime, .detailed-status__datetime a, .detailed-status__link
+{
+	color: #D2CEDF;
 }
 
 	.column-subheading
@@ -276,7 +281,7 @@ body.error, .landing-page .information-board, .landing-page .information-board .
     border-right: 0px;
   }
 
-  .account__header > div > div > button.icon-button, .dropdown-menu
+  .account__header > div > div > button.icon-button, .dropdown-menu, .card
   {
     background-color: rgb(23, 9, 65);
     border-radius: 0px;
@@ -307,10 +312,6 @@ body.error, .landing-page .information-board, .landing-page .information-board .
 }
 
     
-  .autosuggest-textarea__suggestions__item.selected
-  {
-    background-color: #000;
-  }
 
 .accounts-grid, .status light, .activity-stream.with-header, .column-header__collapsible, .column-header__collapsible-inner
 {
@@ -319,12 +320,12 @@ body.error, .landing-page .information-board, .landing-page .information-board .
     color: #f8f8f8; 
 }
 
-.landing-page li, .landing-page p, .navigation-bar strong, .landing-page .information-board .panel .panel-header span, .status-card__host, .status-card__description, .admin-wrapper .sidebar ul a, .button.button-alternative, .landing-page__short-description p a, .landing-page__short-description h1 small span, .landing-page .features-list .features-list__row .text, .landing-page .features-list .features-list__row .visual .fa
+.landing-page li, .landing-page p, .navigation-bar strong, .landing-page .information-board .panel .panel-header span, .status-card__host, .status-card__description, .admin-wrapper .sidebar ul a, .button.button-alternative, .landing-page__short-description p a, .landing-page__short-description h1 small span, .landing-page .features-list .features-list__row .text, .landing-page .features-list .features-list__row .visual .fa, .account-card .detailed-status__display-name .display-name strong, .follow-prompt h2, .oauth-prompt h2, .post-follow-actions div
 {
     color: #f8f8f8; 
 }
 
-.account__section-headline a, .landing-page .header-wrapper.compact .hero .heading a, .landing-page .header .links a, a, .admin-wrapper .content .muted-hint a, .activity-stream .detailed-status.light .status-card__description, .activity-stream .detailed-status.light .status-card__title, a.table-action-link, button.table-action-link, .status-card__title, .table a
+.account__section-headline a, .landing-page .header-wrapper.compact .hero .heading a, .landing-page .header .links a, a, .admin-wrapper .content .muted-hint a, .activity-stream .detailed-status.light .status-card__description, .activity-stream .detailed-status.light .status-card__title, a.table-action-link, button.table-action-link, .status-card__title, .table a, .column-header.active .column-header__icon
 {  
         color: #30ddef; 
 }
@@ -402,7 +403,18 @@ body.error, .landing-page .information-board, .landing-page .information-board .
   {
     color: #dadada;
   }
-
+  
+  .load-gap {
+  border-bottom: 1px solid #dadada;
+  }
+  .load-more {
+  color: #dadada;
+  }
+  .load-more:hover
+  {
+  color: #f8f8f8;
+  background-color: rgb(58, 39, 125);
+  }
   .status__prepend, .status__prepend a.status__display-name strong, .notification__message, .fa.fa-fw.fa-retweet, .fa.fa-fw.fa-retweet:active, .fa.fa-fw.fa-user-plus, .account__header__username, .fa.fa-fw.fa-user-plus, .privacy-dropdown__option__content strong, .landing-page h3
 
   {
