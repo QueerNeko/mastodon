@@ -267,7 +267,22 @@ class Formatter
   def link_to_mention(entity, linkable_accounts, options = {})
     acct = entity[:screen_name]
 
-    return link_to_account(acct, options) unless linkable_accounts
+    username, domain = acct.split('@')
+
+    case domain
+    when 'twitter.com'
+      return link_to_twitter(username)
+    when 'tumblr.com'
+      return link_to_tumblr(username)
+    when 'deviantart.com'
+      return link_to_deviantart(username)
+    when 'artstation.com'
+      return link_to_artstation(username)
+    when 'github.com'
+      return link_to_github(username)
+    else
+      return link_to_account(acct, options) unless linkable_accounts
+    end
 
     same_username_hits = 0
     account = nil
@@ -286,6 +301,26 @@ class Formatter
     end
 
     account ? mention_html(account, with_domain: same_username_hits.positive? || options[:with_domain]) : "@#{encode(acct)}"
+  end
+  
+  def link_to_twitter(username)
+    "<span class=\"h-card\"><a href=\"https://twitter.com/#{username}\" target=\"blank\" rel=\"noopener noreferrer\" class=\"u-url mention\">@<span>#{username}@twitter.com</span></a></span>"
+  end
+
+  def link_to_tumblr(username)
+    "<span class=\"h-card\"><a href=\"https://#{username}.tumblr.com\" target=\"blank\" rel=\"noopener noreferrer\" class=\"u-url mention\">@<span>#{username}@tumblr.com</span></a></span>"
+  end
+
+  def link_to_deviantart(username)
+    "<span class=\"h-card\"><a href=\"https://#{username}.deviantart.com\" target=\"blank\" rel=\"noopener noreferrer\" class=\"u-url mention\">@<span>#{username}@deviantart.com</span></a></span>"
+  end
+
+  def link_to_artstation(username)
+    "<span class=\"h-card\"><a href=\"https://www.artstation.com/#{username}\" target=\"blank\" rel=\"noopener noreferrer\" class=\"u-url mention\">@<span>#{username}@artstation.com</span></a></span>"
+  end
+
+  def link_to_github(username)
+    "<span class=\"h-card\"><a href=\"https://github.com/#{username}\" target=\"blank\" rel=\"noopener noreferrer\" class=\"u-url mention\">@<span>#{username}@github.com</span></a></span>"
   end
 
   def link_to_account(acct, options = {})
