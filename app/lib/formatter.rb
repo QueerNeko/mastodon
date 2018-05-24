@@ -281,6 +281,8 @@ class Formatter
       return link_to_github(username)
 	when 'orientando.org'
 	  return link_to_orientando(username)
+	when 'instagram.com'
+	  return link_to_instagram(username)
     else
       return link_to_account(acct) unless linkable_accounts
     end
@@ -311,6 +313,10 @@ class Formatter
   
   def link_to_orientando(username)
     "<span class=\"h-card\"><a href=\"https://orientando.org/membres/#{username}\" target=\"blank\" rel=\"noopener noreferrer\" class=\"u-url mention\">@<span>#{username}@orientando.org</span></a></span>"
+  end
+  
+  def link_to_instagram(username)
+    "<span class=\"h-card\"><a href=\"https://www.instagram.com/#{username}\" target=\"blank\" rel=\"noopener noreferrer\" class=\"u-url mention\">@<span>#{username}@instagram.com</span></a></span>"
   end
 
   def link_to_account(acct)
