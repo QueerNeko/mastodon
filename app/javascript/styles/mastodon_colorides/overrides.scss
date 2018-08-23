@@ -21,6 +21,11 @@ body.about-body, body.tag-body, body.admin
     background-size: contain;
 }
 
+.column-inline-form
+{
+	background-color: #3a277d;
+}
+
   .drawer__inner
   {
     background-color: transparent;
@@ -49,14 +54,14 @@ body.about-body, body.tag-body, body.admin
  width: 5px;   
 }
 
-::-webkit-scrollbar, ::-webkit-scrollbar-track, ::-webkit-scrollbar-track:hover, ::-webkit-scrollbar-track-piece, ::-webkit-scrollbar-track-piece:hover
-{
-   background-color: rgba(23, 9, 65,0.4);
-}
-
 ::-webkit-scrollbar-thumb
 {
   background: rgb(58, 39, 125) !important;
+}
+
+.regeneration-indicator__label strong
+{
+  color: #58d9ba
 }
 
 .admin-wrapper .sidebar ul ul, .admin-wrapper .sidebar ul ul a:focus, .log-entry__extras, .media-spoiler
@@ -149,6 +154,12 @@ body.about-body, body.tag-body, body.admin
     box-shadow: 0 0 0;
   }
 
+.search-results__section h5
+
+{
+  border-bottom: none;
+  color: #58d9ba
+  }
 
   .entry.h-entry, h5, .search-results__section h5 span, .focusable:focus .status.status-direct, .status.status-direct:active, .focusable:focus, .account__section-headline a.active:after, .account__section-headline a.active:before, .account__header > div > div > button.icon-button
   {
