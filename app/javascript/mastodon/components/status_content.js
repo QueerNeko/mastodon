@@ -177,7 +177,7 @@ export default class StatusContent extends React.PureComponent {
   render () {
     const { status, children, mediaIcon } = this.props;
 
-    if (status.get('content').length === 0) {
+    if (status.get('content').length === 0 && children === null) {
       return null;
     }
 
@@ -232,8 +232,7 @@ export default class StatusContent extends React.PureComponent {
 
           {mentionsPlaceholder}
 
-          {!hidden &&
-          <div tabIndex={!hidden ? 0 : null} className={`status__content__text ${!hidden ? 'status__content__text--visible' : ''}`}>
+          <div tabIndex={!hidden ? 0 : null} className={`status__content__spoiler ${!hidden ? 'status__content__spoiler--visible' : ''}`}>
 
             <div
               style={directionStyle}
@@ -241,11 +240,9 @@ export default class StatusContent extends React.PureComponent {
               onMouseUp={this.handleMouseUp}
               dangerouslySetInnerHTML={content}
             />
-
             {children}
             {!hidden && !!status.get('poll') && <PollContainer pollId={status.get('poll')} />}
           </div>
-          }
         </div>
       );
     } else if (this.props.onClick) {
