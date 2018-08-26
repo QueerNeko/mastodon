@@ -222,18 +222,16 @@ export default class StatusContent extends React.PureComponent {
           {mentionsPlaceholder}
 
           {!hidden &&
-          <div tabIndex={!hidden ? 0 : null} className={`status__content__text ${!hidden ? 'status__content__text--visible' : ''} translate`} dangerouslySetInnerHTML={content}>
+          <div tabIndex={!hidden ? 0 : null} className={`status__content__text ${!hidden ? 'status__content__text--visible' : ''} translate`}>
 
             <div
               onMouseDown={this.handleMouseDown}
               onMouseUp={this.handleMouseUp}
               dangerouslySetInnerHTML={content}
             />
-
             {children}
-            {!hidden && !!status.get('poll') && <PollContainer pollId={status.get('poll')} />}
-          </div>
-          }
+            {!!status.get('poll') && <PollContainer pollId={status.get('poll')} />}
+          </div>}
           {renderViewThread && showThreadButton}
         </div>
       );
