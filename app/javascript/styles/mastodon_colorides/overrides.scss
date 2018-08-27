@@ -579,3 +579,18 @@ button.icon-button i.fa-retweet:hover {
     border-top: 0px;
     margin-bottom: 0px;
 }
+
+.actions-modal, .boost-modal, .confirmation-modal, .mute-modal, .report-modal
+{
+	background-color: #fff;
+}
+
+.boost-modal__action-bar, .confirmation-modal__action-bar, .mute-modal__action-bar
+{
+	background-color: #eee;
+}
+
+.emoji-mart-search input::placeholder, .emoji-mart-search input::-webkit-input-placeholder, .emoji-mart-search input::-moz-placeholder, .emoji-mart-search input:-ms-input-placeholder, .emoji-mart-search input:-moz-placeholder
+{
+	color: #999;
+}
