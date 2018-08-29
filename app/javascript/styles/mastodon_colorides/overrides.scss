@@ -592,5 +592,23 @@ button.icon-button i.fa-retweet:hover {
 
 .emoji-mart-search input::placeholder, .emoji-mart-search input::-webkit-input-placeholder, .emoji-mart-search input::-moz-placeholder, .emoji-mart-search input:-ms-input-placeholder, .emoji-mart-search input:-moz-placeholder
 {
-	color: #999;
+	color: #999 !important;
+}
+
+.trends__item__name
+{
+color: #f8f8f8;
+}
+
+.search__icon .fa-times-circle
+{
+color: #d2cedf;
+}
+
+.trends__item__sparkline path {
+    stroke: #30ddef !important;
+}
+
+.search-popout {
+	color: #4b1dd5;
 }
