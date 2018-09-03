@@ -441,7 +441,7 @@ body.error, .landing-page .information-board, .landing-page .information-board .
   color: #f8f8f8;
   background-color: rgb(58, 39, 125);
   }
-  .status__prepend, .status__prepend a.status__display-name strong, .notification__message, .fa.fa-fw.fa-retweet, .fa.fa-fw.fa-retweet:active, .fa.fa-fw.fa-user-plus, .account__header__username, .fa.fa-fw.fa-user-plus, .privacy-dropdown__option__content strong, .landing-page h3
+  .status__prepend, .status__prepend a.status__display-name strong, .notification__message, .fa.fa-fw.fa-user-plus, .account__header__username, .fa.fa-fw.fa-user-plus, .privacy-dropdown__option__content strong, .landing-page h3
 
   {
     color: #58d9ba !important;
@@ -611,4 +611,42 @@ color: #d2cedf;
 
 .search-popout {
 	color: #4b1dd5;
+}
+
+.activity-stream {
+    background-color: rgba(23,9,65,.7); }
+	
+.hero-widget__text {
+    color: #f8f8f8;
+}
+
+.status__action-bar__counter__label
+{
+	color: #c5c5c5;
+}
+
+.public-layout .footer ul a {
+	color: #fff;
+}
+
+.information-board__section span:last-child {
+	color: #fff;
+}
+
+.rich-formatting li, .rich-formatting p {
+
+    color: #f8f8f8;
+}
+
+.public-layout .header .nav-button {
+background: #1d0b53;
+border-radius: 0px;
+}
+
+.public-layout .header .nav-link {
+    color: #f8f8f8;
+}
+
+.button {
+border-radius: 0px;
 }
