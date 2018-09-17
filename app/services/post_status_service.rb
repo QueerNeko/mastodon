@@ -7,6 +7,7 @@ class PostStatusService < BaseService
   # @param [Status] in_reply_to Optional status to reply to
   # @param [Hash] options
   # @option [Boolean] :sensitive
+  # @option [Boolean] :public_in_local
   # @option [String] :visibility
   # @option [String] :spoiler_text
   # @option [Enumerable] :media_ids Optional array of media IDs to attach
@@ -30,6 +31,7 @@ class PostStatusService < BaseService
                                         sensitive: (options[:sensitive].nil? ? account.user&.setting_default_sensitive : options[:sensitive]) || options[:spoiler_text].present?,
                                         spoiler_text: options[:spoiler_text] || '',
                                         visibility: options[:visibility] || account.user&.setting_default_privacy,
+                                        public_in_local: options[:public_in_local],
                                         language: language_from_option(options[:language]) || account.user&.setting_default_language&.presence || LanguageDetector.instance.detect(text, account),
                                         application: options[:application])
     end
