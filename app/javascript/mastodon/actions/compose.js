@@ -115,6 +115,13 @@ export function submitCompose(routerHistory) {
     if ((!status || !status.length) && media.size === 0) {
       return;
     }
+    
+    var visibility = getState().getIn(['compose', 'privacy']);
+    var publicInLocal = false;
+    if (visibility === 'local') {
+        visibility = 'unlisted';
+        publicInLocal = true;
+    }
 
     dispatch(submitComposeRequest());
 
@@ -124,7 +131,8 @@ export function submitCompose(routerHistory) {
       media_ids: media.map(item => item.get('id')),
       sensitive: getState().getIn(['compose', 'sensitive']),
       spoiler_text: getState().getIn(['compose', 'spoiler_text'], ''),
-      visibility: getState().getIn(['compose', 'privacy']),
+      visibility: visibility,
+      public_in_local: publicInLocal
     }, {
       headers: {
         'Idempotency-Key': getState().getIn(['compose', 'idempotencyKey']),
@@ -155,6 +163,8 @@ export function submitCompose(routerHistory) {
       if (response.data.in_reply_to_id === null && response.data.visibility === 'public') {
         insertIfOnline('community');
         insertIfOnline('public');
+      } else if (response.data.visibility === 'unlisted' && response.data.public_in_local === true) {
+        insertIfOnline('community');
       }
     }).catch(function (error) {
       dispatch(submitComposeFail(error));
