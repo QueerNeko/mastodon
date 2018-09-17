@@ -12,6 +12,7 @@
 #  reblog_of_id           :bigint(8)
 #  url                    :string
 #  sensitive              :boolean          default(FALSE), not null
+#  public_in_local        :boolean
 #  visibility             :integer          default("public"), not null
 #  spoiler_text           :text             default(""), not null
 #  reply                  :boolean          default(FALSE), not null
@@ -77,6 +78,7 @@ class Status < ApplicationRecord
   scope :without_replies, -> { where('statuses.reply = FALSE OR statuses.in_reply_to_account_id = statuses.account_id') }
   scope :without_reblogs, -> { where('statuses.reblog_of_id IS NULL') }
   scope :with_public_visibility, -> { where(visibility: :public) }
+  scope :with_local_public_visibility, -> { where(visibility: :public).or(where(visibility: :unlisted).where(public_in_local: TRUE)) }
   scope :tagged_with, ->(tag) { joins(:statuses_tags).where(statuses_tags: { tag_id: tag }) }
   scope :excluding_silenced_accounts, -> { left_outer_joins(:account).where(accounts: { silenced: false }) }
   scope :including_silenced_accounts, -> { left_outer_joins(:account).where(accounts: { silenced: true }) }
@@ -371,9 +373,16 @@ class Status < ApplicationRecord
 
     def timeline_scope(local_only = false)
       starting_scope = local_only ? Status.local : Status
-      starting_scope
-        .with_public_visibility
-        .without_reblogs
+      
+      if local_only
+        starting_scope
+          .with_local_public_visibility
+          .without_reblogs
+      else
+        starting_scope
+          .with_public_visibility
+          .without_reblogs
+      end
     end
 
     def apply_timeline_filters(query, account, local_only)

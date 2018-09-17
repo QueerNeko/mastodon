@@ -787,6 +787,8 @@ pt-BR:
       public_long: Todos podem ver
       unlisted: Não listado
       unlisted_long: Todos podem ver, porém não será postado nas timelines públicas
+      local: Local
+      local_long: Todos podem ver, porém será listado somente na timeline pública local
   stream_entries:
     pinned: Toot fixado
     reblogged: compartilhou
