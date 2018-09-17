@@ -325,7 +325,7 @@ body.error, .landing-page .information-board, .landing-page .information-board .
  .privacy-dropdown__option
 {
     background-color: rgb(23, 9, 65);
-    color: #eee;
+    color: #58d9ba;
     border-top: 0px;
     border-bottom: 0px;
     border-left: 0px;
@@ -753,4 +753,42 @@ background: rgba(23,9,65,.7);
 
 .attachment-list.compact .attachment-list__list a i.fa {
 	color: #30ddef;
+}
+
+.embed-modal, .error-modal, .onboarding-modal
+{
+background: #f8f8f8;
+}
+
+.video-player__spoiler {
+
+background-color: #170941;
+color: #f8f8f8;
+
+}
+
+.speech-bubble time {
+    color: #b0b0b0;
+}
+
+.report-modal__target {
+
+color: #58d9ba;
+
+}
+
+.report-modal__comment .setting-text {
+
+background-color: #170941;
+
+}
+
+.report-modal {
+
+background-color: rgb(58, 39, 125);
+
+}
+
+.report-modal__comment p, .report-modal__statuses .status__content p {
+color: #f8f8f8;
 }
