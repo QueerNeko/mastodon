@@ -52,6 +52,7 @@ class Api::V1::StatusesController < Api::BaseController
                                          spoiler_text: status_params[:spoiler_text],
                                          visibility: status_params[:visibility],
                                          application: doorkeeper_token.application,
+                                         public_in_local: status_params[:public_in_local],
                                          idempotency: request.headers['Idempotency-Key'])
 
     render json: @status, serializer: REST::StatusSerializer
@@ -77,7 +78,7 @@ class Api::V1::StatusesController < Api::BaseController
   end
 
   def status_params
-    params.permit(:status, :in_reply_to_id, :sensitive, :spoiler_text, :visibility, media_ids: [])
+    params.permit(:status, :in_reply_to_id, :sensitive, :spoiler_text, :public_in_local, :visibility, media_ids: [])
   end
 
   def pagination_params(core_params)
