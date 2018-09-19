@@ -18,7 +18,7 @@ class FanOutOnWriteService < BaseService
       deliver_to_lists(status)
     end
 
-    return if status.account.silenced? || !status.public_visibility? || status.reblog?
+    return if status.account.silenced? || (!status.public_visibility? && !status.public_in_local?) || status.reblog?
 
     deliver_to_hashtags(status)
 
@@ -72,7 +72,7 @@ class FanOutOnWriteService < BaseService
     Rails.logger.debug "Delivering status #{status.id} to hashtags"
 
     status.tags.pluck(:name).each do |hashtag|
-      Redis.current.publish("timeline:hashtag:#{hashtag}", @payload)
+      Redis.current.publish("timeline:hashtag:#{hashtag}", @payload) if !status.public_in_local?
       Redis.current.publish("timeline:hashtag:#{hashtag}:local", @payload) if status.local?
     end
   end
@@ -80,14 +80,14 @@ class FanOutOnWriteService < BaseService
   def deliver_to_public(status)
     Rails.logger.debug "Delivering status #{status.id} to public timeline"
 
-    Redis.current.publish('timeline:public', @payload)
+    Redis.current.publish('timeline:public', @payload) if !status.public_in_local?
     Redis.current.publish('timeline:public:local', @payload) if status.local?
   end
 
   def deliver_to_media(status)
     Rails.logger.debug "Delivering status #{status.id} to media timeline"
 
-    Redis.current.publish('timeline:public:media', @payload)
+    Redis.current.publish('timeline:public:media', @payload) if !status.public_in_local?
     Redis.current.publish('timeline:public:local:media', @payload) if status.local?
   end
 
