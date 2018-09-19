@@ -73,7 +73,7 @@ class BatchedRemoveStatusService < BaseService
   end
 
   def unpush_from_public_timelines(status)
-    return unless status.public_visibility? && status.id > @status_id_cutoff
+    return unless (status.public_visibility? || @status.public_in_local?) && status.id > @status_id_cutoff
 
     payload = Oj.dump(event: :delete, payload: status.id.to_s)
 
