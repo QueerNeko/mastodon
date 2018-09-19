@@ -134,7 +134,7 @@ class RemoveStatusService < BaseService
     return unless @status.public_visibility?
 
     @tags.each do |hashtag|
-      redis.publish("timeline:hashtag:#{hashtag}", @payload)
+      redis.publish("timeline:hashtag:#{hashtag}", @payload) if !@status.public_in_local?
       redis.publish("timeline:hashtag:#{hashtag}:local", @payload) if @status.local?
     end
   end
@@ -142,14 +142,14 @@ class RemoveStatusService < BaseService
   def remove_from_public
     return unless @status.public_visibility?
 
-    redis.publish('timeline:public', @payload)
+    redis.publish('timeline:public', @payload) if !@status.public_in_local?
     redis.publish('timeline:public:local', @payload) if @status.local?
   end
 
   def remove_from_media
     return unless @status.public_visibility?
 
-    redis.publish('timeline:public:media', @payload)
+    redis.publish('timeline:public:media', @payload) if !@status.public_in_local?
     redis.publish('timeline:public:local:media', @payload) if @status.local?
   end
 end
