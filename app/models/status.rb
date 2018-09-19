@@ -12,7 +12,6 @@
 #  reblog_of_id           :bigint(8)
 #  url                    :string
 #  sensitive              :boolean          default(FALSE), not null
-#  public_in_local        :boolean
 #  visibility             :integer          default("public"), not null
 #  spoiler_text           :text             default(""), not null
 #  reply                  :boolean          default(FALSE), not null
@@ -162,6 +161,10 @@ class Status < ApplicationRecord
 
   def local?
     attributes['local'] || uri.nil?
+  end
+  
+  def public_in_local?
+    unlisted_visibility? && attributes['public_in_local']
   end
 
   def reblog?

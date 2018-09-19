@@ -66,7 +66,7 @@ class BatchedRemoveStatusService < BaseService
   end
 
   def unpush_from_public_timelines(status)
-    return unless status.public_visibility?
+    return unless status.public_visibility? || @status.public_in_local?
 
     payload = @json_payloads[status.id]
 
