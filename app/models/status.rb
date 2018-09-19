@@ -129,6 +129,10 @@ class Status < ApplicationRecord
   def local?
     attributes['local'] || uri.nil?
   end
+  
+  def public_in_local?
+    unlisted_visibility? && attributes['public_in_local']
+  end
 
   def reblog?
     !reblog_of_id.nil?
