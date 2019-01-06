@@ -37,6 +37,9 @@ class UserSettingsDecorator
     user.settings['use_blurhash']        = use_blurhash_preference if change?('setting_use_blurhash')
     user.settings['use_pending_items']   = use_pending_items_preference if change?('setting_use_pending_items')
     user.settings['trends']              = trends_preference if change?('setting_trends')
+    user.settings['emoji_size_simple']   = emoji_size_simple_preference if change?('setting_emoji_size_simple')
+    user.settings['emoji_size_detailed'] = emoji_size_detailed_preference if change?('setting_emoji_size_detailed')
+    user.settings['emoji_size_name']     = emoji_size_name_preference if change?('setting_emoji_size_name')
   end
 
   def merged_notification_emails
@@ -101,6 +104,32 @@ class UserSettingsDecorator
 
   def theme_preference
     settings['setting_theme']
+  end
+  
+  def emoji_size_simple_preference
+    coerce_emoji_size 'setting_emoji_size_simple'
+  end
+  
+  def emoji_size_detailed_preference
+    coerce_emoji_size 'setting_emoji_size_detailed'
+  end
+  
+  def emoji_size_name_preference
+    coerce_emoji_size 'setting_emoji_size_name'
+  end
+  
+  def coerce_emoji_size(key)
+    value = settings[key].to_i
+    
+    if value < 1
+      return nil
+    end
+    
+    if value > 50
+      return 50
+    end
+    
+    ActiveModel::Type::Integer.new.cast(value)
   end
 
   def default_language_preference
