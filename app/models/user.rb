@@ -98,7 +98,7 @@ class User < ApplicationRecord
 
   has_many :session_activations, dependent: :destroy
 
-  delegate :auto_play_gif, :default_sensitive, :unfollow_modal, :boost_modal, :delete_modal,
+  delegate :auto_play_gif, :default_sensitive, :unfollow_modal, :boost_modal, :delete_modal, :emoji_size_simple, :emoji_size_detailed, :emoji_size_name,
            :reduce_motion, :system_font_ui, :noindex, :theme, :display_media, :hide_network,
            :expand_spoilers, :default_language, :aggregate_reblogs, to: :settings, prefix: :setting, allow_nil: false
 

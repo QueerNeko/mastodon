@@ -32,6 +32,9 @@ class UserSettingsDecorator
     user.settings['theme']               = theme_preference if change?('setting_theme')
     user.settings['hide_network']        = hide_network_preference if change?('setting_hide_network')
     user.settings['aggregate_reblogs']   = aggregate_reblogs_preference if change?('setting_aggregate_reblogs')
+    user.settings['emoji_size_simple']   = emoji_size_simple_preference if change?('setting_emoji_size_simple')
+    user.settings['emoji_size_detailed'] = emoji_size_detailed_preference if change?('setting_emoji_size_detailed')
+    user.settings['emoji_size_name']     = emoji_size_name_preference if change?('setting_emoji_size_name')
   end
 
   def merged_notification_emails
@@ -92,6 +95,32 @@ class UserSettingsDecorator
 
   def theme_preference
     settings['setting_theme']
+  end
+  
+  def emoji_size_simple_preference
+    coerce_emoji_size 'setting_emoji_size_simple'
+  end
+  
+  def emoji_size_detailed_preference
+    coerce_emoji_size 'setting_emoji_size_detailed'
+  end
+  
+  def emoji_size_name_preference
+    coerce_emoji_size 'setting_emoji_size_name'
+  end
+  
+  def coerce_emoji_size(key)
+    value = settings[key].to_i
+    
+    if value < 1
+      return nil
+    end
+    
+    if value > 50
+      return 50
+    end
+    
+    ActiveModel::Type::Integer.new.cast(value)
   end
 
   def default_language_preference
