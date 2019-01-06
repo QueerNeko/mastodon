@@ -792,3 +792,30 @@ background-color: rgb(58, 39, 125);
 .report-modal__comment p, .report-modal__statuses .status__content p {
 color: #f8f8f8;
 }
+
+.status__content__read-more-button {
+color: #58d9ba;
+}
+
+.grid-3 .column-2 {
+background-color: rgba(23, 9, 65, 0.7);
+border-radius: 0px;
+}
+
+.quick-nav a {
+color: rgb(48, 221, 239);
+}
+
+.simple_form select, .simple_form input[type="text"], .simple_form input[type="number"], .simple_form input[type="email"], .simple_form input[type="password"], .simple_form textarea {
+border: none;
+border-radius: 0px;
+background: #170941;
+}
+
+.status-card__image-image {
+border-radius: 0px;
+}
+
+.status-card.compact {
+    border-color: #f8f8f8;
+}
