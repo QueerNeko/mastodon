@@ -14,6 +14,9 @@ class ApplicationController < ActionController::Base
   helper_method :current_account
   helper_method :current_session
   helper_method :current_theme
+  helper_method :current_emoji_size_simple
+  helper_method :current_emoji_size_detailed
+  helper_method :current_emoji_size_name
   helper_method :single_user_mode?
   helper_method :use_seamless_external_login?
 
@@ -101,6 +104,18 @@ class ApplicationController < ActionController::Base
   def current_theme
     return Setting.theme unless Themes.instance.names.include? current_user&.setting_theme
     current_user.setting_theme
+  end
+  
+  def current_emoji_size_simple
+    return current_user&.setting_emoji_size_simple
+  end
+  
+  def current_emoji_size_detailed
+    return current_user&.setting_emoji_size_detailed
+  end
+  
+  def current_emoji_size_name
+    return current_user&.setting_emoji_size_name
   end
 
   def cache_collection(raw, klass)
