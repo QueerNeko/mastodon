@@ -28,6 +28,25 @@
 
     - if Setting.custom_css.present?
       = stylesheet_link_tag custom_css_path, media: 'all'
+    
+    - unless current_emoji_size_simple.nil?
+      :css
+        .status__content .emojione, .reply-indicator__content .emojione {
+          width: #{current_emoji_size_simple}px;
+          height: #{current_emoji_size_simple}px;
+        }
+    - unless current_emoji_size_detailed.nil?
+      :css
+        .detailed-status .status__content .emojione {
+          width: #{current_emoji_size_detailed}px;
+          height: #{current_emoji_size_detailed}px;
+        }
+    - unless current_emoji_size_name.nil?
+      :css
+        .emojione {
+          width: #{current_emoji_size_name}px;
+          height: #{current_emoji_size_name}px;
+        }
 
     = yield :header_tags
 

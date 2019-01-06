@@ -31,6 +31,9 @@ pt:
         note: Biografia
         otp_attempt: Código de autenticação em dois passos
         password: Palavra-passe
+        setting_emoji_size_simple: Tamanho de emoji em toots simples (padrão: 20)
+        setting_emoji_size_detailed: Tamanho de emoji em toots detalhados (padrão: 24)
+        setting_emoji_size_name: Tamanho de emoji em nome público (padrão: 16)
         setting_auto_play_gif: Reproduzir GIFs automaticamente
         setting_boost_modal: Solicitar confirmação antes de partilhar uma publicação
         setting_default_privacy: Privacidade da publicação

@@ -52,6 +52,11 @@
     = f.input :setting_expand_spoilers, as: :boolean, wrapper: :with_label
     = f.input :setting_reduce_motion, as: :boolean, wrapper: :with_label
     = f.input :setting_system_font_ui, as: :boolean, wrapper: :with_label
+  
+  .fields-group
+    = f.input :setting_emoji_size_simple, input_html: { min: '0', step: '1', max: '50' }, wrapper: :with_label
+    = f.input :setting_emoji_size_detailed, input_html: { min: '0', step: '1', max: '50' }, wrapper: :with_label
+    = f.input :setting_emoji_size_name, input_html: { min: '0', step: '1', max: '50' }, wrapper: :with_label
 
   .actions
     = f.button :button, t('generic.save_changes'), type: :submit
