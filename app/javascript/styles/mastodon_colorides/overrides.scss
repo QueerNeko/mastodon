@@ -819,3 +819,62 @@ border-radius: 0px;
 .status-card.compact {
     border-color: #f8f8f8;
 }
+
+.trends__header {
+    color: #f8f8f8;
+}
+
+.emoji-mart-search input::placeholder {
+    color: #170941 !important;
+}
+
+.notice-widget a {
+color: #30ddef;
+}
+
+.simple_form .hint a {
+    color: #30ddef;
+}
+
+.notice-widget, .nothing-here {
+    color: #f8f8f8;
+    border-radius: 0px;
+    background-color: rgba(23, 9, 65, 0.7);
+}
+
+.page-header, .directory {
+background-color: rgba(23, 9, 65, 0.7);
+border-radius: 0px;
+box-shadow: 0px 0px 0px 0px;
+}
+
+.simple_form p.hint {
+    color: #f8f8f8;
+}
+
+.input-copy {
+    background: #432d90;
+    border: 0px;
+    border-radius: 0px;
+    }
+    
+.account__section-headline, .notification__filter-bar {
+    background: #170941;
+    border-bottom: 0px;
+    }
+    
+.notification__filter-bar button.active:after {
+    border-color: transparent;
+}
+
+.notification__filter-bar button.active {
+  color: #f8f8f8;
+}
+
+.notification__filter-bar button {
+    color: #30ddef;
+}
+
+.directory__tag h4 small {
+  color: #f8f8f8;
+}
