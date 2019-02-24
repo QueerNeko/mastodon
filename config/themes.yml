@@ -2,3 +2,8 @@ default: styles/mastodon_colorides.scss
 mastodon: styles/application.scss
 contrast: styles/contrast.scss
 mastodon-light: styles/mastodon-light.scss
+purple-haze: styles/purple_haze.scss
+win95: styles/win95.scss
+meemu-purple: styles/meemu-default.scss
+meemu-vaporwave: styles/meemu.scss
+flamingo: styles/flamingo.scss
