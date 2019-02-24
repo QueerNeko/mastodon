@@ -327,6 +327,8 @@
   "privacy.public.short": "Público",
   "privacy.unlisted.long": "Não postar em linhas públicas",
   "privacy.unlisted.short": "Não-listado",
+  "privacy.local.long": "Todos podem ver, porém será listado somente na timeline pública local",
+  "privacy.local.short": "Local",
   "refresh": "Atualizar",
   "regeneration_indicator.label": "Carregando…",
   "regeneration_indicator.sublabel": "Sua página inicial está sendo preparada!",
