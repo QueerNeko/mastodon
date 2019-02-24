@@ -932,6 +932,11 @@ pt-BR:
     mastodon-light: Mastodon (claro)
     mastodon: Mastodon (escuro)
     default: Colorides
+    purple-haze: Purple Haze
+    win95: Windows 95
+    meemu-purple: Meemu Roxo
+    meemu-vaporwave: Meemu Vaporwave
+    flamingo: Flamingo
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
