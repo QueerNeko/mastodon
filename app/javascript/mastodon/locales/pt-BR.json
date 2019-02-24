@@ -266,6 +266,8 @@
   "privacy.public.short": "Pública",
   "privacy.unlisted.long": "Não publicar em feeds públicos",
   "privacy.unlisted.short": "Não listada",
+  "privacy.local.long": "Todos podem ver, porém será listado somente na timeline pública local",
+  "privacy.local.short": "Local",
   "regeneration_indicator.label": "Carregando…",
   "regeneration_indicator.sublabel": "Sua página inicial está sendo preparada!",
   "relative_time.days": "{number}d",
