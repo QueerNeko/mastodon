@@ -2001,3 +2001,1127 @@ $win95-img-resizer: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAA
     box-shadow: none;
   }
 }
+
+.table > thead > tr > th {
+    border-bottom: 0px;
+}
+
+.dashboard__counters > div > a, .dashboard__counters > div > div {
+    background: transparent;
+    border-radius: 0px;
+    box-shadow: inset -1px -1px 0 #000,inset 1px 1px 0 #fff,inset -2px -2px 0 grey,inset 2px 2px 0 #dfdfdf;
+}
+
+.dashboard__counters > div > a:hover, .dashboard__counters > div > a:active, .dashboard__counters > div > a:focus {
+    background: transparent;
+    box-shadow: inset -1px -1px 0 #fff,inset 1px 1px 0 #000,inset -2px -2px 0 grey,inset 2px 2px 0 #dfdfdf;
+}
+
+.dashboard__counters__label {
+    color: #000;
+}
+
+.admin-wrapper .content h4 {
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+.dashboard__widgets a:not(.name-tag) {
+    color: #00007f;
+    text-decoration: underline;
+}
+
+.dashboard__widgets a:not(.name-tag):hover {
+    color: #00007f;
+    text-decoration: none;
+}
+
+.inline-name-tag, .name-tag, a.inline-name-tag, a.name-tag {
+    color: #00007f;
+    text-decoration: underline;
+}
+
+.inline-name-tag:hover, .name-tag:hover, a.inline-name-tag:hover, a.name-tag:hover {
+    color: #00007f;
+  text-decoration: none;
+}
+
+.report-card {
+    background: transparent;
+    border-radius: 0px;
+    border: 1px solid #7f7f7f;
+}
+
+.report-card__summary__item__content a {
+    color: black;
+}
+
+.report-card__summary__item {
+    border-top: 1px solid #7f7f7f;
+}
+
+.report-card__profile__stats a:active, .report-card__profile__stats a:focus, .report-card__profile__stats a:hover {
+    color: #00007f;
+    text-decoration: none;
+}
+
+.report-card__profile__stats a {
+    color: #00007f;
+    text-decoration: underline;
+}
+
+.report-card__profile__stats .red {
+    color: red;
+    font-weight: bold;
+}
+
+.report-card__profile__stats {
+    color: black;
+    text-transform: none;
+}
+
+.report-card__summary__item:hover {
+    background: white;
+}
+
+.report-card__summary__item__assigned, .report-card__summary__item__reported-by {
+    color: black;
+}
+
+.report-card__summary__item__content__icon {
+    color: black;
+}
+
+.card > a:active .card__bar, .card > a:focus .card__bar, .card > a:hover .card__bar {
+    background: transparent;
+}
+
+.card__bar {
+background: transparent;
+border-radius: 0px;
+}
+
+.card__img img {
+border-radius: 0px;
+}
+
+.card > a {
+    box-shadow: 0px;
+    border: 1px groove #7f7f7f;
+}
+
+.card__bar .display-name span {
+    color: #00007f;
+}
+
+.account__header .account__header__display-name {
+    color: white;
+}
+  
+.account__header .account__header__username {
+    color: #bfbfbf;
+}
+
+.account__header .account__header__fields dt {
+    color: black;
+    background: #bfbfbf;
+}
+
+.account__header .account__header__fields dd {
+    color: #000;
+    background: white;
+}
+
+.account__header .account__header__fields dl {
+    border-top: 0px;
+    border-bottom: 1px solid #7f7f7f;
+}
+
+.account__section-headline a.active, .account__section-headline button.active, .notification__filter-bar a.active, .notification__filter-bar button.active {
+    color: black;
+    text-decoration: none;
+}
+
+.notification__filter-bar button.active::before {
+    border-color: transparent transparent transparent;
+}
+
+.account__section-headline a.active::after, .account__section-headline button.active::after, .notification__filter-bar a.active::after, .notification__filter-bar button.active::after {
+    bottom: 0px;
+    border-color: transparent transparent #bfbfbf;
+}
+
+.account__section-headline, .notification__filter-bar {
+    background: transparent;
+    border-bottom: 0px;
+}
+
+.account__section-headline a, .account__section-headline button, .notification__filter-bar a, .notification__filter-bar button {
+    color: #00007f;
+    text-decoration: underline;
+}
+
+.account__section-headline a:hover, .account__section-headline a:focus, .account__section-headline a:active {
+text-decoration:none;
+}
+
+body {
+    background: teal;
+  }
+  
+.status-card__image {
+    background: #bfbfbf;
+}
+
+.reply-indicator__content a .fa, .status__content a .fa {
+    color: #3f3f3f;
+}
+
+.status-card.compact {
+    border: 0px;
+  }
+  
+.status-card.compact .status-card__image {
+    box-shadow: inset -1px -1px 0 #000,inset 1px 1px 0 #fff,inset -2px -2px 0 grey,inset 2px 2px 0 #dfdfdf;
+}
+
+.status-card.compact .status-card__content, .status-card.compact .status-card__content:hover {
+    background: #bfbfbf;
+    box-shadow: inset -1px -1px 0 #000,inset 1px 1px 0 #fff,inset -2px -2px 0 grey,inset 2px 2px 0 #dfdfdf;
+}
+
+.status-card__title {
+    color: black;
+    text-decoration: none;
+}
+
+.account__disclaimer {
+    border-top: 0px;
+    color: black;
+    border-bottom: 1px solid #7f7f7f;
+}
+
+.search-results__section h5 {
+    background: #bfbfbf;
+    border-bottom: 1px solid #7f7f7f;
+    color: #3f3f3f;
+}
+
+.search-results__section .account:last-child, .search-results__section > div:last-child .status {
+    border-bottom: 1px solid #7f7f7f;
+}
+
+.trends__item__name a {
+    color: blue;
+  }
+  
+.trends__item__current {
+    color: #3f3f3f;
+}
+
+.account__header__fields .verified a {
+    color: white;
+    font-weight: 700;
+}
+
+.emoji-mart-bar:first-child {
+    border-bottom-width: 0px;
+    background: #bfbfbf;
+}
+
+.account__section-headline a.active::after, .account__section-headline a.active::before, .account__section-headline button.active::after, .account__section-headline button.active::before, .notification__filter-bar a.active::after, .notification__filter-bar a.active::before, .notification__filter-bar button.active::after, .notification__filter-bar button.active::before {
+border-color: transparent transparent transparent;
+border-width: 0px 0px 0px;
+}
+
+.account__section-headline a.active::after, .account__section-headline button.active::after, .notification__filter-bar a.active::after, .notification__filter-bar button.active::after {
+    bottom: 0px;
+    border-color: transparent transparent transparent;
+}
+
+.account__section-headline button, .notification__filter-bar button {
+    background: #bfbfbf;
+    box-shadow: inset -1px -1px 0 #000,inset 1px 1px 0 #fff,inset -2px -2px 0 grey,inset 2px 2px 0 #dfdfdf;
+}
+
+.account__section-headline a.active, .account__section-headline button.active, .notification__filter-bar a.active, .notification__filter-bar button.active {
+    color: #000;
+    font-weight: bold;
+}
+
+.notification__filter-bar button {
+
+    color: #000;
+    text-decoration: none;
+
+}
+
+.public-layout .header {
+
+    background: #00007f;
+    box-shadow: none;
+    border-radius: 0px;
+    border-color: #efefef #404040 #404040 #efefef;
+    border-style: solid;
+    border-width: 2px 2px 0;
+
+}
+
+.public-layout .header .nav-button:active, .public-layout .header .nav-button:focus { 
+
+    text-decoration: none;
+    background: #bfbfbf;
+    box-shadow: inset -1px -1px 0 #fff,inset 1px 1px 0 #000,inset -2px -2px 0 grey,inset 2px 2px 0 #dfdfdf;
+    color: black;
+
+}
+
+.public-layout .header .nav-button:hover {
+
+    text-decoration: none;
+    background: #bfbfbf;
+    box-shadow: inset -1px -1px 0 #000,inset 1px 1px 0 #fff,inset -2px -2px 0 grey,inset 2px 2px 0 #dfdfdf;
+    color: black;
+
+}
+
+.public-layout .header .nav-button {
+
+    margin: 8px 8px 8px 0;
+    border-radius: 0px;
+    background: #bfbfbf;
+    box-shadow: inset -1px -1px 0 #000,inset 1px 1px 0 #fff,inset -2px -2px 0 grey,inset 2px 2px 0 #dfdfdf;
+    color: black;
+
+}
+
+.public-layout .header .brand:active, .public-layout .header .brand:focus, .public-layout .header .brand:hover {
+
+    background: #00007f;
+
+}
+
+.public-layout .header .nav-link {
+color: #fff;
+}
+
+.public-layout .header .nav-link:active, .public-layout .header .nav-link:focus, .public-layout .header .nav-link:hover {
+    color: #fff;
+}
+
+.memoriam-widget, .page-header {
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+.page-header {
+    background: #bfbfbf;
+    margin: -10px 0 0 0;
+    border-left: 2px solid #efefef;
+    border-right: 2px solid #404040;
+}
+
+.page-header p {
+    font-size: 15px;
+    color: #7f7f7f;
+}
+
+.text-icon-button {
+padding: 0 5px;
+box-shadow: inset -1px -1px 0 #000,inset 1px 1px 0 #fff,inset -2px -2px 0 grey,inset 2px 2px 0 #dfdfdf;
+}
+
+.directory {
+    background: #bfbfbf;
+    border-radius: 0px;
+    box-shadow: none;
+    border-left: 2px solid #efefef;
+    height: 100%;
+}
+
+
+.accounts-table tbody tr {
+    border: 0px;
+}
+
+table.accounts-table {
+
+border-collapse:separate;
+border-spacing:0px 15px;
+padding:3%;
+
+}
+
+.accounts-table tr td:first-child {
+
+    border-left: 2px groove #bfbfbf;
+
+}
+.accounts-table tbody td {
+
+    padding: 15px 0px 15px 0px;
+    border-bottom: 2px groove #bfbfbf;
+    margin-top: 50px;
+    border-top: 2px groove #bfbfbf;
+
+}
+.accounts-table tr td:last-child {
+
+    border-right: 2px groove #bfbfbf;
+
+}
+
+.accounts-table tbody tr:last-child td {
+
+    border-bottom: 2px groove #bfbfbf;
+
+}
+
+.accounts-table__count small {
+    color: #7f7f7f;  
+}
+
+// Changes 28/02/2019:
+
+.public-layout .header .nav-button:active, .public-layout .header .nav-button:focus { 
+    color: black;
+}
+
+.public-layout .header .nav-button:hover {
+    color: black;
+}
+
+.notice-widget, .notice-widget p {
+    margin-bottom: 0px;
+}
+.notice-widget {
+    color: #000;
+}
+.box-widget, .contact-widget, .landing-page__information.contact-widget {
+    border-radius: 0px;
+    background: #bfbfbf;
+    box-shadow: none;
+    border-right: 2px solid #404040;
+}
+
+.public-layout .grid {
+    grid-gap: 0px;
+}
+
+.directory__tag {
+    margin-bottom: 0px;
+}
+
+.directory__tag a {
+    background: #bfbfbf;
+    border-radius: 0px;
+    box-shadow: none;
+    border-right: 2px solid #404040;
+}
+
+.directory__tag h4 small {
+    color: #7f7f7f;
+}
+
+.directory__tag a:active, .directory__tag a:focus, .directory__tag a:hover {
+    background: #00007f;
+}
+
+.directory__tag h4:hover {
+    color: #fff;
+}
+
+.directory__tag h4 .fa {
+    color: #7f7f7f;
+}
+
+.avatar-stack .account__avatar {
+    border-radius: 0;
+    margin-left: 2px;
+    border-color: #404040 #efefef #efefef #404040;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.public-layout .footer {
+    color: #7f7f7f;
+    background: #bfbfbf;
+    border-left: 2px solid #efefef;
+    border-right: 2px solid #404040;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #404040;
+}
+
+.public-layout .footer h4 {
+    color: #000;
+}
+
+.public-layout .footer .grid .column-2 h4 a {
+    color: #00007f;
+}
+
+.public-layout .footer .grid .column-0 {
+    border-left: 2px groove #bfbfbf;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-top: 2px groove #bfbfbf;
+    border-bottom: 2px groove #bfbfbf;
+    padding-bottom: 10px;
+}
+
+.public-layout .footer .grid .column-1 {
+    padding-top: 10px;
+    border-top: 2px groove #bfbfbf;
+    border-bottom: 2px groove #bfbfbf;
+    padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.public-layout .footer .grid {
+    grid-gap: 0px;
+}
+
+.public-layout .footer .grid .column-2 {
+    padding-top: 10px;
+    border-top: 2px groove #bfbfbf;
+    border-bottom: 2px groove #bfbfbf;
+    padding-bottom: 10px;
+}
+
+.public-layout .footer .grid .column-3 {
+    padding-top: 10px;
+    border-top: 2px groove #bfbfbf;
+    border-bottom: 2px groove #bfbfbf;
+    padding-bottom: 10px;
+}
+
+.public-layout .footer .brand svg path {
+    fill: #00007f;
+}
+
+.public-layout .footer .grid .column-4 {
+
+    border-right: 2px groove #bfbfbf;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-top: 2px groove #bfbfbf;
+    border-bottom: 2px groove #bfbfbf;
+    padding-bottom: 10px;
+}
+
+.public-layout .footer .brand:active svg path, .public-layout .footer .brand:focus svg path, .public-layout .footer .brand:hover svg path {
+    fill: #000;
+}
+
+.public-layout .footer ul a:active, .public-layout .footer ul a:focus, .public-layout .footer ul a:hover {
+    text-decoration: none;
+}
+
+.public-layout .footer ul a {
+    text-decoration: underline;
+    color: blue;
+}
+
+.directory__tag h4 {
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+.rich-formatting li, .rich-formatting p {
+    color: #000;
+  font-family: "MS Sans Serif",premillenium,sans-serif;
+}
+
+.rich-formatting h3, .rich-formatting h4 {
+
+    font-family: "MS Sans Serif",premillenium,sans-serif;
+    color: #00007f;
+  font-weight: 700;
+
+}
+
+.rich-formatting em, .rich-formatting strong {
+
+    color: #000;
+
+}
+
+.rich-formatting li:last-child, .rich-formatting p:last-child {
+
+    margin-bottom: 30px;
+
+}
+
+.box-widget {
+    border-left: 2px solid #efefef;
+}
+
+.notice-widget, .notice-widget p {
+    border-left: 0px;
+}
+
+.landing-page__call-to-action {
+    background: #bfbfbf;
+    border-radius: 0px;
+    border-left: 2px solid #efefef;
+}
+
+.information-board__section span:last-child {
+    color: #000;
+}
+
+.grid-3 {
+    grid-gap: 0px;
+}
+
+.landing-page__information strong {
+
+    font-weight: 600;
+    color: #00007f;
+
+}
+
+.landing-page__information .account {
+    padding: 5px;
+    box-shadow: inset -1px -1px 0 #000,inset 1px 1px 0 #fff,inset -2px -2px 0 grey,inset 2px 2px 0 #dfdfdf;
+}
+
+.public-layout .public-account-header--no-bar .public-account-header__image, .public-layout .public-account-header--no-bar .public-account-header__image img {
+
+    border-radius: 0px;
+
+}
+
+.public-layout .public-account-header {
+    box-shadow: none;
+    border-right: 2px solid #404040;
+}
+
+.public-layout .public-account-header__image::after {
+    box-shadow: none;
+    border-left: 2px solid #efefef;
+}
+
+.public-layout .public-account-header {
+    margin-bottom: 0px;
+    margin-top: -10px;
+}
+
+.media-spoiler {
+
+    background: #bfbfbf;
+    color: #000;
+    box-shadow: none;
+    border-radius: 0px;
+  border: 1px solid #7f7f7f;
+
+}
+
+.media-spoiler:active, .media-spoiler:focus, .media-spoiler:hover {
+
+    color: #fff;
+    text-decoration: none;
+    box-shadow: none;
+    background: #00007f;
+  border-radius: 0px;
+    border: 1px solid #7f7f7f;
+}
+
+
+.account-gallery__item a:active, .account-gallery__item a:focus, .account-gallery__item a:hover {
+    color: #fff;
+    text-decoration: none;
+    box-shadow: none;
+    background: #00007f;
+    border-radius: 0px;
+    border: 1px solid #7f7f7f;
+}
+
+.account-gallery__item a {
+
+    background: #bfbfbf;
+    color: #000;
+    box-shadow: none;
+    border-radius: 0px;
+  border: 1px solid #7f7f7f;
+}
+
+.account-gallery__item a:active::before, .account-gallery__item a:focus::before, .account-gallery__item a:hover::before {
+    border-radius: 0px;
+}
+
+.public-layout .public-account-header__image {
+    border-radius: 0;
+}
+
+.hero-widget__img, .public-layout .public-account-header__image {
+    background: #bfbfbf;
+  }
+  
+.public-layout .public-account-header__bar .avatar img {
+    border-radius: 0;
+    background: #17191f;
+    border-color: #404040 #efefef #efefef #404040;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.public-layout .public-account-header__tabs__name h1 {
+    font-weight: 700;
+    text-shadow: 1px 0 #bfbfbf, 0 1px #bfbfbf, -1px 0px #bfbfbf, 0 -1px #bfbfbf;
+}
+
+.public-layout .public-account-header__bar::before {
+    background: #bfbfbf;
+    border-radius: 0px;
+    border-left: 2px solid #efefef;
+}
+
+.public-layout .public-account-header__tabs__tabs .counter .counter-label {
+    color: #000;
+}
+
+.public-layout .public-account-header__tabs__tabs .counter::after {
+    border-bottom: 0px;
+}
+
+.public-layout .public-account-header__tabs__tabs .counter {
+    color: #000;
+    border: 2px groove #bfbfbf;
+}
+
+.public-layout .public-account-header__tabs__tabs .counter:last-child {
+    border-right: 2px groove #bfbfbf;
+}
+
+.button.logo-button:active, .button.logo-button:focus, .button.logo-button:hover {
+    background: #bfbfbf;
+    box-shadow: inset -1px -1px 0 #fff,inset 1px 1px 0 #000,inset -2px -2px 0 grey,inset 2px 2px 0 #dfdfdf;
+}
+
+.button.logo-button {
+    background: #bfbfbf;
+}
+
+.button.logo-button:active svg path:last-child, .button.logo-button:focus svg path:last-child, .button.logo-button:hover svg path:last-child {
+    fill: #bfbfbf;
+}
+
+.button.logo-button svg path:last-child {
+    fill: #bfbfbf;
+}
+
+a.status-card:hover {
+    background: #bfbfbf;
+}
+
+.status-card {
+
+    border-radius: 0;
+    background: #bfbfbf;
+    border: 0px;
+}
+
+.status-card__image {
+    background: #bfbfbf;
+    box-shadow: inset -1px -1px 0 #000,inset 1px 1px 0 #fff,inset -2px -2px 0 grey,inset 2px 2px 0 #dfdfdf;
+}
+
+.status-card__content {
+    box-shadow: inset -1px -1px 0 #000,inset 1px 1px 0 #fff,inset -2px -2px 0 grey,inset 2px 2px 0 #dfdfdf;
+}
+
+.public-layout .account__section-headline {
+
+    border-radius: 0px;
+    background: #bfbfbf;
+    border-left: 2px solid #efefef;
+
+}
+
+.activity-stream .entry {
+    background: #bfbfbf;
+  border-left: 2px solid #efefef;
+}
+
+.activity-stream .entry:first-child .detailed-status, .activity-stream .entry:first-child .load-more, .activity-stream .entry:first-child .status {
+    border-radius: 0;
+}
+
+.activity-stream {
+
+    box-shadow: none;
+    border-radius: 0px;
+    margin-bottom: 0px;
+
+}
+
+
+.status {
+margin: 0px;
+}
+
+.nav-link.nav-button.webapp-btn {
+    color: #000;
+}
+
+.public-layout .public-account-header__tabs__name h1 small {
+    font-size: 15px;
+    color: #404040;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.public-layout .public-account-bio {
+    background: #bfbfbf;
+    box-shadow: none;
+    border-radius: 0;
+    margin-bottom: 0px;
+    border-right: 0px;
+}
+
+.account__header__fields dd {
+    color: #000;
+}
+
+.activity-stream .entry .detailed-status, .activity-stream .entry .load-more, .activity-stream .entry .status {
+    margin: 0px 20px 0px 10px;
+}
+
+.hero-widget__text {
+    background: #bfbfbf;
+    border-radius: 0;
+    color: #000;
+  border-right: 0px;
+}
+
+.hero-widget__img img {
+    border-radius: 0;
+}
+
+.hero-widget__img {
+    width: 296px;
+    border-radius: 0px;
+    border-right: 2px solid #404040;
+}
+
+.simple_form .label_input__append::after {
+    background-image: none;
+}
+
+.hero-widget__img img {
+    width: 96%;
+    height: 96%;
+    border-radius: 0px;
+    margin-left: 2%;
+    border-color: #404040 #efefef #efefef #404040;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 2%;
+}
+
+element {
+
+}
+.hero-widget {
+    margin-bottom: 0;
+    box-shadow: none;
+}
+
+.public-layout .grid .column-1 {
+    background: #bfbfbf;
+}
+
+.public-layout .public-account-header__image::after {
+    box-shadow: none;
+}
+
+.public-layout .public-account-header__image {
+    border-radius: 0px;
+}
+
+.public-layout .public-account-header__image img {
+    border-radius: 0;
+}
+
+.public-layout .public-account-bio .roles, .public-layout .public-account-bio__extra {
+    color: #404040;
+}
+
+.account-role.admin {
+
+    color: red;
+    background-color: transparent;
+    border-color: #f00;
+
+}
+
+.account-role {
+    border-radius: 0px;
+}
+
+.account__header__fields dt {
+    color: #000;
+    background: #bfbfbf;
+}
+
+.account__header__fields dd {
+    background: #fff;
+}
+
+.account__header__fields dl {
+border-bottom: 2px groove #bfbfbf;
+border-left: 2px groove #bfbfbf;
+margin-right: 1%;
+border-right: 2px groove #bfbfbf;
+}
+
+.account__header__fields dl:last-child {
+    border-bottom: 2px groove #bfbfbf;
+}
+
+.account__header__fields dl:first-child {
+    border-top: 2px groove #bfbfbf;
+}
+
+.public-layout .public-account-bio .account__header__fields {
+    border: 0;
+}
+
+.public-layout .public-account-bio .account__header__content a {
+    color: #00007f;
+}
+
+.public-layout .card-grid {
+
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 98%;
+    margin: 0;
+    background: #bfbfbf;
+    border-right: 2px solid #404040;
+    border-left: 2px solid #efefef;
+
+}
+
+.pagination {
+    background: #bfbfbf;
+    border-left: 2px solid #efefef;
+    border-right: 2px solid #404040;
+}
+
+.pagination .current {
+
+    background: #bfbfbf;
+    border-radius: 0;
+    color: #000;
+    box-shadow: inset -1px -1px 0 #fff,inset 1px 1px 0 #000,inset -2px -2px 0 gray,inset 2px 2px 0 #dfdfdf;
+
+}
+
+.public-account-header + .grid .column-1 {
+
+    border-right: 2px solid #404040;
+
+}
+
+.pagination .page a, .pagination .next {
+    box-shadow: inset -1px -1px 0 #000,inset 1px 1px 0 #fff,inset -2px -2px 0 gray,inset 2px 2px 0 #dfdfdf;
+}
+
+.pagination .next {
+    padding: 8px;
+}
+
+.card > a {
+    box-shadow: none;
+}
+
+.card__bar .avatar img {
+
+    margin: 0;
+    border-radius: 0;
+    background: #bfbfbf;
+    border-color: #404040 #efefef #efefef #404040;
+    border-style: solid;
+    border-width: 1px;
+
+}
+
+.button.button-alternative:active, .button.button-alternative:focus, .button.button-alternative:hover {
+    background-color: #bfbfbf;
+}
+
+.button.button-alternative {
+    color: #282c37;
+    background: #bfbfbf;
+}
+
+.landing-page #mastodon-timeline .column {
+    border-radius: 0px;
+}
+
+.landing-page #mastodon-timeline {
+    height: auto;
+}
+
+.landing-page #mastodon-timeline, .landing-page__forms, .landing-page__information {
+    background: #bfbfbf;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.landing-page__hero img {
+    border-radius: 0px;
+}
+
+.landing-page li, .landing-page p {
+
+    font-family: "MS Sans Serif",premillenium,sans-serif;
+    color: #000;
+
+}
+
+.landing-page #mastodon-timeline p a {
+
+    color: blue;
+    text-decoration: underline;
+
+}
+
+.landing-page__short-description h1 small {
+
+    color: #404040;
+
+}
+
+.landing-page__short-description h1 small span {
+
+    color: #00007f;
+
+}
+
+.landing-page__short-description p a {
+
+    color: #00007f;
+
+}
+
+.landing-page h3, .landing-page h4 {
+    font-family: "MS Sans Serif",premillenium,sans-serif;
+    color: #000;
+  font-weight: 600;
+}
+
+.landing-page__call-to-action {
+
+    background: #bfbfbf;
+    border-radius: 0px;
+  border-width: 2px;
+    border-style: solid;
+    border-color: #efefef #404040 #404040 #efefef;
+}
+
+.information-board__section span:last-child {
+
+    color: #404040;
+
+}
+
+.landing-page h5, .landing-page h6 {
+
+    font-family: "MS Sans Serif",premillenium,sans-serif;
+    font-weight: 600;
+    color: #000;
+
+}
+
+.landing-page .features-list .features-list__row .text {
+    color: #000;
+}
+
+.landing-page .features-list .features-list__row .visual .fa {
+    color: #7f7f7f;
+}
+
+.landing-page .separator-or span {
+    background: #bfbfbf;
+    font-weight: 600;
+    color: #000;
+}
+
+.button.button-alternative-2 {
+    background: #bfbfbf;
+}
+
+.landing-page__forms, .landing-page__information {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #efefef #404040 #404040 #efefef;
+}
+
+.privacy-dropdown__option.active .privacy-dropdown__option__content, .privacy-dropdown__option.active .privacy-dropdown__option__content strong, .privacy-dropdown__option:hover .privacy-dropdown__option__content, .privacy-dropdown__option:hover .privacy-dropdown__option__content strong {
+    color: #fff;
+}
+
+.privacy-dropdown__option.active, .privacy-dropdown__option:hover {
+    color: #fff;
+}
+
+.trends__header {
+
+    color: #404040;
+    background: #bfbfbf;
+    border-bottom: 1px solid #7f7f7f;
+}
+
+.public-layout .activity-stream .entry .status__action-bar {
+margin-bottom: -40px;
+}
+
+.public-layout .activity-stream .entry {
+    padding-bottom: 30px;
+}
+
+.simple_form .required abbr {
+    color: red;
+}
+
+.compose-form .compose-form__warning {
+    color: #000;
+    background: #bfbfbf;
+    box-shadow: none;
+    border-radius: 0px;
+}
+
+.compose-form .compose-form__warning a {
+    color: #00007f;
+}
+
+// 28/02/2019
+
+.account--follows-info, .account--muting-info {
+    color: #fff;
+  border-radius: 0px;
+  font-weight: 600;
+}
+
+.activity-stream .entry:last-child .detailed-status, .activity-stream .entry:last-child .load-more, .activity-stream .entry:last-child .status {
+    border-radius: 0px;
+}
+
+.load-more {
+padding: 8px 5px;
+}
+
+.hero-widget__img {
+    background: #bfbfbf !important;
+}
+
+// !important aqui serve para dar override na stylesheet custom.css, que é aplicada depois desta
+
+.account__action-bar-dropdown {
+    border-bottom: 1px solid #7f7f7f;
+}
