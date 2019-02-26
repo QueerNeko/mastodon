@@ -4443,3 +4443,43 @@ body {
 .public-layout .footer {
     color: #ceacf1;
 }
+
+// 28/02/2019
+
+.back-link a {
+    color: #8e6cb1;
+}
+
+.batch-table__toolbar {
+    border-radius: 4px 4px 0 0;
+}
+
+.batch-table__toolbar {
+    border: 1px solid #ceacf1;
+    background: #694e78;
+}
+
+.batch-table__row {
+    border: 1px solid #ceacf1;
+    background: #fbf6ff;
+}
+
+.batch-table__row:nth-child(2n) {
+    background: #f7efff;
+}
+
+.batch-table__row:hover {
+    background: #fefefe;
+}
+
+.batch-table__row:nth-child(2n):hover {
+    background: #fefefe;
+}
+
+.trends__header {
+
+    color: #8e6cb1;
+    background: #fbf6ff;
+    border-bottom: 1px solid #b5a5bf;
+
+}
