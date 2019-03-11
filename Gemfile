@@ -103,6 +103,7 @@ gem 'webpush'
 gem 'json-ld'
 gem 'json-ld-preloaded', '~> 3.1'
 gem 'rdf-normalize', '~> 0.4'
+gem 'ruby-bbcode'
 
 group :development, :test do
   gem 'fabrication', '~> 2.21'
