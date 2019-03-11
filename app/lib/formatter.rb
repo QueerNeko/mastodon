@@ -40,6 +40,7 @@ class Formatter
     html = encode_custom_emojis(html, status.emojis, options[:autoplay]) if options[:custom_emojify]
     html = simple_format(html, {}, sanitize: false)
     html = html.delete("\n")
+    html = format_bbcode(html)
 
     html.html_safe # rubocop:disable Rails/OutputSafety
   end
@@ -58,6 +59,7 @@ class Formatter
   def simplified_format(account, **options)
     html = account.local? ? linkify(account.note) : reformat(account.note)
     html = encode_custom_emojis(html, account.emojis, options[:autoplay]) if options[:custom_emojify]
+    html = format_bbcode(html)
     html.html_safe # rubocop:disable Rails/OutputSafety
   end
 
@@ -345,5 +347,46 @@ class Formatter
 
   def mention_html(account)
     "<span class=\"h-card\"><a href=\"#{encode(ActivityPub::TagManager.instance.url_for(account))}\" class=\"u-url mention\">@<span>#{encode(account.username)}</span></a></span>"
+  end
+  
+  def format_bbcode(html)
+    begin
+      html = html.bbcode_to_html(false, {
+        :spin => {
+          :html_open => '<span class="fa bbcode__spin">', :html_close => '</span>',
+          :description => 'Make text spin',
+          :example => 'This is [spin]spin[/spin].'},
+        :pulse => {
+          :html_open => '<span class="bbcode__pulse">', :html_close => '</span>',
+          :description => 'Make text pulse',
+          :example => 'This is [pulse]pulse[/pulse].'},
+        :b => {
+          :html_open => '<span class="bbcode__b">', :html_close => '</span>',
+          :description => 'Make text bold',
+          :example => 'This is [b]bold[/b].'},
+        :i => {
+          :html_open => '<span class="bbcode__i">', :html_close => '</span>',
+          :description => 'Make text italic',
+          :example => 'This is [i]italic[/i].'},
+        :flip => {
+          :html_open => '<span class="fa fa-flip-%direction%">', :html_close => '</span>',
+          :description => 'Flip text',
+          :example => '[flip=horizontal]This is flip[/flip]',
+          :allow_quick_param => true, :allow_between_as_param => false,
+          :quick_param_format => /(horizontal|vertical)/,
+          :quick_param_format_description => 'The size parameter \'%param%\' is incorrect, a number is expected',
+          :param_tokens => [{:token => :direction}]},
+        :large => {
+          :html_open => '<span class="fa fa-%size%">', :html_close => '</span>',
+          :description => 'Large text',
+          :example => '[large=2x]Large text[/large]',
+          :allow_quick_param => true, :allow_between_as_param => false,
+          :quick_param_format => /(2x|3x|4x|5x)/,
+          :quick_param_format_description => 'The size parameter \'%param%\' is incorrect, a number is expected',
+          :param_tokens => [{:token => :size}]},
+      }, :enable, :i, :b, :color, :quote, :code, :size, :u, :s, :spin, :pulse, :flip, :large)
+    rescue Exception => e
+    end
+    html
   end
 end
