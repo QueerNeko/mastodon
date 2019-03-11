@@ -31,6 +31,7 @@ class Sanitize
         next true if /^(h|p|u|dt|e)-/.match?(e) # microformats classes
         next true if /^(mention|hashtag)$/.match?(e) # semantic classes
         next true if /^(ellipsis|invisible)$/.match?(e) # link formatting classes
+        next true if /^(bbcode__spin|bbcode__pulse|fa|fa-2x|fa-flip-vertical|fa-flip-horizontal|bbcode__b|bbcode__i|quote|fa-3x|fa-4x|fa-5x)$/.match?(e)
       end
 
       node['class'] = class_list.join(' ')
@@ -71,11 +72,12 @@ class Sanitize
     end
 
     MASTODON_STRICT ||= freeze_config(
-      elements: %w(p br span a),
+      elements: %w(p br span a u pre div blockquote),
 
       attributes: {
         'a'    => %w(href rel class),
-        'span' => %w(class),
+        'span' => %w(class style),
+        'div'  => %w(class),
       },
 
       add_attributes: {
