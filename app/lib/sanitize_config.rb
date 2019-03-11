@@ -14,17 +14,19 @@ class Sanitize
         next true if e =~ /^(h|p|u|dt|e)-/ # microformats classes
         next true if e =~ /^(mention|hashtag)$/ # semantic classes
         next true if e =~ /^(ellipsis|invisible)$/ # link formatting classes
+        next true if e =~ /^(bbcode__spin|bbcode__pulse|fa|fa-2x|fa-flip-vertical|fa-flip-horizontal|bbcode__b|bbcode__i|quote|fa-3x|fa-4x|fa-5x)$/
       end
 
       node['class'] = class_list.join(' ')
     end
 
     MASTODON_STRICT ||= freeze_config(
-      elements: %w(p br span a),
+      elements: %w(p br span a u pre div blockquote),
 
       attributes: {
         'a'    => %w(href rel class),
-        'span' => %w(class),
+        'span' => %w(class style),
+        'div'  => %w(class),
       },
 
       add_attributes: {
@@ -40,7 +42,11 @@ class Sanitize
 
       transformers: [
         CLASS_WHITELIST_TRANSFORMER,
-      ]
+      ],
+      
+      css: {
+        'properties' => %w(color text-decoration font-size),
+      }
     )
 
     MASTODON_OEMBED ||= freeze_config merge(
