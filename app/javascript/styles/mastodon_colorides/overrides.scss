@@ -912,3 +912,38 @@ box-shadow: 0px 0px 0px 0px;
 .simple_form .label_input__append {
     color: #58d9ba
 }
+
+//13/03/2019:
+.column-settings__hashtags .column-select__placeholder {
+    color: #acacac;
+}
+
+.css-15k3avv.column-select__menu {
+    background: #f8f8f8;
+    border-radius: 0px;
+}
+
+.column-settings__hashtags .column-select__clear-indicator, .column-settings__hashtags .column-select__dropdown-indicator {
+    color: #58d9ba;
+}
+
+.column-settings__hashtags .column-select__indicator-separator {
+    background-color: #58d9ba;
+}
+
+.boost-modal {
+    background-color: #170941;
+border-radius: 0px;
+}
+
+.boost-modal__action-bar {
+    background-color: #3a277d;
+}
+
+.boost-modal__action-bar > div span {
+    color: #58d9ba;
+}
+
+.boost-modal__container .status.light .status__content {
+    color: #f8f8f8;
+}
