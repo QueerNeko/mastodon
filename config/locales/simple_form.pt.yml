@@ -90,6 +90,16 @@ pt:
         setting_emoji_size_simple: "Tamanho de emoji em toots simples (padrão: 20)"
         setting_emoji_size_detailed: "Tamanho de emoji em toots detalhados (padrão: 24)"
         setting_emoji_size_name: "Tamanho de emoji em nome público (padrão: 16)"
+        setting_bbcode_spin: "BBCode [spin]"
+        setting_bbcode_pulse: "BBCode [pulse]"
+        setting_bbcode_flip: "BBCode [flip]"
+        setting_bbcode_large: "BBCode [large]"
+        setting_bbcode_size: "BBCode [size]"
+        setting_bbcode_color: "BBCode [color]"
+        setting_bbcode_b: "BBCode [b]"
+        setting_bbcode_i: "BBCode [i]"
+        setting_bbcode_u: "BBCode [u]"
+        setting_bbcode_s: "BBCode [s]"
         setting_auto_play_gif: Reproduzir GIFs automaticamente
         setting_boost_modal: Solicitar confirmação antes de partilhar uma publicação
         setting_default_language: Língua de publicação

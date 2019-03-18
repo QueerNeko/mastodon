@@ -57,6 +57,16 @@ class Settings::PreferencesController < Settings::BaseController
       :setting_emoji_size_simple,
       :setting_emoji_size_detailed,
       :setting_emoji_size_name,
+      :setting_bbcode_spin,
+      :setting_bbcode_pulse,
+      :setting_bbcode_flip,
+      :setting_bbcode_large,
+      :setting_bbcode_size,
+      :setting_bbcode_color,
+      :setting_bbcode_b,
+      :setting_bbcode_i,
+      :setting_bbcode_u,
+      :setting_bbcode_s,
       notification_emails: %i(follow follow_request reblog favourite mention digest report pending_account),
       interactions: %i(must_be_follower must_be_following must_be_following_dm)
     )
