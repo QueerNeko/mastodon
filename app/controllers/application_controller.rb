@@ -17,6 +17,16 @@ class ApplicationController < ActionController::Base
   helper_method :current_emoji_size_simple
   helper_method :current_emoji_size_detailed
   helper_method :current_emoji_size_name
+  helper_method :current_bbcode_spin
+  helper_method :current_bbcode_flip
+  helper_method :current_bbcode_size
+  helper_method :current_bbcode_color
+  helper_method :current_bbcode_pulse
+  helper_method :current_bbcode_large
+  helper_method :current_bbcode_i
+  helper_method :current_bbcode_b
+  helper_method :current_bbcode_s
+  helper_method :current_bbcode_u
   helper_method :single_user_mode?
   helper_method :use_seamless_external_login?
 
@@ -116,6 +126,46 @@ class ApplicationController < ActionController::Base
   
   def current_emoji_size_name
     return current_user&.setting_emoji_size_name
+  end
+  
+  def current_bbcode_spin
+    return current_user&.setting_bbcode_spin
+  end
+  
+  def current_bbcode_pulse
+    return current_user&.setting_bbcode_pulse
+  end
+  
+  def current_bbcode_flip
+    return current_user&.setting_bbcode_flip
+  end
+  
+  def current_bbcode_color
+    return current_user&.setting_bbcode_color
+  end
+  
+  def current_bbcode_large
+    return current_user&.setting_bbcode_large
+  end
+  
+  def current_bbcode_size
+    return current_user&.setting_bbcode_size
+  end
+  
+  def current_bbcode_b
+    return current_user&.setting_bbcode_b
+  end
+  
+  def current_bbcode_i
+    return current_user&.setting_bbcode_i
+  end
+  
+  def current_bbcode_u
+    return current_user&.setting_bbcode_u
+  end
+  
+  def current_bbcode_s
+    return current_user&.setting_bbcode_s
   end
 
   def cache_collection(raw, klass)

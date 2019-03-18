@@ -35,6 +35,16 @@ class UserSettingsDecorator
     user.settings['emoji_size_simple']   = emoji_size_simple_preference if change?('setting_emoji_size_simple')
     user.settings['emoji_size_detailed'] = emoji_size_detailed_preference if change?('setting_emoji_size_detailed')
     user.settings['emoji_size_name']     = emoji_size_name_preference if change?('setting_emoji_size_name')
+    user.settings['bbcode_spin']         = bbcode_spin_preference if change?('setting_bbcode_spin')
+    user.settings['bbcode_pulse']        = bbcode_pulse_preference if change?('setting_bbcode_pulse')
+    user.settings['bbcode_flip']         = bbcode_flip_preference if change?('setting_bbcode_flip')
+    user.settings['bbcode_large']        = bbcode_large_preference if change?('setting_bbcode_large')
+    user.settings['bbcode_size']         = bbcode_size_preference if change?('setting_bbcode_size')
+    user.settings['bbcode_color']        = bbcode_color_preference if change?('setting_bbcode_color')
+    user.settings['bbcode_b']            = bbcode_b_preference if change?('setting_bbcode_b')
+    user.settings['bbcode_i']            = bbcode_i_preference if change?('setting_bbcode_i')
+    user.settings['bbcode_u']            = bbcode_u_preference if change?('setting_bbcode_u')
+    user.settings['bbcode_s']            = bbcode_s_preference if change?('setting_bbcode_s')
   end
 
   def merged_notification_emails
@@ -121,6 +131,46 @@ class UserSettingsDecorator
     end
     
     ActiveModel::Type::Integer.new.cast(value)
+  end
+  
+  def bbcode_spin_preference
+    boolean_cast_setting 'setting_bbcode_spin'
+  end
+  
+  def bbcode_pulse_preference
+    boolean_cast_setting 'setting_bbcode_pulse'
+  end
+  
+  def bbcode_flip_preference
+    boolean_cast_setting 'setting_bbcode_flip'
+  end
+  
+  def bbcode_large_preference
+    boolean_cast_setting 'setting_bbcode_large'
+  end
+  
+  def bbcode_size_preference
+    boolean_cast_setting 'setting_bbcode_size'
+  end
+  
+  def bbcode_color_preference
+    boolean_cast_setting 'setting_bbcode_color'
+  end
+  
+  def bbcode_b_preference
+    boolean_cast_setting 'setting_bbcode_b'
+  end
+  
+  def bbcode_i_preference
+    boolean_cast_setting 'setting_bbcode_i'
+  end
+  
+  def bbcode_u_preference
+    boolean_cast_setting 'setting_bbcode_u'
+  end
+  
+  def bbcode_s_preference
+    boolean_cast_setting 'setting_bbcode_s'
   end
 
   def default_language_preference
