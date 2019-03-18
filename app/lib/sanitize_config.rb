@@ -30,7 +30,7 @@ class Sanitize
         next true if e =~ /^(h|p|u|dt|e)-/ # microformats classes
         next true if e =~ /^(mention|hashtag)$/ # semantic classes
         next true if e =~ /^(ellipsis|invisible)$/ # link formatting classes
-        next true if e =~ /^(bbcode__spin|bbcode__pulse|fa|fa-2x|fa-flip-vertical|fa-flip-horizontal|bbcode__b|bbcode__i|quote|fa-3x|fa-4x|fa-5x)$/
+        next true if e =~ /^(bbcode__spin|bbcode__pulse|fa-2x|fa-flip-vertical|fa-flip-horizontal|bbcode__b|bbcode__i|quote|fa-3x|fa-4x|fa-5x)$/
       end
 
       node['class'] = class_list.join(' ')
