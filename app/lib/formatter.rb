@@ -352,9 +352,10 @@ class Formatter
   
   def format_bbcode(html)
     begin
+      allowed_bbcodes = [:i, :b, :color, :quote, :code, :size, :u, :s, :spin, :pulse, :flip, :large]
       html = html.bbcode_to_html(false, {
         :spin => {
-          :html_open => '<span class="fa bbcode__spin">', :html_close => '</span>',
+          :html_open => '<span class="bbcode__spin">', :html_close => '</span>',
           :description => 'Make text spin',
           :example => 'This is [spin]spin[/spin].'},
         :pulse => {
@@ -370,7 +371,7 @@ class Formatter
           :description => 'Make text italic',
           :example => 'This is [i]italic[/i].'},
         :flip => {
-          :html_open => '<span class="fa fa-flip-%direction%">', :html_close => '</span>',
+          :html_open => '<span class="fa-flip-%direction%">', :html_close => '</span>',
           :description => 'Flip text',
           :example => '[flip=horizontal]This is flip[/flip]',
           :allow_quick_param => true, :allow_between_as_param => false,
@@ -378,14 +379,14 @@ class Formatter
           :quick_param_format_description => 'The size parameter \'%param%\' is incorrect, a number is expected',
           :param_tokens => [{:token => :direction}]},
         :large => {
-          :html_open => '<span class="fa fa-%size%">', :html_close => '</span>',
+          :html_open => '<span class="fa-%size%">', :html_close => '</span>',
           :description => 'Large text',
           :example => '[large=2x]Large text[/large]',
           :allow_quick_param => true, :allow_between_as_param => false,
           :quick_param_format => /(2x|3x|4x|5x)/,
           :quick_param_format_description => 'The size parameter \'%param%\' is incorrect, a number is expected',
           :param_tokens => [{:token => :size}]},
-      }, :enable, :i, :b, :color, :quote, :code, :size, :u, :s, :spin, :pulse, :flip, :large)
+      }, :enable, *allowed_bbcodes)
     rescue Exception => e
     end
     html

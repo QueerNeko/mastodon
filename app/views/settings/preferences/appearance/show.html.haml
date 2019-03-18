@@ -27,6 +27,20 @@
     = f.input :setting_emoji_size_detailed, input_html: { min: '0', step: '1', max: '50' }, wrapper: :with_label
     = f.input :setting_emoji_size_name, input_html: { min: '0', step: '1', max: '50' }, wrapper: :with_label
 
+  %hr#settings_bbcode/
+  
+  .fields-group
+    = f.input :setting_bbcode_spin, as: :boolean, wrapper: :with_label
+    = f.input :setting_bbcode_pulse, as: :boolean, wrapper: :with_label
+    = f.input :setting_bbcode_flip, as: :boolean, wrapper: :with_label
+    = f.input :setting_bbcode_large, as: :boolean, wrapper: :with_label
+    = f.input :setting_bbcode_color, as: :boolean, wrapper: :with_label
+    = f.input :setting_bbcode_size, as: :boolean, wrapper: :with_label
+    = f.input :setting_bbcode_b, as: :boolean, wrapper: :with_label
+    = f.input :setting_bbcode_i, as: :boolean, wrapper: :with_label
+    = f.input :setting_bbcode_u, as: :boolean, wrapper: :with_label
+    = f.input :setting_bbcode_s, as: :boolean, wrapper: :with_label
+
   %h4= t 'appearance.confirmation_dialogs'
 
   .fields-group

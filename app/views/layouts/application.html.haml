@@ -50,6 +50,78 @@
           height: #{current_emoji_size_name}px;
           margin: 0ex .1em 0ex;
         }
+    
+    - unless current_bbcode_spin
+      :css
+        .bbcode__spin {
+          -webkit-animation: none !important;
+          animation: none !important;
+        }
+    
+    - unless current_bbcode_pulse
+      :css
+        .bbcode__pulse {
+          -webkit-animation: none !important;
+          animation: none !important;
+        }
+        
+    - unless current_bbcode_large
+      :css
+        .status__content .fa-2x, .status__content .fa-3x, .status__content .fa-4x, .status__content .fa-5x {
+          font-size: inherit !important;
+        }
+        
+    - unless current_bbcode_size
+      :css
+        .status__content span:not(.fa-2x, .fa-3x, .fa-4x, .fa-5x) {
+          font-size: inherit !important;
+        }
+        
+    - unless current_bbcode_color
+      :css
+        .status__content span {
+          color: inherit !important;
+        }
+        
+    - unless current_bbcode_flip
+      :css
+        .status__content .fa-flip-vertical .fa-flip-horizontal {
+          -webkit-transform: none !important;
+          transform: none !important;
+        }
+    
+    - unless current_bbcode_flip
+      :css
+        .status__content .fa-flip-vertical .fa-flip-horizontal {
+          -webkit-transform: none !important;
+          transform: none !important;
+        }
+        
+    - unless current_bbcode_b
+      :css
+        .bbcode__b {
+          font-weight: inherit !important;
+        }
+        
+    - unless current_bbcode_i
+      :css
+        .bbcode__i {
+          font-style: inherit !important;
+          -webkit-font-feature-settings: inherit !important;
+          font-feature-settings: inherit !important;
+        }
+        
+    - unless current_bbcode_u
+      :css
+        .status__content u {
+          text-decoration: none !important;
+        }
+        
+    - unless current_bbcode_s
+      :css
+        .status__content span {
+          text-decoration: none !important;
+        }
 
     = yield :header_tags
 
