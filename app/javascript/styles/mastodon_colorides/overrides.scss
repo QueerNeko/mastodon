@@ -947,3 +947,14 @@ border-radius: 0px;
 .boost-modal__container .status.light .status__content {
     color: #f8f8f8;
 }
+
+//21/03/2019
+body.lighter {
+    background: #222;
+    background: linear-gradient(to right, rgb(23,9,65), #4b1dd5);
+    background-image: url(/styles/background/fundo3plus.png);
+    background-position: 100% 100%;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-size: contain;
+}
