@@ -373,7 +373,7 @@ class Formatter
           :description => 'Make text italic',
           :example => 'This is [i]italic[/i].'},
         :flip => {
-          :html_open => '<span class="fa-flip-%direction%">', :html_close => '</span>',
+          :html_open => '<span class="bbcode__flip-%direction%">', :html_close => '</span>',
           :description => 'Flip text',
           :example => '[flip=horizontal]This is flip[/flip]',
           :allow_quick_param => true, :allow_between_as_param => false,
