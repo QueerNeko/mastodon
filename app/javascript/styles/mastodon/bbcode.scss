@@ -46,6 +46,20 @@ pre {
 
 .bbcode__spin {
     display: inline-block;
-    -webkit-animation: fa-spin 2s infinite linear;
-    animation: fa-spin 2s infinite linear;
+    -webkit-animation: fa-spin 4s infinite linear;
+    animation: fa-spin 4s infinite linear;
+}
+
+.bbcode__flip-horizontal {
+    display: inline-block;
+    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+}
+
+.bbcode__flip-vertical {
+    display: inline-block;
+    transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
 }
