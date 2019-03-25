@@ -37,16 +37,25 @@
   %hr#settings_bbcode/
   
   .fields-group
-    = f.input :setting_bbcode_spin, as: :boolean, wrapper: :with_label
-    = f.input :setting_bbcode_pulse, as: :boolean, wrapper: :with_label
-    = f.input :setting_bbcode_flip, as: :boolean, wrapper: :with_label
-    = f.input :setting_bbcode_large, as: :boolean, wrapper: :with_label
-    = f.input :setting_bbcode_color, as: :boolean, wrapper: :with_label
-    = f.input :setting_bbcode_size, as: :boolean, wrapper: :with_label
-    = f.input :setting_bbcode_b, as: :boolean, wrapper: :with_label
-    = f.input :setting_bbcode_i, as: :boolean, wrapper: :with_label
-    = f.input :setting_bbcode_u, as: :boolean, wrapper: :with_label
-    = f.input :setting_bbcode_s, as: :boolean, wrapper: :with_label
+    %strong= t('bbcode.title')
+    %p= t('bbcode.explanation_html')
+    .fields-row
+      %button#bbcode_enable_all(type="button")
+        = t('bbcode.setting_enable_all') 
+      %button#bbcode_disable_all(type="button")
+        = t('bbcode.setting_disable_all')
+      = javascript_include_tag '/jquery-3.3.1.slim.min.js'
+      = javascript_include_tag '/bbcode_setting.js'
+    .setting_bbcode= f.input :setting_bbcode_spin, as: :boolean, wrapper: :with_label
+    .setting_bbcode= f.input :setting_bbcode_pulse, as: :boolean, wrapper: :with_label
+    .setting_bbcode= f.input :setting_bbcode_flip, as: :boolean, wrapper: :with_label
+    .setting_bbcode= f.input :setting_bbcode_large, as: :boolean, wrapper: :with_label
+    .setting_bbcode= f.input :setting_bbcode_color, as: :boolean, wrapper: :with_label
+    .setting_bbcode= f.input :setting_bbcode_size, as: :boolean, wrapper: :with_label
+    .setting_bbcode= f.input :setting_bbcode_b, as: :boolean, wrapper: :with_label
+    .setting_bbcode= f.input :setting_bbcode_i, as: :boolean, wrapper: :with_label
+    .setting_bbcode= f.input :setting_bbcode_u, as: :boolean, wrapper: :with_label
+    .setting_bbcode= f.input :setting_bbcode_s, as: :boolean, wrapper: :with_label
 
   %h4= t 'appearance.toot_layout'
 
