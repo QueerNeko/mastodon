@@ -617,3 +617,8 @@ pt:
     invalid_email: O endereço de e-mail é inválido
     invalid_otp_token: Código de autenticação inválido
     signed_in_as: 'Registado como:'
+  bbcode:
+    title: BBCode
+    explanation_html: 'Você pode configurar quais tipos de BBCode serão visíveis para você. Além destas opções, estão também disponíveis [quote] e [code].'
+    setting_enable_all: Habilitar tudo
+    setting_disable_all: Desabilitar tudo

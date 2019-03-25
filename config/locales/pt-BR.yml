@@ -1005,3 +1005,8 @@ pt-BR:
   verification:
     explanation_html: 'Você pode <strong>verificar-se como tendo posse dos links nos metadados do seu perfil</strong>. Para isso, o site conectado deve conter um link de volta para o seu perfil do Mastodon. O link de volta <strong>deve</strong> conter um atributo <code>rel="me"</code>. O conteúdo ou texto do link não importa. Aqui está um exemplo:'
     verification: Verificação
+  bbcode:
+    title: BBCode
+    explanation_html: 'Você pode configurar quais tipos de BBCode serão visíveis para você. Além destas opções, estão também disponíveis [quote] e [code].'
+    setting_enable_all: Habilitar tudo
+    setting_disable_all: Desabilitar tudo
