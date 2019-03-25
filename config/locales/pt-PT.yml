@@ -1475,3 +1475,8 @@ pt-PT:
     not_supported: Este navegador não suporta chaves de segurança
     otp_required: Para usar chaves de segurança, por favor ative primeiro a autenticação de duas etapas.
     registered_on: Registado em %{date}
+  bbcode:
+    title: BBCode
+    explanation_html: 'Tu podes configurar quais tipos de BBCode serão visíveis para ti. Além destas opções, estão também disponíveis [quote] e [code].'
+    setting_enable_all: Habilitar tudo
+    setting_disable_all: Desabilitar tudo

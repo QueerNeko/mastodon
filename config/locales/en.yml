@@ -1480,3 +1480,8 @@ en:
     not_supported: This browser doesn't support security keys
     otp_required: To use security keys please enable two-factor authentication first.
     registered_on: Registered on %{date}
+  bbcode:
+    title: BBCode
+    explanation_html: 'You can choose which BBCodes are visible for you. Beside these options, [quote] and [code] are also available.'
+    setting_enable_all: Enable all
+    setting_disable_all: Disable all
