@@ -1000,3 +1000,8 @@ pt:
   verification:
     explanation_html: 'Tu podes <strong>comprovar que és o dono dos links nos metadados do teu perfil</strong>. Para isso, o website para o qual o link aponta tem de conter um link para o teu perfil do Mastodon. Este link <strong>tem</strong> de ter um <code>rel="me"</code> atributo. O conteúdo do texto não é relevante. Aqui está um exemplo:'
     verification: Verificação
+  bbcode:
+    title: BBCode
+    explanation_html: 'Tu podes configurar quais tipos de BBCode serão visíveis para ti. Além destas opções, estão também disponíveis [quote] e [code].'
+    setting_enable_all: Habilitar tudo
+    setting_disable_all: Desabilitar tudo
