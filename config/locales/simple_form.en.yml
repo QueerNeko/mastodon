@@ -126,16 +126,16 @@ en:
         setting_emoji_size_simple: "Simple toot emoji size (default: 20)"
         setting_emoji_size_detailed: "Detailed toot emoji size (default: 24)"
         setting_emoji_size_name: "Display name emoji size (default: 16)"
-        setting_bbcode_spin: "BBCode [spin]"
-        setting_bbcode_pulse: "BBCode [pulse]"
-        setting_bbcode_flip: "BBCode [flip]"
-        setting_bbcode_large: "BBCode [large]"
-        setting_bbcode_size: "BBCode [size]"
-        setting_bbcode_color: "BBCode [color]"
-        setting_bbcode_b: "BBCode [b]"
-        setting_bbcode_i: "BBCode [i]"
-        setting_bbcode_u: "BBCode [u]"
-        setting_bbcode_s: "BBCode [s]"
+        setting_bbcode_spin: 'BBCode [spin]'
+        setting_bbcode_pulse: 'BBCode [pulse]'
+        setting_bbcode_flip: 'BBCode [flip]'
+        setting_bbcode_large: 'BBCode [large]'
+        setting_bbcode_size: 'BBCode [size]'
+        setting_bbcode_color: 'BBCode [color]'
+        setting_bbcode_b: 'BBCode [b]'
+        setting_bbcode_i: 'BBCode [i]'
+        setting_bbcode_u: 'BBCode [u]'
+        setting_bbcode_s: 'BBCode [s]'
         setting_auto_play_gif: Auto-play animated GIFs
         setting_boost_modal: Show confirmation dialog before boosting
         setting_crop_images: Crop images in non-expanded toots to 16x9
