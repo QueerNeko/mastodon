@@ -349,7 +349,7 @@ class Formatter
   
   def format_bbcode(html)
     begin
-      allowed_bbcodes = [:i, :b, :color, :quote, :code, :size, :u, :s, :spin, :pulse, :flip, :large]
+      allowed_bbcodes = [:i, :b, :color, :quote, :code, :size, :u, :s, :spin, :pulse, :flip, :large, :colorhex]
       html = html.bbcode_to_html(false, {
         :spin => {
           :html_open => '<span class="bbcode__spin">', :html_close => '</span>',
@@ -383,6 +383,13 @@ class Formatter
           :quick_param_format => /(2x|3x|4x|5x)/,
           :quick_param_format_description => 'The size parameter \'%param%\' is incorrect, a number is expected',
           :param_tokens => [{:token => :size}]},
+        :colorhex => {
+          :html_open => '<span style="color: #%colorhex%;">', :html_close => '</span>',
+          :description => 'Change the color of the text',
+          :example => '[colorhex=ff0000]This is red[/colorhex]',
+          :allow_quick_param => true, :allow_between_as_param => false,
+          :quick_param_format => /([0-9a-f]{6})/i,
+          :param_tokens => [{:token => :colorhex}]},
       }, :enable, *allowed_bbcodes)
     rescue Exception => e
     end
