@@ -131,7 +131,7 @@ pt-BR:
         setting_bbcode_flip: 'BBCode [flip]'
         setting_bbcode_large: 'BBCode [large]'
         setting_bbcode_size: 'BBCode [size]'
-        setting_bbcode_color: 'BBCode [color]'
+        setting_bbcode_color: 'BBCode [color] e [colorhex]'
         setting_bbcode_b: 'BBCode [b]'
         setting_bbcode_i: 'BBCode [i]'
         setting_bbcode_u: 'BBCode [u]'
