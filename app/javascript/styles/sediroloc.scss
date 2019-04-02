@@ -1,0 +1,813 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@import 'mastodon-light/variables';
+
+$black: #000;            // Black
+$white: #fff;            // White
+$success-green: #3c754d;    // Padua
+$error-red: #df405a !default;        // Cerise
+$warning-red: #ff5050 !default;      // Sunset Orange
+$gold-star: #cf2210 !default;        // link color
+
+// Values from the classic Mastodon UI
+$classic-base-color: #e8f6be;         // lighter yellow
+$classic-primary-color: #a72645;      // highlight pink
+$classic-secondary-color: #cf2210;    // link color
+$classic-highlight-color: #3c5d882;    // darker yellow
+
+$primary-text-color: #070707;
+
+@import 'application';
+@import 'mastodon-light/diff';
+
+  .ui, body
+  {
+    background-color: #e8f6be;
+    background-image: url('/styles/background/fundo3plus.png');
+    background-position: bottom right;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-size: contain;
+  }
+
+body.about-body, body.tag-body, body.admin
+{
+    background-color: #e8f6be;
+    background-image: url('/styles/background/fundo3plus.png');
+    background-position: bottom right;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+.column-inline-form
+{
+	background-color: #c5d882;
+}
+
+  .drawer__inner
+  {
+    background-color: transparent;
+  }
+
+  .drawer__inner__mastodon, .regeneration-indicator, .missing-indicator, .column-settings__section
+	{
+        background: none;
+        min-height: 0px;
+        color: #000
+                                        }
+
+  .drawer__header, .column-header, .column-header__button, .column-header__back-button, .button:hover, .column-subheading, .static-content, .account__section-headline, .search__input:focus, .column-header__back-button, .drawer__inner.darker, .detailed-status__action-bar, .search-results__header, .search-results__section, .autosuggest-textarea__suggestions--visible:active, .autosuggest-textarea__suggestions--visible.active, .autosuggest-textarea__suggestions:active, .compose-form .autosuggest-textarea__suggestions__item.selected, .compose-form .autosuggest-textarea__suggestions__item:active, .compose-form .autosuggest-textarea__suggestions__item:focus, .compose-form .autosuggest-textarea__suggestions__item:hover, .compose-form__warning, .card.h-card.p-author, .activity-stream-tabs, .card__bio, .notification-bar, .notification-bar-active, .notification-bar-title, .account-grid-card__header, .accounts-grid .account-grid-card, .media-spoiler:active, .media-spoiler:focus, .media-spoiler:hover, .dropdown-menu__item a:active, .dropdown-menu__item a:focus, .dropdown-menu__item a:hover, .react-toggle--checked .react-toggle-track, .simple_form .block-button:active, .simple_form .block-button:focus, .simple_form .button:active, .simple_form .button:focus, .simple_form button:active, .simple_form button:focus, .simple_form .block-button, .simple_form .button, .simple_form button, .admin-wrapper .sidebar ul ul a.selected, .admin-wrapper .sidebar ul ul a:hover, .admin-wrapper .sidebar ul a:hover, .pagination .current, .log-entry__header, .landing-strip, .memoriam-strip, .account--follows-info, .account--muting-info, .flash-message
+  {
+    background-color: rgb(197, 216, 130);
+    border-radius: 0px;
+    color: #000;
+  }
+.detailed-status__action-bar
+{
+    padding-top: 0px;
+}
+
+::-webkit-scrollbar
+{
+ width: 5px;   
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: rgb(197, 216, 130);
+}
+
+.regeneration-indicator__label strong
+{
+  color: #a72645
+}
+
+.admin-wrapper .sidebar ul ul, .admin-wrapper .sidebar ul ul a:focus, .log-entry__extras, .media-spoiler
+{
+    background-color: rgb(232, 246, 190);
+    color: #070707;
+}
+
+.admin-wrapper .sidebar ul a.selected {
+        background-color: rgb(232, 246, 190);
+    color: #cf2210;
+}
+
+.detailed-status__datetime, .detailed-status__datetime a, .detailed-status__link, .detailed-status__meta, .detailed-status__application, .detailed-status__datetime, .compose-form .compose-form__buttons-wrapper .character-counter__wrapper .character-counter
+{
+	color: #2d3120;
+}
+
+	.column-subheading
+	{
+    margin-top: 7px;
+                                        }
+
+.activity-stream .detailed-status.light .status-card, .activity-stream .detailed-status.light .status-card:hover, .activity-stream .detailed-status.light .status-card:active, .status-card:hover, .status-card:active, .status-card:focus, .status-card
+{
+    border-top: 1px solid #070707;
+    border-left: 1px solid #070707;
+    border-right: 1px solid #070707;
+    border-bottom: 1px solid #070707;
+    border-radius: 0px;
+    background-color: transparent !important;
+}
+
+.landing-page #mastodon-timeline .column {
+        border-radius: 0px;
+}
+
+.status-card__content, .status-card__image, .status-card__content:hover, .status-card__image:hover, .table>tbody>tr:nth-child(odd)>td, .table>tbody>tr:nth-child(odd)>th
+{
+    background-color: transparent;
+}
+
+  .drawer__tab, .activity-stream .display-name strong, .activity-stream .status__content, .counter, .compose-form .autosuggest-textarea__suggestions, .landing-page .header .links a:hover, .landing-page .header .links a:active, .account__section-headline a.active, .community-timeline__section-headline a.active, .public-timeline__section-headline a.active, .account__section-headline a:hover, .community-timeline__section-headline a:hover, .public-timeline__section-headline a:hover
+  {
+    color: #000;
+  }
+
+  .activity-stream .entry .detailed-status.light, .activity-stream .entry .status.light, .activity-stream-tabs, .account__header__fields dl
+  {
+    border-bottom: 0px;
+  }
+
+  .column-back-button, .column-icon collapsable-collapsed, .column-icon, .column-icon collapsable-collapsed, .landing-page .separator-or span
+  {
+    background-color: transparent;
+    color: #000;
+  }
+
+.landing-page .separator-or:before
+{
+    border-bottom: transparent;
+}
+
+  .column, .column-link, .column > .scrollable, .react-toggle-track, .table td, .admin-wrapper .sidebar-wrapper
+  {
+    background-color: transparent;
+  }
+
+  .scrollable
+  {
+    margin: 5px;
+  }
+
+.setting-text, .setting-text:active, .setting-text:focus, .setting-text.active, .setting-text.focus
+{
+    color: #070707;
+    border-bottom: 2px solid #070707;
+    border-top: 0px !important;
+    border-left: 0px !important;
+    border-right: 0px !important;
+}
+.account-role.admin
+{
+    color: #00cc66;
+    border-color: #00cc66;
+}
+
+  .activity-stream
+  {
+    box-shadow: 0 0 0;
+  }
+
+.search-results__section h5
+
+{
+  border-bottom: none;
+  color: #a72645
+  }
+
+  .entry.h-entry, h5, .search-results__section h5 span, .focusable:focus .status.status-direct, .status.status-direct:active, .focusable:focus, .account__section-headline a.active:after, .account__section-headline a.active:before, .account__header > div > div > button.icon-button
+  {
+    background: transparent !important;
+  }
+
+.account__header__content, .account__header, .account__section-headline a:hover, .account__section-headline a.active, .account__section-headline a:before, .account__section-headline a:after, .setting-meta__label, .setting-toggle__label, .e-content, .activity-stream .detailed-status.light .detailed-status__display-name .display-name strong, .activity-stream .detailed-status.light .status__content, .admin-wrapper .content .muted-hint, .p-summary
+{
+    background-color: transparent;
+    color: #070707 !important;
+}
+
+.account__header>div, .floating-action-button:active, .floating-action-button:focus, .floating-action-button:hover, .admin-wrapper .content
+{
+background-color: rgba(232, 246, 190, 0.8)
+}
+
+.extended-description .container-alt
+{
+	background-color: rgba(232, 246, 190, 0.7);
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+} 
+
+
+
+.account__section-headline a.active::after, .community-timeline__section-headline a.active::after, .public-timeline__section-headline a.active::after, .account__section-headline a.active::before, .community-timeline__section-headline a.active::before, .public-timeline__section-headline a.active::before
+{
+ border-bottom: 0px;
+ border-left: 0px;
+ border-right: 0px;
+ border-top: 0px;
+}
+
+
+.floating-action-button, .landing-page .header-wrapper.compact, .flex-spacer, .getting-started, .getting-started__wrapper
+{
+    background-color: rgb(197, 216, 130);
+}
+
+.tabs-bar {
+    background: rgb(197, 216, 130);
+}
+    
+  .status__display-name, .account
+  {
+    padding-bottom: 2px;
+  }
+
+  .display-name, .search-results__section h5 span, .card .name small, .activity-stream .pre-header, .status__display-name.muted, a.status__display-name.muted, .activity-stream .pre-header .status__display-name.muted strong, .activity-stream .display-name span, .username, .admin-wrapper .content h6
+  {
+    color: #a72645 !important;
+  }
+
+.table th, .table>thead>tr>th
+{
+    color: #a72645;
+    background-color: transparent;
+    border-bottom: 0px solid transparent;
+}
+
+  .status.muted, .detailed-status__action-bar
+  {
+    border: none;
+  }
+
+  .status__relative-time
+  {
+    color: rgb(197, 216, 130);
+  }
+
+.card .counter, .card .counter:after, .card .counter:before, .card .counter.active:after, .card .counter.active:before, .account__action-bar__tab, .account__header .account__header__fields dl, .account__header__fields, .account__action-bar, .account__disclaimer, .table th
+{
+    border-left: 0px; 
+    border-right: 0px;
+    border-bottom: 0px;
+    border-top: 0px;
+}
+
+.card .counter:hover
+{
+    border-bottom: 4px solid #cf2210;
+    padding-top: 1px;
+}
+
+.simple_form textarea, .simple_form input[type=email], .simple_form input[type=number], .simple_form input[type=password], .simple_form input[type=text]
+{
+    border-bottom: 2px solid #070707;
+}
+
+.simple_form textarea:active, .simple_form textarea:focus, .simple_form input[type=email]:active, .simple_form input[type=number]:active, .simple_form input[type=password]:active, .simple_form input[type=text]:active, .simple_form input[type=email]:focus, .simple_form input[type=number]:focus, .simple_form input[type=password]:focus, .simple_form input[type=text]:focus
+{
+	border-bottom: 2px solid #cf2210;
+}
+
+.account__section-headline a.active:after
+{
+    border-bottom-color: rgb(197, 216, 130);
+    bottom: 0px;
+    border-top-width: 0px;
+    border-right-width: 15px;
+    border-bottom-width: 15px;
+    border-left-width: 15px;
+}
+
+.account__header__fields dt, .account__action-bar__tab>span, .activity-stream .detailed-status.light .detailed-status__display-name .display-name span
+{
+    background: transparent !important;
+	color: #a72645 !important;
+    max-height: 77px;
+    white-space: normal;
+}
+.account__header__fields dd, .account__disclaimer, .dropdown-menu__item a, .empty-column-indicator, .error-column, .column-header__collapsible a:hover
+{
+    background: transparent !important;
+	color: #070707 !important;
+    max-height: 77px;
+    white-space: normal;
+}
+
+body.error, .landing-page .information-board, .landing-page .information-board .panel
+{
+    background-color: rgb(232, 246, 190);
+    color: #070707
+}
+
+ .compose-form__buttons-wrapper, .compose-form__modifiers, .compose-form__autosuggest-wrapper, .autosuggest-textarea, .autosuggest-textarea__textarea, .spoiler-input__input, .autosuggest-textarea__suggestions, .dropdown-menu__item
+{
+    background-color: rgb(232, 246, 190);
+        border-radius: 0px !important;
+}
+
+  .drawer__header a:hover, .column-link:hover, .static-content.getting-started span, .reply-indicator, .button, .detailed-status, detailed-status__action-bar, .privacy-dropdown__option.active, .privacy-dropdown__option.active:hover, .privacy-dropdown__option:hover, .privacy-dropdown__value-icon.icon-button.inverted:active, .privacy-dropdown__value-icon.icon-button.inverted.active, .account__section-headline
+  {
+    background-color: rgb(197, 216, 130);
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    border-right: 0px;
+  }
+
+  .account__header > div > div > button.icon-button, .dropdown-menu, .card
+  {
+    background-color: rgb(232, 246, 190);
+    border-radius: 0px;
+    opacity: 1;
+  }
+
+ .text-icon-button.active
+{
+ color: #070707;
+    background-color: rgb(197, 216, 130);
+        padding: 0px 7px 0px 6px;
+}
+  .autosuggest-textarea__suggestions
+  {
+    box-shadow: 0 0 15px rgba(232, 246, 190,0.4);
+    background: rgb(232, 246, 190);
+  }
+
+ .privacy-dropdown__option
+{
+    background-color: rgb(232, 246, 190);
+    color: #a72645;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 0px;
+}
+
+    .account__section-headline, .community-timeline__section-headline, .public-timeline__section-headline
+	{
+	 background-color: rgb(232, 246, 190);
+	 border-bottom: 0px;
+	}
+
+.accounts-grid, .status light, .activity-stream.with-header, .column-header__collapsible, .column-header__collapsible-inner
+{
+    background-color: rgba(232, 246, 190, 0.7) !important;
+    border-radius: 0px;
+    color: #070707; 
+}
+
+.landing-page li, .landing-page p, .navigation-bar strong, .landing-page .information-board .panel .panel-header span, .status-card__host, .status-card__description, .admin-wrapper .sidebar ul a, .button.button-alternative, .landing-page__short-description p a, .landing-page__short-description h1 small span, .landing-page .features-list .features-list__row .text, .landing-page .features-list .features-list__row .visual .fa, .account-card .detailed-status__display-name .display-name strong, .follow-prompt h2, .oauth-prompt h2, .post-follow-actions div
+{
+    color: #070707; 
+}
+
+.account__section-headline a, .landing-page .header-wrapper.compact .hero .heading a, .landing-page .header .links a, a, .admin-wrapper .content .muted-hint a, .activity-stream .detailed-status.light .status-card__description, .activity-stream .detailed-status.light .status-card__title, a.table-action-link, button.table-action-link, .status-card__title, .table a, .column-header.active .column-header__icon, .form-footer a, .account__section-headline a, .community-timeline__section-headline a, .public-timeline__section-headline a, .getting-started p a
+{  
+        color: #cf2210; 
+}
+  .column
+{
+    background-color: rgba(232, 246, 190, 0.7);
+    border-radius: 0px;
+    color: #070707;
+    margin: 0px 10px 0px 0px;
+  } 
+
+.activity-stream.activity-stream-headless.h-entry
+
+{
+    background-color: rgba(232, 246, 190, 0.7) !important;
+    border-radius: 0px;
+    color: #070707;
+    padding: 5px 10px 5px 10px;
+  } 
+
+.landing-page #mastodon-timeline, .landing-page__forms, .landing-page__information, .landing-page__call-to-action
+{
+   background-color: rgba(232, 246, 190, 0.7);
+    border-radius: 0px;
+    color: #070707; 
+}
+
+:focus
+{
+ outline-color: transparent;   
+}
+
+.entry .entry-predecessor .h-cite .p-in-reply-to, .activity-stream .entry:first-child, .activity-stream .entry:first-child .detailed-status.light, .activity-stream .entry:first-child .status.light, .entry.entry-successor.h-cite.p-comment, .activity-stream .entry:last-child, .activity-stream .entry:last-child .detailed-status.light, .activity-stream .entry:last-child .status.light, .entry.entry-predecessor.h-cite.p-in-reply-to, .entry.entry-successor.h-cite, .activity-stream .entry, .card .card__bio
+{
+    background-color: transparent;
+}
+
+	.status, .search__input, status.light, .focusable:focus.status.status-direct, .status.status-direct, .status.status-direct:focus, .status.status-direct:active, .status__wrapper status__wrapper-direct focusable
+  {
+    background-color: transparent !important;
+    border-radius: 0px;
+    margin: 5px auto 10px auto;
+    color: #070707 !important;   
+  }
+
+  .status, .status__display-name, .reply-indicator__content
+  {
+    color: #000;
+  }
+  
+.tabs-bar__link
+{
+    color: #000;
+    border-bottom: 2px solid #c5d882;
+}
+
+.tabs-bar__link .active
+{
+    color: #cf2210;
+	border-bottom: 2px solid #cf2210;
+}
+
+
+  .status.muted strong, .status.muted p, .icon-button, .reply-indicator__content a, .muted .status__content a, .admin-wrapper .content hr, .confirmation-modal__action-bar .confirmation-modal__cancel-button, .confirmation-modal__action-bar .mute-modal__cancel-button, .mute-modal__action-bar .confirmation-modal__cancel-button, .mute-modal__action-bar .mute-modal__cancel-button
+  {
+    color: #3a3a3a;
+  }
+
+	 .entry.entry-reblog.h-cite, .getting-started__wrapper, .status__wrapper-public.focusable
+	{
+    background-color: transparent;
+    }
+
+  time, .footer
+  {
+    color: #252525;
+  }
+  
+  .load-gap {
+  border-bottom: 1px solid #252525;
+  }
+  .load-more {
+  color: #252525;
+  }
+  .load-more:hover
+  {
+  color: #070707;
+  background-color: rgb(197, 216, 130);
+  }
+  .status__prepend, .status__prepend a.status__display-name strong, .notification__message, .fa.fa-fw.fa-user-plus, .account__header__username, .fa.fa-fw.fa-user-plus, .privacy-dropdown__option__content strong, .landing-page h3
+
+  {
+    color: #a72645;
+    font-weight: bold;
+    opacity: 1;
+  }
+
+.landing-page h6
+{
+    color: #a72645;
+}
+
+h4, h4 a, .landing-page h4, #tralala
+{
+    color: #a72645 !important;
+}
+
+  .mention hashtag, .status__content a, .navigation-bar a, .icon-button.active, .detailed-status__button.active, .compose-form__warning a, .activity-stream-tabs a, .accounts-grid .account-grid-card .name a, .account__disclaimer a, .extended-description a, .simple_form p.hint.subtle-hint a, .account__header__fields a
+  {
+    color: #cf2210 !important;
+  }
+  
+    .getting-started a
+  {
+    color: #cf2210 !important;
+  }
+
+button.icon-button i.fa-retweet {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='209'><path d='M4.97 3.16c-.1.03-.17.1-.22.18L.8 8.24c-.2.3.03.78.4.8H3.6v2.68c0 4.26-.55 3.62 3.66 3.62h7.66l-2.3-2.84c-.03-.02-.03-.04-.05-.06H7.27c-.44 0-.72-.3-.72-.72v-2.7h2.5c.37.03.63-.48.4-.77L5.5 3.35c-.12-.17-.34-.25-.53-.2zm12.16.43c-.55-.02-1.32.02-2.4.02H7.1l2.32 2.85.03.06h5.25c.42 0 .72.28.72.72v2.7h-2.5c-.36.02-.56.54-.3.8l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.26-.28 0-.83-.37-.8H18.4v-2.7c0-3.15.4-3.62-1.25-3.66z' fill='%23333333' stroke-width='0'/><path d='M7.78 19.66c-.24.02-.44.25-.44.5v2.46h-.06c-1.08 0-1.86-.03-2.4-.03-1.64 0-1.25.43-1.25 3.65v4.47c0 4.26-.56 3.62 3.65 3.62H8.5l-1.3-1.06c-.1-.08-.18-.2-.2-.3-.02-.17.06-.35.2-.45l1.33-1.1H7.28c-.44 0-.72-.3-.72-.7v-4.48c0-.44.28-.72.72-.72h.06v2.5c0 .38.54.63.82.38l4.9-3.93c.25-.18.25-.6 0-.78l-4.9-3.92c-.1-.1-.24-.14-.38-.12zm9.34 2.93c-.54-.02-1.3.02-2.4.02h-1.25l1.3 1.07c.1.07.18.2.2.33.02.16-.06.3-.2.4l-1.33 1.1h1.28c.42 0 .72.28.72.72v4.47c0 .42-.3.72-.72.72h-.1v-2.47c0-.3-.3-.53-.6-.47-.07 0-.14.05-.2.1l-4.9 3.93c-.26.18-.26.6 0 .78l4.9 3.92c.27.25.82 0 .8-.38v-2.5h.1c4.27 0 3.65.67 3.65-3.62v-4.47c0-3.15.4-3.62-1.25-3.66zM10.34 38.66c-.24.02-.44.25-.43.5v2.47H7.3c-1.08 0-1.86-.04-2.4-.04-1.64 0-1.25.43-1.25 3.65v4.47c0 3.66-.23 3.7 2.34 3.66l-1.34-1.1c-.1-.08-.18-.2-.2-.3 0-.17.07-.35.2-.45l1.96-1.6c-.03-.06-.04-.13-.04-.2v-4.48c0-.44.28-.72.72-.72H9.9v2.5c0 .36.5.6.8.38l4.93-3.93c.24-.18.24-.6 0-.78l-4.94-3.92c-.1-.08-.23-.13-.36-.12zm5.63 2.93l1.34 1.1c.1.07.18.2.2.33.02.16-.03.3-.16.4l-1.96 1.6c.02.07.06.13.06.22v4.47c0 .42-.3.72-.72.72h-2.66v-2.47c0-.3-.3-.53-.6-.47-.06.02-.12.05-.18.1l-4.94 3.93c-.24.18-.24.6 0 .78l4.94 3.92c.28.22.78-.02.78-.38v-2.5h2.66c4.27 0 3.65.67 3.65-3.62v-4.47c0-3.66.34-3.7-2.4-3.66zM13.06 57.66c-.23.03-.4.26-.4.5v2.47H7.28c-1.08 0-1.86-.04-2.4-.04-1.64 0-1.25.43-1.25 3.65v4.87l2.93-2.37v-2.5c0-.44.28-.72.72-.72h5.38v2.5c0 .36.5.6.78.38l4.94-3.93c.24-.18.24-.6 0-.78l-4.94-3.92c-.1-.1-.24-.14-.38-.12zm5.3 6.15l-2.92 2.4v2.52c0 .42-.3.72-.72.72h-5.4v-2.47c0-.3-.32-.53-.6-.47-.07.02-.13.05-.2.1L3.6 70.52c-.25.18-.25.6 0 .78l4.93 3.92c.28.22.78-.02.78-.38v-2.5h5.42c4.27 0 3.65.67 3.65-3.62v-4.47-.44zM19.25 78.8c-.1.03-.2.1-.28.17l-.9.9c-.44-.3-1.36-.25-3.35-.25H7.28c-1.08 0-1.86-.03-2.4-.03-1.64 0-1.25.43-1.25 3.65v.7l2.93.3v-1c0-.44.28-.72.72-.72h7.44c.2 0 .37.08.5.2l-1.8 1.8c-.25.26-.08.76.27.8l6.27.7c.28.03.56-.25.53-.53l-.7-6.25c0-.27-.3-.48-.55-.44zm-17.2 6.1c-.2.07-.36.3-.33.54l.7 6.25c.02.36.58.55.83.27l.8-.8c.02 0 .04-.02.04 0 .46.24 1.37.17 3.18.17h7.44c4.27 0 3.65.67 3.65-3.62v-.75l-2.93-.3v1.05c0 .42-.3.72-.72.72H7.28c-.15 0-.3-.03-.4-.1L8.8 86.4c.3-.24.1-.8-.27-.84l-6.28-.65h-.2zM4.88 98.6c-1.33 0-1.34.48-1.3 2.3l1.14-1.37c.08-.1.22-.17.34-.2.16 0 .34.08.44.2l1.66 2.03c.04 0 .07-.03.12-.03h7.44c.34 0 .57.2.65.5h-2.43c-.34.05-.53.52-.3.78l3.92 4.95c.18.24.6.24.78 0l3.94-4.94c.22-.27-.02-.76-.37-.77H18.4c.02-3.9.6-3.4-3.66-3.4H7.28c-1.08 0-1.86-.04-2.4-.04zm.15 2.46c-.1.03-.2.1-.28.2l-3.94 4.9c-.2.28.03.77.4.78H3.6c-.02 3.94-.45 3.4 3.66 3.4h7.44c3.65 0 3.74.3 3.7-2.25l-1.1 1.34c-.1.1-.2.17-.32.2-.16 0-.34-.08-.44-.2l-1.65-2.03c-.06.02-.1.04-.18.04H7.28c-.35 0-.57-.2-.66-.5h2.44c.37 0 .63-.5.4-.78l-3.96-4.9c-.1-.15-.3-.23-.47-.2zM4.88 117.6c-1.16 0-1.3.3-1.3 1.56l1.14-1.38c.08-.1.22-.14.34-.16.16 0 .34.04.44.16l2.22 2.75h7c.42 0 .72.28.72.72v.53h-2.6c-.3.1-.43.54-.2.78l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.22-.28-.02-.77-.37-.78H18.4v-.53c0-4.2.72-3.63-3.66-3.63H7.28c-1.08 0-1.86-.03-2.4-.03zm.1 1.74c-.1.03-.17.1-.23.16L.8 124.44c-.2.28.03.77.4.78H3.6v.5c0 4.26-.55 3.62 3.66 3.62h7.44c1.03 0 1.74.02 2.28 0-.16.02-.34-.03-.44-.15l-2.22-2.76H7.28c-.44 0-.72-.3-.72-.72v-.5h2.5c.37.02.63-.5.4-.78L5.5 119.5c-.12-.15-.34-.22-.53-.16zm12.02 10c1.2-.02 1.4-.25 1.4-1.53l-1.1 1.36c-.07.1-.17.17-.3.18zM5.94 136.6l2.37 2.93h6.42c.42 0 .72.28.72.72v1.25h-2.6c-.3.1-.43.54-.2.78l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.22-.28-.02-.77-.37-.78H18.4v-1.25c0-4.2.72-3.63-3.66-3.63H7.28c-.6 0-.92-.02-1.34-.03zm-1.72.06c-.4.08-.54.3-.6.75l.6-.74zm.84.93c-.12 0-.24.08-.3.18l-3.95 4.9c-.24.3 0 .83.4.82H3.6v1.22c0 4.26-.55 3.62 3.66 3.62h7.44c.63 0 .97.02 1.4.03l-2.37-2.93H7.28c-.44 0-.72-.3-.72-.72v-1.22h2.5c.4.04.67-.53.4-.8l-3.96-4.92c-.1-.13-.27-.2-.44-.2zm13.28 10.03l-.56.7c.36-.07.5-.3.56-.7zM17.13 155.6c-.55-.02-1.32.03-2.4.03h-8.2l2.38 2.9h5.82c.42 0 .72.28.72.72v1.97H12.9c-.32.06-.48.52-.28.78l3.94 4.94c.2.23.6.22.78-.03l3.94-4.9c.22-.28-.02-.77-.37-.78H18.4v-1.97c0-3.15.4-3.62-1.25-3.66zm-12.1.28c-.1.02-.2.1-.28.18l-3.94 4.9c-.2.3.03.78.4.8H3.6v1.96c0 4.26-.55 3.62 3.66 3.62h8.24l-2.36-2.9H7.28c-.44 0-.72-.3-.72-.72v-1.97h2.5c.37.02.63-.5.4-.78l-3.96-4.9c-.1-.15-.3-.22-.47-.2zM5.13 174.5c-.15 0-.3.07-.38.2L.8 179.6c-.24.27 0 .82.4.8H3.6v2.32c0 4.26-.55 3.62 3.66 3.62h7.94l-2.35-2.9h-5.6c-.43 0-.7-.3-.7-.72v-2.3h2.5c.38.03.66-.54.4-.83l-3.97-4.9c-.1-.13-.23-.2-.38-.2zm12 .1c-.55-.02-1.32.03-2.4.03H6.83l2.35 2.9h5.52c.42 0 .72.28.72.72v2.34h-2.6c-.3.1-.43.53-.2.78l3.92 4.9c.18.24.6.24.78 0l3.94-4.9c.22-.3-.02-.78-.37-.8H18.4v-2.33c0-3.15.4-3.62-1.25-3.66zM4.97 193.16c-.1.03-.17.1-.22.18l-3.94 4.9c-.2.3.03.78.4.8H3.6v2.68c0 4.26-.55 3.62 3.66 3.62h7.66l-2.3-2.84c-.03-.02-.03-.04-.05-.06H7.27c-.44 0-.72-.3-.72-.72v-2.7h2.5c.37.03.63-.48.4-.77l-3.96-4.9c-.12-.17-.34-.25-.53-.2zm12.16.43c-.55-.02-1.32.03-2.4.03H7.1l2.32 2.84.03.06h5.25c.42 0 .72.28.72.72v2.7h-2.5c-.36.02-.56.54-.3.8l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.26-.28 0-.83-.37-.8H18.4v-2.7c0-3.15.4-3.62-1.25-3.66z' fill='%23cf2210' stroke-width='0'/></svg>");
+}
+
+button.icon-button i.fa-retweet:hover {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='209'><path d='M4.97 3.16c-.1.03-.17.1-.22.18L.8 8.24c-.2.3.03.78.4.8H3.6v2.68c0 4.26-.55 3.62 3.66 3.62h7.66l-2.3-2.84c-.03-.02-.03-.04-.05-.06H7.27c-.44 0-.72-.3-.72-.72v-2.7h2.5c.37.03.63-.48.4-.77L5.5 3.35c-.12-.17-.34-.25-.53-.2zm12.16.43c-.55-.02-1.32.02-2.4.02H7.1l2.32 2.85.03.06h5.25c.42 0 .72.28.72.72v2.7h-2.5c-.36.02-.56.54-.3.8l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.26-.28 0-.83-.37-.8H18.4v-2.7c0-3.15.4-3.62-1.25-3.66z' fill='%23b4e22a' stroke-width='0'/><path d='M7.78 19.66c-.24.02-.44.25-.44.5v2.46h-.06c-1.08 0-1.86-.03-2.4-.03-1.64 0-1.25.43-1.25 3.65v4.47c0 4.26-.56 3.62 3.65 3.62H8.5l-1.3-1.06c-.1-.08-.18-.2-.2-.3-.02-.17.06-.35.2-.45l1.33-1.1H7.28c-.44 0-.72-.3-.72-.7v-4.48c0-.44.28-.72.72-.72h.06v2.5c0 .38.54.63.82.38l4.9-3.93c.25-.18.25-.6 0-.78l-4.9-3.92c-.1-.1-.24-.14-.38-.12zm9.34 2.93c-.54-.02-1.3.02-2.4.02h-1.25l1.3 1.07c.1.07.18.2.2.33.02.16-.06.3-.2.4l-1.33 1.1h1.28c.42 0 .72.28.72.72v4.47c0 .42-.3.72-.72.72h-.1v-2.47c0-.3-.3-.53-.6-.47-.07 0-.14.05-.2.1l-4.9 3.93c-.26.18-.26.6 0 .78l4.9 3.92c.27.25.82 0 .8-.38v-2.5h.1c4.27 0 3.65.67 3.65-3.62v-4.47c0-3.15.4-3.62-1.25-3.66zM10.34 38.66c-.24.02-.44.25-.43.5v2.47H7.3c-1.08 0-1.86-.04-2.4-.04-1.64 0-1.25.43-1.25 3.65v4.47c0 3.66-.23 3.7 2.34 3.66l-1.34-1.1c-.1-.08-.18-.2-.2-.3 0-.17.07-.35.2-.45l1.96-1.6c-.03-.06-.04-.13-.04-.2v-4.48c0-.44.28-.72.72-.72H9.9v2.5c0 .36.5.6.8.38l4.93-3.93c.24-.18.24-.6 0-.78l-4.94-3.92c-.1-.08-.23-.13-.36-.12zm5.63 2.93l1.34 1.1c.1.07.18.2.2.33.02.16-.03.3-.16.4l-1.96 1.6c.02.07.06.13.06.22v4.47c0 .42-.3.72-.72.72h-2.66v-2.47c0-.3-.3-.53-.6-.47-.06.02-.12.05-.18.1l-4.94 3.93c-.24.18-.24.6 0 .78l4.94 3.92c.28.22.78-.02.78-.38v-2.5h2.66c4.27 0 3.65.67 3.65-3.62v-4.47c0-3.66.34-3.7-2.4-3.66zM13.06 57.66c-.23.03-.4.26-.4.5v2.47H7.28c-1.08 0-1.86-.04-2.4-.04-1.64 0-1.25.43-1.25 3.65v4.87l2.93-2.37v-2.5c0-.44.28-.72.72-.72h5.38v2.5c0 .36.5.6.78.38l4.94-3.93c.24-.18.24-.6 0-.78l-4.94-3.92c-.1-.1-.24-.14-.38-.12zm5.3 6.15l-2.92 2.4v2.52c0 .42-.3.72-.72.72h-5.4v-2.47c0-.3-.32-.53-.6-.47-.07.02-.13.05-.2.1L3.6 70.52c-.25.18-.25.6 0 .78l4.93 3.92c.28.22.78-.02.78-.38v-2.5h5.42c4.27 0 3.65.67 3.65-3.62v-4.47-.44zM19.25 78.8c-.1.03-.2.1-.28.17l-.9.9c-.44-.3-1.36-.25-3.35-.25H7.28c-1.08 0-1.86-.03-2.4-.03-1.64 0-1.25.43-1.25 3.65v.7l2.93.3v-1c0-.44.28-.72.72-.72h7.44c.2 0 .37.08.5.2l-1.8 1.8c-.25.26-.08.76.27.8l6.27.7c.28.03.56-.25.53-.53l-.7-6.25c0-.27-.3-.48-.55-.44zm-17.2 6.1c-.2.07-.36.3-.33.54l.7 6.25c.02.36.58.55.83.27l.8-.8c.02 0 .04-.02.04 0 .46.24 1.37.17 3.18.17h7.44c4.27 0 3.65.67 3.65-3.62v-.75l-2.93-.3v1.05c0 .42-.3.72-.72.72H7.28c-.15 0-.3-.03-.4-.1L8.8 86.4c.3-.24.1-.8-.27-.84l-6.28-.65h-.2zM4.88 98.6c-1.33 0-1.34.48-1.3 2.3l1.14-1.37c.08-.1.22-.17.34-.2.16 0 .34.08.44.2l1.66 2.03c.04 0 .07-.03.12-.03h7.44c.34 0 .57.2.65.5h-2.43c-.34.05-.53.52-.3.78l3.92 4.95c.18.24.6.24.78 0l3.94-4.94c.22-.27-.02-.76-.37-.77H18.4c.02-3.9.6-3.4-3.66-3.4H7.28c-1.08 0-1.86-.04-2.4-.04zm.15 2.46c-.1.03-.2.1-.28.2l-3.94 4.9c-.2.28.03.77.4.78H3.6c-.02 3.94-.45 3.4 3.66 3.4h7.44c3.65 0 3.74.3 3.7-2.25l-1.1 1.34c-.1.1-.2.17-.32.2-.16 0-.34-.08-.44-.2l-1.65-2.03c-.06.02-.1.04-.18.04H7.28c-.35 0-.57-.2-.66-.5h2.44c.37 0 .63-.5.4-.78l-3.96-4.9c-.1-.15-.3-.23-.47-.2zM4.88 117.6c-1.16 0-1.3.3-1.3 1.56l1.14-1.38c.08-.1.22-.14.34-.16.16 0 .34.04.44.16l2.22 2.75h7c.42 0 .72.28.72.72v.53h-2.6c-.3.1-.43.54-.2.78l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.22-.28-.02-.77-.37-.78H18.4v-.53c0-4.2.72-3.63-3.66-3.63H7.28c-1.08 0-1.86-.03-2.4-.03zm.1 1.74c-.1.03-.17.1-.23.16L.8 124.44c-.2.28.03.77.4.78H3.6v.5c0 4.26-.55 3.62 3.66 3.62h7.44c1.03 0 1.74.02 2.28 0-.16.02-.34-.03-.44-.15l-2.22-2.76H7.28c-.44 0-.72-.3-.72-.72v-.5h2.5c.37.02.63-.5.4-.78L5.5 119.5c-.12-.15-.34-.22-.53-.16zm12.02 10c1.2-.02 1.4-.25 1.4-1.53l-1.1 1.36c-.07.1-.17.17-.3.18zM5.94 136.6l2.37 2.93h6.42c.42 0 .72.28.72.72v1.25h-2.6c-.3.1-.43.54-.2.78l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.22-.28-.02-.77-.37-.78H18.4v-1.25c0-4.2.72-3.63-3.66-3.63H7.28c-.6 0-.92-.02-1.34-.03zm-1.72.06c-.4.08-.54.3-.6.75l.6-.74zm.84.93c-.12 0-.24.08-.3.18l-3.95 4.9c-.24.3 0 .83.4.82H3.6v1.22c0 4.26-.55 3.62 3.66 3.62h7.44c.63 0 .97.02 1.4.03l-2.37-2.93H7.28c-.44 0-.72-.3-.72-.72v-1.22h2.5c.4.04.67-.53.4-.8l-3.96-4.92c-.1-.13-.27-.2-.44-.2zm13.28 10.03l-.56.7c.36-.07.5-.3.56-.7zM17.13 155.6c-.55-.02-1.32.03-2.4.03h-8.2l2.38 2.9h5.82c.42 0 .72.28.72.72v1.97H12.9c-.32.06-.48.52-.28.78l3.94 4.94c.2.23.6.22.78-.03l3.94-4.9c.22-.28-.02-.77-.37-.78H18.4v-1.97c0-3.15.4-3.62-1.25-3.66zm-12.1.28c-.1.02-.2.1-.28.18l-3.94 4.9c-.2.3.03.78.4.8H3.6v1.96c0 4.26-.55 3.62 3.66 3.62h8.24l-2.36-2.9H7.28c-.44 0-.72-.3-.72-.72v-1.97h2.5c.37.02.63-.5.4-.78l-3.96-4.9c-.1-.15-.3-.22-.47-.2zM5.13 174.5c-.15 0-.3.07-.38.2L.8 179.6c-.24.27 0 .82.4.8H3.6v2.32c0 4.26-.55 3.62 3.66 3.62h7.94l-2.35-2.9h-5.6c-.43 0-.7-.3-.7-.72v-2.3h2.5c.38.03.66-.54.4-.83l-3.97-4.9c-.1-.13-.23-.2-.38-.2zm12 .1c-.55-.02-1.32.03-2.4.03H6.83l2.35 2.9h5.52c.42 0 .72.28.72.72v2.34h-2.6c-.3.1-.43.53-.2.78l3.92 4.9c.18.24.6.24.78 0l3.94-4.9c.22-.3-.02-.78-.37-.8H18.4v-2.33c0-3.15.4-3.62-1.25-3.66zM4.97 193.16c-.1.03-.17.1-.22.18l-3.94 4.9c-.2.3.03.78.4.8H3.6v2.68c0 4.26-.55 3.62 3.66 3.62h7.66l-2.3-2.84c-.03-.02-.03-.04-.05-.06H7.27c-.44 0-.72-.3-.72-.72v-2.7h2.5c.37.03.63-.48.4-.77l-3.96-4.9c-.12-.17-.34-.25-.53-.2zm12.16.43c-.55-.02-1.32.03-2.4.03H7.1l2.32 2.84.03.06h5.25c.42 0 .72.28.72.72v2.7h-2.5c-.36.02-.56.54-.3.8l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.26-.28 0-.83-.37-.8H18.4v-2.7c0-3.15.4-3.62-1.25-3.66z' fill='%23cf2210' stroke-width='0'/></svg>");
+}
+
+.account-card .detailed-status__display-name .display-name span {
+    color: #a72645;
+}
+
+.account-card {
+    background-color: rgba(232, 246, 190, 0.7);
+    border-radius: 0px;
+}
+
+  .fa.fa-search.active, .icon-button.inverted:active, .icon-button.inverted:focus, .icon-button.inverted:hover, fa.fa-fw.fa-camera, fa.fa-fw.fa-camera::before, fa.fa-fw.fa-camera::after, .icon-button.inverted, .icon-button.inverted::before, .icon-button.inverted::after, .text-icon-button, textarea, .privacy-dropdown__option__content, .activity-stream-tabs a.active, .activity-stream-tabs a:active, .activity-stream-tabs a:hover, .spoiler-input__input
+
+  {
+    color: #070707 !important;
+    opacity: 1;
+    
+  }
+
+.landing-page .information-board .panel .panel-header, .admin-wrapper .content h2, .landing-page__short-description h1 small, .compose-form .compose-form__modifiers .compose-form__upload__actions .icon-button {
+   color: #070707;
+    opacity: 0.8; 
+}
+
+.character-counter, ::-webkit-input-placeholder, .detailed-status__meta, .simple_form span.hint, .activity-stream .detailed-status.light .status__content a.status__content__spoiler-link, .activity-stream .status.light .status__content a.status__content__spoiler-link
+{
+   color: #070707 !important;
+    opacity: 0.8; 
+}
+
+.admin-wrapper .sidebar ul a i.fa
+{
+    color: #070707 !important;
+}
+
+.activity-stream .status.light .display-name strong, .status.light .display-name strong, .status.light .status__display-name, .compose-form .autosuggest-account .display-name__account, .getting-started, .getting-started p
+{
+	color: #070707;
+}
+
+.filters .filter-subset a.selected, .filters .filter-subset a:hover, .tabs-bar__link.active
+{
+    color: #cf2210;
+    border-bottom: 2px solid #cf2210;
+}
+
+.filters .filter-subset a
+{
+    color: #070707;
+    border-bottom: 2px solid transparent;
+}
+
+
+  .fa.fa-fw.fa-photo
+  {
+    color: #fff !important;
+  }
+
+  a.status__display-name.muted, .react-toggle--checked .react-toggle-thumb, .react-toggle-thumb
+  {
+    border: none;
+  }
+
+  .status__avatar, .notification-bar-wrapper, .notification-list, .notification-bar-message, .react-toggle--checked .react-toggle-thumb, .react-toggle-thumb, .react-toggle-track, .button.button-alternative-2, .button.button-alternative
+  {
+    border-radius: 0px;
+  }
+
+.panel-header, .admin-wrapper .content h4
+{
+    border-bottom: 1px solid #a72645 !important;
+}
+
+.icon-button.disabled
+{
+    color: #3a3a3a;
+    opacity: 0.4;
+}
+
+	.status__content__spoiler-link, .status__content__spoiler-link:focus, .status__content__spoiler-link:active, .status__content__spoiler-link:hover, .status__content__spoiler-link:default, .status__content__spoiler-link:link, .status__content__spoiler-link:enabled, .status__content__spoiler-link:checked, .status__content__spoiler-link:indeterminate, .status__content__spoiler-link:any-link, .status__content__spoiler-link::before, .status__content__spoiler-link::after
+{ color: #eee;
+    background-color: rgb(197, 216, 130) !important;
+    border-radius: 0px;
+    margin-left: 3px;
+}
+
+	.status__wrapper, .status, .account
+{
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    padding-bottom: 5px;
+}
+
+.search-results__header, .search-results__section h5:before, .table td
+
+{
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    margin-bottom: 0px;
+}
+
+.actions-modal, .boost-modal, .confirmation-modal, .mute-modal, .report-modal
+{
+	background-color: #000;
+}
+
+.boost-modal__action-bar, .confirmation-modal__action-bar, .mute-modal__action-bar
+{
+	background-color: #111;
+}
+
+.emoji-mart-search input::placeholder, .emoji-mart-search input::-webkit-input-placeholder, .emoji-mart-search input::-moz-placeholder, .emoji-mart-search input:-ms-input-placeholder, .emoji-mart-search input:-moz-placeholder
+{
+	color: #666 !important;
+}
+
+.trends__item__name
+{
+color: #070707;
+}
+
+.search__icon .fa-times-circle
+{
+color: #2d3120;
+}
+
+.trends__item__sparkline path {
+    stroke: #cf2210 !important;
+}
+
+.search-popout {
+	color: #b4e22a;
+}
+
+.activity-stream {
+    background-color: rgba(232,246,190,.7); }
+	
+.hero-widget__text {
+    color: #070707;
+}
+
+.status__action-bar__counter__label
+{
+	color: #3a3a3a;
+}
+
+.public-layout .footer ul a {
+	color: #000;
+}
+
+.information-board__section span:last-child {
+	color: #000;
+}
+
+.rich-formatting li, .rich-formatting p {
+
+    color: #070707;
+}
+
+.public-layout .header .nav-button {
+background: #e2f4ac;
+border-radius: 0px;
+}
+
+.public-layout .header .nav-link {
+    color: #070707;
+}
+
+.button {
+border-radius: 0px;
+}
+
+.public-layout {
+border-radius: 0px;
+}
+
+.account__header__fields dl {
+background-color: #c5d882;
+margin-bottom: 10px;
+}
+
+.account__header__fields dd, .account__header__fields dt {
+padding: 10px;
+}
+
+.public-layout .account__section-headline {
+border-radius: 0 0 0 0;
+}
+
+.hero-widget__text
+{
+background: rgba(232,246,190,.7);
+border-radius: 0 0 0 0;
+}
+
+.public-layout .header
+{
+border-radius: 0px;
+background: rgba(232,246,190,.7);
+}
+
+.public-layout .public-account-bio {
+border-radius: 0px;
+background: rgba(232,246,190,.7);
+}
+
+.public-layout .public-account-header__bar::before {
+background: rgba(232,246,190,.7);
+}
+
+.public-layout .public-account-header__bar .avatar img {
+border: 4px solid rgba(232,246,190,0.7);
+background: transparent;
+}
+
+.public-layout .public-account-header__tabs__tabs .counter.active::after
+{
+border-bottom: 4px solid #a72645;
+}
+
+.public-layout .public-account-header__tabs__tabs .counter
+{
+border-right: 0px;
+}
+
+.landing-page__information.contact-widget {
+background: transparent;
+border-radius: 0px;
+}
+
+.box-widget, .contact-widget {
+border-radius: 0px;
+}
+
+.rich-formatting li a, .rich-formatting p a, .rich-formatting a {
+color: #cf2210;
+text-decoration: none;
+}
+
+.rich-formatting li a:hover, .rich-formatting p a:hover, .rich-formatting a:hover {
+color: #cf2210;
+text-decoration: underline;
+}
+
+.notification__message .fa {
+color: #a72645;
+}
+
+.public-layout .footer {
+color: #070707;
+}
+
+.public-layout .footer .brand svg path {
+fill: #000;
+}
+
+.public-layout .footer .brand:active svg path, .public-layout .footer .brand:focus svg path, .public-layout .footer .brand:hover svg path {
+fill: #cf2210;
+}
+
+.notification__message i.fa-retweet {
+	color: #a72645;
+}
+
+.endorsements-widget {
+background: rgba(232,246,190,.7);
+}
+
+.attachment-list.compact .attachment-list__list a:hover i.fa {
+	color: #cf2210;
+}
+
+.attachment-list.compact .attachment-list__list a i.fa {
+	color: #cf2210;
+}
+
+.embed-modal, .error-modal, .onboarding-modal
+{
+background: #070707;
+}
+
+.video-player__spoiler {
+
+background-color: #e8f6be;
+color: #070707;
+
+}
+
+.speech-bubble time {
+    color: #4f4f4f;
+}
+
+.report-modal__target {
+
+color: #a72645;
+
+}
+
+.report-modal__comment .setting-text {
+
+background-color: #e8f6be;
+
+}
+
+.report-modal {
+
+background-color: rgb(197, 216, 130);
+
+}
+
+.report-modal__comment p, .report-modal__statuses .status__content p {
+color: #070707;
+}
