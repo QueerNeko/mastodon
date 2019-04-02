@@ -7,3 +7,4 @@ win95: styles/win95.scss
 meemu-purple: styles/meemu-default.scss
 meemu-vaporwave: styles/meemu.scss
 flamingo: styles/flamingo.scss
+sediroloc: styles/sediroloc.scss
