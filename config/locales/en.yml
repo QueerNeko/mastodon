@@ -1015,6 +1015,7 @@ en:
     meemu-purple: Meemu Purple
     meemu-vaporwave: Meemu Vaporwave
     flamingo: Flamingo
+    sediroloc: Sediroloc
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
