@@ -4484,3 +4484,27 @@ body {
     font-size: 14px;
 
 }
+
+//09/04/2019
+
+.follow-prompt strong, .oauth-prompt strong {
+    color: #705480;
+}
+
+.activity-stream--highlighted .entry {
+    background: #fcf8ff;
+}
+
+.account__moved-note {
+    background: #fcf8ff;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+
+div.quote, pre {
+    border: 1px solid #9c77c2;
+}
+
+.speech-bubble {
+    border-left: 4px solid #694e78;
+}
