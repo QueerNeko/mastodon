@@ -1,31 +1,4 @@
-@import 'mastodon/mixins';
-@import 'mastodon/variables';
-@import 'fonts/roboto';
-@import 'fonts/roboto-mono';
-@import 'fonts/montserrat';
-
-@import 'mastodon/reset';
-@import 'mastodon/basics';
-@import 'mastodon/containers';
-@import 'mastodon/lists';
-@import 'mastodon/footer';
-@import 'mastodon/compact_header';
-@import 'mastodon/widgets';
-@import 'mastodon/forms';
-@import 'mastodon/accounts';
-@import 'mastodon/stream_entries';
-@import 'mastodon/boost';
-@import 'mastodon/components';
-@import 'mastodon/introduction';
-@import 'mastodon/modal';
-@import 'mastodon/emoji_picker';
-@import 'mastodon/about';
-@import 'mastodon/tables';
-@import 'mastodon/admin';
-@import 'mastodon/dashboard';
-@import 'mastodon/rtl';
-@import 'mastodon/accessibility';
-@import 'mastodon/bbcode';
+@import 'application';
 
 /*------------------------------------------------------------------------------
 * MISC TWEAKS
@@ -1528,4 +1501,362 @@ color: #fff;
 
 .compose-form .autosuggest-account .display-name__account {
     color: #777;
+}
+
+//11/04/2019
+
+.compose-form__poll-wrapper li .poll__text {
+
+    flex: 0 0 auto;
+    width: calc(100% - 29px);
+    margin-right: 6px;
+
+}
+
+.poll__text.editable {
+
+    display: flex;
+    align-items: center;
+
+}
+
+
+.poll__text {
+
+    position: relative;
+    display: inline-block;
+    padding: 6px 0;
+    line-height: 18px;
+    cursor: default;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+ol, ul {
+
+    list-style: none;
+
+}
+
+.compose-form .compose-form__modifiers {
+
+    font-family: inherit;
+    font-size: 14px;
+
+}
+
+.compose-form__poll-wrapper ul {
+
+    padding: 10px;
+
+}
+
+.poll__input {
+
+    display: inline-block;
+    position: relative;
+    border: 1px solid #f09;
+    box-sizing: border-box;
+    width: 18px;
+    height: 18px;
+    flex: 0 0 auto;
+    margin-right: 10px;
+    top: -1px;
+    border-radius: 50%;
+    vertical-align: middle;
+
+}
+
+.compose-form__poll-wrapper li {
+    display: flex;
+    align-items: center;
+}
+
+.compose-form__poll-wrapper .button.button-secondary {
+
+    font-size: 14px;
+    font-weight: 400;
+    padding: 6px 10px 6.5px 10px;
+    height: auto;
+    line-height: inherit;
+    color: #fff;
+    border-color: #fff;
+    margin-right: 5px;
+    border-radius: 0px;
+}
+
+
+.compose-form__poll-wrapper .poll__footer button, .compose-form__poll-wrapper .poll__footer select {
+    flex: 1 1 50%;
+}
+
+.compose-form__poll-wrapper .poll__footer {
+
+    padding: 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.poll__text input[type="text"] {
+
+    box-sizing: border-box;
+    flex: 1 1 auto;
+    width: 20px;
+    font-size: 14px;
+    color: #fff;
+    display: block;
+    outline: 0;
+    font-family: inherit;
+    background: #111111;
+    border: 1px solid #111;
+    border-radius: 0px;
+    padding: 6px 10px;
+
+}
+
+.poll__text input[type="text"]:active, .poll__text input[type="text"]:focus {
+  border-color: #f09;
+}
+
+.compose-form__poll-wrapper .button.button-secondary:hover, .compose-form__poll-wrapper .button.button-secondary:active, .compose-form__poll-wrapper .button.button-secondary:focus  {
+    border: 1px solid #ff0099 !important;
+}
+
+.compose-form__poll-wrapper select {
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #f8f8f8;
+    display: inline-block;
+    width: auto;
+    outline: 0;
+    font-family: inherit;
+    background: #222 url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14.933 18.467' height='19.698' width='15.929'><path d='M3.467 14.967l-3.393-3.5H14.86l-3.392 3.5c-1.866 1.925-3.666 3.5-4 3.5-.335 0-2.135-1.575-4-3.5zm.266-11.234L7.467 0 11.2 3.733l3.733 3.734H0l3.733-3.734z' fill='%23ff0099'/></svg>") no-repeat right 8px center/auto 16px;
+    border: 1px solid #777777;
+    border-radius: 0px;
+    padding: 6px 10px;
+
+}
+
+.status.light .status__content {
+    color: #fff;
+}
+
+.status.light .status__content a {
+    color: #f09;
+}
+
+.status.light .display-name span {
+    color: #777;
+}
+
+.status.light .display-name strong, .status.light .status__display-name {
+    color: #fff;
+}
+
+.status.light .status__relative-time {
+    color: #777;
+}
+
+.status {
+    box-shadow: none;
+}
+
+.boost-modal__action-bar > div, .confirmation-modal__action-bar > div, .mute-modal__action-bar > div {
+    text-align: right;
+    color: #777;
+}
+
+
+.poll {
+
+    margin-top: 16px;
+    font-size: 15px;
+
+}
+
+.poll li {
+
+    margin-bottom: 10px;
+    position: relative;
+    height: 30px;
+
+}
+
+.poll__chart.leading {
+
+    background: #AD0068;
+
+}
+.poll__chart {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: inline-block;
+    border-radius: 0px;
+    background: #555;
+
+}
+
+.poll__text input[type="checkbox"], .poll__text input[type="radio"] {
+
+    display: none;
+
+}
+
+.poll__footer {
+
+    padding-top: 6px;
+    padding-bottom: 5px;
+    color: #ddd;
+
+}
+
+.poll__number {
+
+    display: inline-block;
+    width: 36px;
+    font-weight: 700;
+    padding: 0 10px;
+    text-align: right;
+
+}
+
+.poll__input.active {
+    background: #f09;
+}
+
+.button.button-secondary:active, .button.button-secondary:focus, .button.button-secondary:hover {
+    color: #fff;
+    border-color: #f09 !important;
+}
+
+.poll__link {
+
+    display: inline;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    color: #f09;
+    text-decoration: underline;
+    font-size: inherit;
+
+}
+
+
+.poll .button {
+
+    height: 36px;
+    padding: 0 16px;
+    margin-right: 10px;
+    font-size: 15px;
+
+}
+
+.account__header__tabs__name h1 small {
+    color: #777;
+}
+
+.account__header__extra__links a {
+    color: #ddd;
+}
+
+.account__header__bar {
+
+    border-bottom: 0px;
+}
+
+.account__header__tabs__buttons .icon-button {
+    border: 1px solid #777;
+}
+
+.account__header__tabs__buttons .icon-button:hover {
+    border: 1px solid #777;
+    color: #90f;
+}
+
+.account__header__bar .avatar .account__avatar {
+    background: #191919;
+    border: 2px solid #191919;
+}
+
+.account__header__content {
+    color: #fff;
+}
+
+.rich-formatting {
+    color: #ddd;
+}
+
+.landing-page__information strong {
+    font-weight: 500;
+    color: #ddd;
+}
+
+.landing .simple_form .user_agreement .label_input > label, .landing .simple_form p.lead {
+    color: #ddd;
+}
+
+.simple_form input[type="email"], .simple_form input[type="number"], .simple_form input[type="password"], .simple_form input[type="text"], .simple_form textarea {
+    border: 1px solid #777;
+}
+
+.simple_form .label_input__append::after {
+    background-image: none;
+}
+
+.simple_form .label_input__append {
+    color: #f09;
+}
+
+.landing .hero-widget__footer {
+    background: #222;
+    border-radius: 0px;
+}
+
+.hero-widget__img {
+    border-radius: 0px;
+}
+
+.hero-widget__img img {
+    border-radius: 0px;
+}
+
+.landing .hero-widget h4 {
+    color: #ddd;
+}
+
+.landing .hero-widget__counter span {
+    color: #ddd;
+}
+
+.simple_form .input.with_label.boolean .label_input > label, .simple_form .input.with_label .label_input > label {
+  background: #222;
+}
+
+.simple_form .input.boolean .label_input {
+  background: #222;
+}
+
+.simple_form .input.boolean label a {
+    color: #f09;
+}
+
+.hero-widget__text a {
+    color: #f09;
+    text-decoration: underline;
+}
+
+.hero-widget__text a:hover {
+    text-decoration: none;
 }
