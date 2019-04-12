@@ -3125,3 +3125,219 @@ padding: 8px 5px;
 .account__action-bar-dropdown {
     border-bottom: 1px solid #7f7f7f;
 }
+
+//14/04/2019
+
+.admin-wrapper .content h2 {
+    border-bottom: 2px groove #bfbfbf;
+}
+
+.batch-table__toolbar {
+    border: 2px groove #bfbfbf;
+    background: #bfbfbf;
+    border-radius: 0px;
+    border-bottom: 0px;
+}
+
+a.table-action-link, button.table-action-link {
+    color: #00007f;
+}
+
+.batch-table__row {
+    border-left: 2px groove #bfbfbf;
+    background: #bfbfbf;
+    border-right: 2px groove #bfbfbf;
+    border-bottom: 0px;
+}
+
+table.accounts-table {
+    border-collapse: separate;
+    border-spacing: 0px;
+    padding: 0%;
+}
+
+.admin-wrapper table {
+    border-color: #bfbfbf;
+    border-width: 0px;
+}
+
+.batch-table__row:hover {
+    background: #00007f;
+}
+
+.batch-table__row:nth-child(2n) {
+    background: #bfbfbf;
+}
+
+.batch-table__row:nth-child(2n):hover {
+    background: #00007f;
+}
+
+.icon-button, .icon-button.inverted, .icon-button.inverted:hover, .icon-button:active, .icon-button:focus, .icon-button:hover {
+    color: #000;
+}
+
+.compose-form .compose-form__modifiers {
+    color: #000;
+	background: #bfbfbf;
+}
+
+.compose-form__poll-wrapper {
+    border-top: 0px;
+}
+
+.compose-form__upload-wrapper {
+    border-left: 0px;
+    border-right: 0px;
+}
+
+
+.compose-form .compose-form__modifiers .compose-form__uploads-wrapper {
+    padding: 0px;
+}
+
+.poll__input {
+    border: 1px solid;
+    border-color: #7f7f7f #efefef #efefef #7f7f7f;
+}
+
+.compose-form__poll-wrapper .button.button-secondary {
+    color: #000;
+	border-color: transparent;
+}
+
+.button.button-secondary {
+    border: 1px solid #bfbfbf;
+}
+
+.poll__text input[type="text"] {
+    color: #000;
+    border: 1px solid;
+    border-radius: 0px;
+    border-color: #7f7f7f #efefef #efefef #7f7f7f;
+
+}
+
+.poll__text input[type="text"]:focus {
+
+    border-color: #7f7f7f #efefef #efefef #7f7f7f;
+    border-width: 2px;
+
+}
+
+.compose-form__poll-wrapper select {
+    -webkit-appearance: menulist;
+    -moz-appearance: menulist;
+    appearance: menulist;
+    color: #000;
+    background: #fff;
+    border: 2px inset;
+    border-radius: 0px;
+    padding: 4px 30px 4px 5px;
+    border-color: #7f7f7f #efefef #efefef #7f7f7f;
+}
+
+.relationship-tag {
+    background-color: #bfbfbf;
+    font-weight: 600;
+    padding: 2px;
+    border-radius: 0px;
+    opacity: 1;
+    border: 1px solid #7f7f7f;
+}
+
+.account__header__tabs__buttons .icon-button {
+    border: 0px;
+    border-radius: 0px;
+    box-shadow: inset -1px -1px 0 #000,inset 1px 1px 0 #fff,inset -2px -2px 0 grey,inset 2px 2px 0 #dfdfdf;
+}
+
+.account__header > div {
+    background: #bfbfbf;
+}
+
+.account__header__bar .avatar .account__avatar {
+    background: transparent;
+    border-color: #404040 #efefef #efefef #404040;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.account__header__tabs__name h1 small {
+    color: #404040;
+}
+
+.account__header__content a {
+    color: blue;
+	text-decoration: underline;
+}
+
+.account__header__extra__links a {
+    color: #404040;
+}
+
+.account__header__bar {
+    border-bottom: 1px solid #7f7f7f;
+}
+
+.poll__link {
+   color: #00f; 
+}
+
+.poll__input.active {
+
+    border-color: #7f7f7f #efefef #efefef #7f7f7f;
+    background: radial-gradient(#000 30%, #fff 20%);
+    padding: 0px;
+
+}
+
+.button.button-secondary, .button.button-secondary:active, .button.button-secondary:focus, .button.button-secondary:hover {
+    border-color: #fff;
+    color: #000;
+}
+
+.button.button-secondary, .button.button-secondary:active, .button.button-secondary:focus, .button.button-secondary:hover {
+
+    border-color: #fff;
+    color: #000;
+
+}
+
+.button.button-secondary {
+    background-color: #bfbfbf;
+}
+
+.compose-form .compose-form__modifiers .compose-form__upload-description textarea {
+    color: #fff;
+}
+
+.account__header__bio .account__header__fields {
+    border-top: 0px;
+	border-bottom: 0px;
+}
+
+.account__header .account__header__content {
+    color: #000;
+}
+
+.poll__chart {
+    border-radius: 0px;
+}
+
+
+.poll__chart {
+    background: rgb(138,138,255);
+}
+
+.muted .poll__chart {
+    background: rgba(138,138,255,.2);
+}
+
+.muted .poll__chart.leading {
+      background: rgba(0,173,173,.2);
+}
+
+.poll__chart.leading {
+  background: #00ADAD;
+}

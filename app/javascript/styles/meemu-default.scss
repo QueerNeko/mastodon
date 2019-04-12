@@ -7,3 +7,11 @@ $ui-highlight-color: #CC7AFF;
 
 
 @import 'application';
+
+.poll__chart {
+    background: #885b8c;
+}
+
+.poll__chart.leading {
+    background: #ac5adf;
+}
