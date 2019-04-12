@@ -4508,3 +4508,109 @@ div.quote, pre {
 .speech-bubble {
     border-left: 4px solid #694e78;
 }
+
+//11/04/2019
+
+.button.button-secondary {
+    border-color: #ae8cd1;
+    color: #ae8cd1;
+}
+
+.button.button-secondary:active, .button.button-secondary:focus, .button.button-secondary:hover {
+    border-color: #9c77c2;
+    color: #9c77c2;
+}
+
+.poll__text input[type="text"]:focus {
+    border-color: #9c77c2;
+}
+
+.poll__text input[type="text"] {
+    color: #694e78;
+}
+
+.poll__input {
+    border: 1px solid #ae8cd1;
+}
+
+.brand__tagline {
+    color: #ae8cd1;
+	}
+	
+.simple_form .input.boolean label a {
+    color: #9c77c2;
+}
+
+.landing .simple_form .user_agreement .label_input > label, .landing .simple_form p.lead {
+    color: #694e78;
+}
+
+.landing .hero-widget__footer {
+    background: #fbf6ff;
+}
+
+.landing .hero-widget h4 {
+    color: #694e78;
+}
+
+.landing .hero-widget__counter span {
+    color: #9c77c2;
+}
+
+.avatar-stack .account__avatar {
+    border: 2px solid #fbf6ff;
+}
+
+.poll__chart.leading {
+    background: #dfc9f2;
+}
+
+.poll__chart {
+    background: #e2dfe5;
+}
+
+//14/04/2019
+
+a.table-action-link:hover, button.table-action-link:hover {
+    color: #fff;
+}
+
+.poll__input.active {
+    border-color: #ae8cd1;
+    background: #ae8cd1;
+}
+
+.account__header__bar .avatar .account__avatar {
+
+    background: #4c3b5c;
+    border: 2px solid #4c3b5c;
+
+}
+
+.account__header__tabs__buttons .icon-button {
+    border: 1px solid #ae8cd1;
+}
+
+.account__header__tabs__name h1 small {
+    color: #f7efff;
+}
+
+.account__header__bio .account__header__fields {
+    border-top: 0px;
+}
+
+.directory__tag > a, .directory__tag > div {
+    background: #efdfff;
+}
+
+.directory__tag a {
+    border-radius: 4px;
+}
+
+.muted .poll__chart {
+    background: rgba(226,223,229,.4);
+}
+
+.muted .poll__chart.leading {
+    background: rgba(223,201,242,.4);
+}
