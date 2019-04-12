@@ -60,7 +60,7 @@ class Option extends React.PureComponent {
           <input
             type='text'
             placeholder={intl.formatMessage(messages.option_placeholder, { number: index + 1 })}
-            maxLength={25}
+            maxLength={50}
             value={title}
             onChange={this.handleOptionTitleChange}
           />
@@ -116,7 +116,7 @@ class PollForm extends ImmutablePureComponent {
         </ul>
 
         <div className='poll__footer'>
-          {options.size < 4 && (
+          {options.size < 10 && (
             <button className='button button-secondary' onClick={this.handleAddOption}><Icon id='plus' /> <FormattedMessage {...messages.add_option} /></button>
           )}
 
