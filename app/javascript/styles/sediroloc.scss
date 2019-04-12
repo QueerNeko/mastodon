@@ -1019,3 +1019,145 @@ box-shadow: 0px 0px 0px 0px;
 .boost-modal__container .status.light .status__content {
     color: #070707;
 }
+
+//11/04/2019
+
+.account__section-headline a.active::after, .account__section-headline button.active::after, .notification__filter-bar a.active::after, .notification__filter-bar button.active::after {
+    border-color: transparent transparent #a72645;
+}
+.account__section-headline a.active::after, .account__section-headline a.active::before, .account__section-headline button.active::after, .account__section-headline button.active::before, .notification__filter-bar a.active::after, .notification__filter-bar a.active::before, .notification__filter-bar button.active::after, .notification__filter-bar button.active::before {
+    border-color: transparent transparent #a72645;
+}
+
+.account__header__bar {
+    background: #e8f5c0;
+    border-bottom: 1px solid #c5d882;
+}
+
+.account__header__bio .account__header__fields {
+    border-top: 0px;
+}
+
+.button.logo-button:active, .button.logo-button:focus, .button.logo-button:hover {
+    background-color: #a72645;
+}
+
+.button.logo-button {
+    color: #000;
+	background-color: #c5d882;
+    border: 0;
+}
+
+.account__header__bar .avatar .account__avatar {
+    background: transparent;
+    border: 0px;
+}
+
+.account__avatar {
+    border-radius: 0px;
+}
+
+
+.account__header__tabs__buttons .icon-button {
+    border: 0px;
+    border-radius: 0px;
+    padding: 3px 2px 2.5px 2px;
+    background: #c5d882;
+}
+
+.icon-button:active, .icon-button:focus, .icon-button:hover {
+    color: #cf2210;
+}
+
+.admin-wrapper .sidebar ul {
+    border-radius: 0px;
+	}
+	
+.poll__text input[type="text"]:focus {
+    border: 1px solid #a72645;
+}
+.poll__text input[type="text"] {
+    color: #070707;
+    background: #e8f5c0;
+    border: 0px;
+    border-radius: 0px;
+}
+
+.compose-form__poll-wrapper .button.button-secondary {
+    color: #070707;
+    border-color: #e8f5c0;
+    background: #e8f5c0;
+}
+
+.button.button-secondary:active, .button.button-secondary:focus, .button.button-secondary:hover {
+
+    color: #cf2210;
+    border-color: #cf2210;
+    background: #e8f5c0;
+
+}
+
+.compose-form__poll-wrapper {
+    border-top: 0px;
+}
+
+.compose-form__poll-wrapper .poll__footer {
+    border-top: 0px;
+}
+
+.compose-form__poll-wrapper select {
+    color: #070707;
+    background: #e8f5c0 url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14.933 18.467' height='19.698' width='15.929'><path d='M3.467 14.967l-3.393-3.5H14.86l-3.392 3.5c-1.866 1.925-3.666 3.5-4 3.5-.335 0-2.135-1.575-4-3.5zm.266-11.234L7.467 0 11.2 3.733l3.733 3.734H0l3.733-3.734z' fill='%23a72645'/></svg>") no-repeat right 8px center/auto 16px;
+    border: 1px solid #e8f5c0;
+    border-radius: 0px;
+}
+
+.compose-form__poll-wrapper select:hover, .compose-form__poll-wrapper select:focus {
+    border: 1px solid #cf2210;
+}
+
+.simple_form .input.boolean label a {
+    color: #cf2210;
+}
+
+.simple_form .label_input__append::after {
+    background-image: none;
+}
+
+.directory__tag > a, .directory__tag > div {
+    border-radius: 0px;
+}
+
+
+.poll__footer {
+    color: #333;
+}
+
+.poll__link {
+    color: #cf2210;
+}
+
+.poll__chart {
+    border-radius: 0px;
+	background: #CDE77E;
+}
+
+.poll__chart.leading {
+    background: #F17C6F;
+}
+
+.button.button-secondary {
+    color: #000;
+    border: 1px solid #3a277d;
+}
+
+.poll__input {
+   border-color: #a72645; 
+}
+
+.poll__input.active {
+
+    border-color: #a72645;
+    background: #a72645;
+
+}
