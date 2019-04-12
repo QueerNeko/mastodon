@@ -958,3 +958,170 @@ body.lighter {
     background-attachment: fixed;
     background-size: contain;
 }
+
+//11/04/2019
+
+.admin-wrapper .sidebar ul {
+    border-radius: 0px;
+	}
+	
+.poll__text input[type="text"]:focus {
+    border: 1px solid #58d9ba;
+}
+.poll__text input[type="text"] {
+    color: #f8f8f8;
+    background: #3a277d;
+    border: 0px;
+    border-radius: 0px;
+}
+
+.compose-form__poll-wrapper .button.button-secondary {
+    color: #f8f8f8;
+    border-color: #3a277d;
+}
+
+.button.button-secondary:active, .button.button-secondary:focus, .button.button-secondary:hover {
+
+    color: #30ddef;
+    border-color: #30ddef;
+
+}
+
+.compose-form__poll-wrapper {
+    border-top: 0px;
+}
+
+.compose-form__poll-wrapper .poll__footer {
+    border-top: 0px;
+}
+
+.compose-form__poll-wrapper select {
+    color: #f8f8f8;
+    background: #3a277d url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14.933 18.467' height='19.698' width='15.929'><path d='M3.467 14.967l-3.393-3.5H14.86l-3.392 3.5c-1.866 1.925-3.666 3.5-4 3.5-.335 0-2.135-1.575-4-3.5zm.266-11.234L7.467 0 11.2 3.733l3.733 3.734H0l3.733-3.734z' fill='%2358d9ba'/></svg>") no-repeat right 8px center/auto 16px;
+    border: 1px solid #3a277d;
+    border-radius: 0px;
+}
+
+.compose-form__poll-wrapper select:hover, .compose-form__poll-wrapper select:focus {
+    border: 1px solid #30ddef;
+}
+
+.box-widget, .contact-widget, .landing-page__information.contact-widget {
+    border-radius: 0px;
+    background: #170941b3;
+    box-shadow: none;
+}
+
+.simple_form .input.boolean label a {
+    color: #30ddef;
+}
+
+.landing .hero-widget__footer {
+    background: #170941b3;
+    border-radius: 0px;
+}
+
+.simple_form .label_input__append::after {
+    background-image: none;
+}
+
+.landing .simple_form p.lead {
+    color: #f8f8f8;
+}
+
+.directory__tag > a, .directory__tag > div {
+    border-radius: 0px;
+}
+
+.account__header__bar .avatar .account__avatar {
+    background: transparent;
+    border: 0px;
+}
+
+.account__header__tabs__buttons .icon-button {
+    border: 0px;
+    border-radius: 0px;
+    padding: 3px 2px 2.5px 2px;
+    background: #3a277d;
+}
+
+.icon-button:active, .icon-button:focus, .icon-button:hover {
+    color: #30ddef;
+}
+
+.account__avatar {
+    border-radius: 0px;
+}
+
+.poll__footer {
+    color: #ccc;
+}
+
+.poll__link {
+    color: #30ddef;
+}
+
+.poll__chart {
+    border-radius: 0px;
+	background: #5C45A1;
+}
+
+.poll__chart.leading {
+    background: #105D5F;
+}
+
+.button.button-secondary {
+    color: #fff;
+    border: 1px solid #3a277d;
+}
+
+.poll__input.active {
+
+    border-color: #58d9ba;
+    background: #58d9ba;
+
+}
+
+//14/04/2019
+
+.muted .poll {
+    color: #c5c5c5;
+}
+
+.muted .poll__chart {
+    background: rgba(58,39,125,.2);
+}
+
+.muted .poll__chart.leading {
+    background: rgba(43,190,155,.2);
+}
+
+.batch-table__toolbar {
+    border: 0px;
+    background: #3a277d;
+    border-radius: 0px;
+	}
+	
+.batch-table__row {
+    border: 0px;
+	background: #170941;
+}
+
+.batch-table__row:nth-child(2n) {
+    background: #3a277d;
+}
+
+.batch-table__row:nth-child(2n):hover {
+    background: #2a176d;
+}
+
+.batch-table__row:hover {
+    background: #070031;
+}
+
+.landing__grid .directory__tag {
+    @media screen and (max-width: $no-gap-breakpoint) {
+      border-bottom: 0px;
+      margin-bottom: 5px;
+    }
+}
