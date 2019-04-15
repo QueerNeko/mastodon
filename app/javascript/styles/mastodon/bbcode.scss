@@ -63,3 +63,11 @@ pre {
     -webkit-transform: scaleY(-1);
     -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
 }
+
+.bbcode__color {
+    color: attr(data-bbcodecolor color);
+}
+
+.bbcode__size {
+    size: attr(data-bbcodesize size);
+}

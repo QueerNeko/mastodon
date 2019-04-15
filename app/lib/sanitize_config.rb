@@ -14,7 +14,7 @@ class Sanitize
         next true if e =~ /^(h|p|u|dt|e)-/ # microformats classes
         next true if e =~ /^(mention|hashtag)$/ # semantic classes
         next true if e =~ /^(ellipsis|invisible)$/ # link formatting classes
-        next true if e =~ /^(bbcode__spin|bbcode__pulse|fa-2x|fa|bbcode__flip-vertical|bbcode__flip-horizontal|fa-flip-vertical|fa-flip-horizontal|bbcode__b|bbcode__i|quote|fa-3x|fa-4x|fa-5x)$/
+        next true if e =~ /^bbcode__([a-z2-5\-]+)$/
       end
 
       node['class'] = class_list.join(' ')
@@ -41,7 +41,7 @@ class Sanitize
 
       attributes: {
         'a'    => %w(href rel class),
-        'span' => %w(class style),
+        'span' => %w(class data-bbcodecolor data-bbcodecolor data-bbcodesize),
         'div'  => %w(class),
       },
 
