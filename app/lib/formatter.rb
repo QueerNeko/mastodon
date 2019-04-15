@@ -120,7 +120,11 @@ class Formatter
 
     rewrite(html.dup, entities) do |entity|
       if entity[:url]
-        link_to_url(entity, options)
+        if entity[:indices][0] > 4 && html[entity[:indices][0]-5..entity[:indices][0]-1] == "[url="
+          entity[:url]
+        else
+          link_to_url(entity, options)
+        end
       elsif entity[:hashtag]
         link_to_hashtag(entity)
       elsif entity[:screen_name]
@@ -349,7 +353,7 @@ class Formatter
   
   def format_bbcode(html)
     begin
-      allowed_bbcodes = [:i, :b, :color, :quote, :code, :size, :u, :s, :spin, :pulse, :flip, :large, :colorhex]
+      allowed_bbcodes = [:i, :b, :color, :quote, :code, :size, :u, :s, :spin, :pulse, :flip, :large, :colorhex, :url]
       html = html.bbcode_to_html(false, {
         :spin => {
           :html_open => '<span class="bbcode__spin">', :html_close => '</span>',
@@ -384,12 +388,36 @@ class Formatter
           :quick_param_format_description => 'The size parameter \'%param%\' is incorrect, a number is expected',
           :param_tokens => [{:token => :size}]},
         :colorhex => {
-          :html_open => '<span style="color: #%colorhex%;">', :html_close => '</span>',
+          :html_open => '<span class="bbcode__color" data-bbcodecolor="#%colorhex%;">', :html_close => '</span>',
           :description => 'Change the color of the text',
           :example => '[colorhex=ff0000]This is red[/colorhex]',
           :allow_quick_param => true, :allow_between_as_param => false,
           :quick_param_format => /([0-9a-f]{6})/i,
           :param_tokens => [{:token => :colorhex}]},
+        :color => {
+          :html_open => '<span class="bbcode__color" data-bbcodecolor="%color%">', :html_close => '</span>',
+          :description => 'Use color',
+          :example => '[color=red]This is red[/color]',
+          :allow_quick_param => true, :allow_between_as_param => false,
+          :quick_param_format => /([a-z]+)/i,
+          :param_tokens => [{:token => :color}]},
+        :size => {
+          :html_open => '<span class="bbcode__size" data-bbcodesize="%size%px">', :html_close => '</span>',
+          :description => 'Change the size of the text',
+          :example => '[size=32]This is 32px[/size]',
+          :allow_quick_param => true, :allow_between_as_param => false,
+          :quick_param_format => /(\d+)/,
+          :quick_param_format_description => 'The size parameter \'%param%\' is incorrect, a number is expected',
+          :param_tokens => [{:token => :size}]},
+        :url => {
+          :html_open => '<a target="_blank" rel="nofollow noopener" href="%url%">%between%', :html_close => '</a>',
+          :description => 'Link to another page',
+          :example => '[url=http://www.google.com/]link[/url].',
+          :require_between => true,
+          :allow_quick_param => true, :allow_between_as_param => false,
+          :quick_param_format => /^((((http|https|ftp):\/\/)).+)$/,
+          :param_tokens => [{:token => :url}],
+          :quick_param_format_description => 'The URL should start with http:// https://, ftp://'},
       }, :enable, *allowed_bbcodes)
     rescue Exception => e
     end
