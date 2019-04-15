@@ -345,6 +345,10 @@ class Status extends ImmutablePureComponent {
       status  = status.get('reblog');
     }
 
+    if (status.get('poll')) {
+      mediaIcon = 'tasks';
+    }
+
     if (status.get('media_attachments').size > 0) {
       if (this.props.muted) {
         media = (
@@ -453,7 +457,7 @@ class Status extends ImmutablePureComponent {
 
             <StatusContent mediaIcon={mediaIcon} status={status} onClick={this.handleClick} expanded={!status.get('hidden')} onExpandedToggle={this.handleExpandedToggle} collapsable>
 
-                {media}
+              {media}
 
             </StatusContent>
 
