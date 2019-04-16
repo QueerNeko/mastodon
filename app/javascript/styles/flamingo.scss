@@ -1860,3 +1860,37 @@ ol, ul {
 .hero-widget__text a:hover {
     text-decoration: none;
 }
+
+//16/04/2019
+
+.simple_form .input.boolean .label_input, .simple_form .input.with_label.boolean .label_input > label, .simple_form .input.with_label .label_input > label {
+    background: #111;
+}
+
+.simple_form input[type="email"]:hover, .simple_form input[type="number"]:hover, .simple_form input[type="password"]:hover, .simple_form input[type="text"]:hover, .simple_form textarea:hover {
+    border-color: #777;
+}
+.simple_form input[type="email"], .simple_form input[type="number"], .simple_form input[type="password"], .simple_form input[type="text"], .simple_form textarea {
+    border: 1px solid #111;
+}
+
+.poll__input.active {
+    border-color: #f09;
+}
+
+.account__header__bio .account__header__fields {
+    border-top: 0px;
+    border-bottom: 0px;
+}
+
+.account__header__bio .account__header__fields a {
+    color: #f09;
+}
+
+a:hover {
+    color: #fff;
+}
+
+.account__header__bio .account__header__fields a:hover {
+    color: #fff;
+}
