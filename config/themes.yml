@@ -8,3 +8,5 @@ meemu-purple: styles/meemu-default.scss
 meemu-vaporwave: styles/meemu.scss
 flamingo: styles/flamingo.scss
 sediroloc: styles/sediroloc.scss
+rosaceae: styles/pink.scss
+quartzo: styles/light_pink.scss
