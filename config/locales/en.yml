@@ -1200,6 +1200,8 @@ en:
     meemu-vaporwave: Meemu Vaporwave
     flamingo: Flamingo
     sediroloc: Sediroloc
+    rosaceae: Rosaceae
+    quartzo: Quartzo
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
