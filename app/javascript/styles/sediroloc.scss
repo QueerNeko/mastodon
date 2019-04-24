@@ -1161,3 +1161,63 @@ box-shadow: 0px 0px 0px 0px;
     background: #a72645;
 
 }
+
+//02/05/2019
+
+.admin-wrapper .content h2 {
+    border-bottom: 1px solid #c5d882;
+}
+
+.admin-wrapper .sidebar ul .simple-navigation-active-leaf a:hover {
+    background-color: #c5d882;
+}
+
+.loading-indicator__figure {
+    border: 6px solid #a72645;
+}
+
+.compose-form .compose-form__warning {
+    background: #c5d882;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.compose-form .compose-form__modifiers .compose-form__upload-description {
+background: linear-gradient(0deg,rgba(255,255,255,.9),rgba(255,255,255,.55) 80%,transparent);
+}
+
+.public-layout .header .nav-button {
+    background: #c5d882;
+}
+
+.public-layout .header .nav-button:active, .public-layout .header .nav-button:focus, .public-layout .header .nav-button:hover {
+    background: #e8f5c0;
+}
+
+.public-layout .public-account-header__tabs__tabs .counter::after {
+  border-bottom: 4px solid #c5d882;
+}
+
+.public-layout .header .brand:active, .public-layout .header .brand:focus, .public-layout .header .brand:hover {
+    background: #c5d882;
+}
+
+.directory__tag > a, .directory__tag > div {
+   background: rgba(232,246,190,.8);
+}
+
+.directory__tag > a:active, .directory__tag > a:focus, .directory__tag > a:hover {
+    background: #c5d882;
+}
+
+.reply-indicator {
+    border-radius: 0px;
+}
+
+.button:active, .button:focus, .button:hover {
+    color: #fff;
+}
+
+.button.logo-button:active, .button.logo-button:focus, .button.logo-button:hover {
+   color: #fff;
+}
