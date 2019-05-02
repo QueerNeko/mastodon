@@ -10,7 +10,7 @@
   .fields-row
     .fields-row__column.fields-group.fields-row__column-6
       = f.input :display_name, wrapper: :with_label, input_html: { maxlength: 40, data: { default: @account.username } }, hint: false
-      = f.input :note, wrapper: :with_label, input_html: { maxlength: 500 }, hint: false
+      = f.input :note, wrapper: :with_label, input_html: { maxlength: 800 }, hint: false
 
   .fields-row
     .fields-row__column.fields-row__column-6
