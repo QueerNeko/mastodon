@@ -106,3 +106,17 @@ button.icon-button i.fa-retweet {
 .privacy-dropdown.active .privacy-dropdown__value.active .icon-button {
     color: #fff;
 }
+
+//07/05/2019
+
+.media-gallery__preview {
+    background: #f5a3c5;
+}
+
+.status.status-direct:not(.read) {
+    background: #fbdae8;
+}
+
+.compose-form .compose-form__modifiers .compose-form__upload-description textarea::placeholder {
+    color: #fbdae8;
+}
