@@ -1894,3 +1894,46 @@ a:hover {
 .account__header__bio .account__header__fields a:hover {
     color: #fff;
 }
+
+//07/05/2019
+
+.admin-wrapper .sidebar ul .simple-navigation-active-leaf a:hover {
+    background-color: #f09;
+}
+
+.muted .poll__chart {
+    background: #5555554d;
+}
+
+.muted .poll__chart.leading {
+    background: #ad00684d;
+}
+
+.muted .poll {
+    color: #777;
+}
+
+.account-gallery__item {
+    border-radius: 0px;
+}
+
+.media-gallery__item {
+    border-radius: 0px;
+}
+
+.media-gallery {
+    border-radius: 0px;
+}
+
+.media-gallery__preview {
+    background: #333;
+}
+
+.spoiler-button__overlay__label {
+background: rgba(0,0,0,.5);
+border-radius: 2px;
+}
+
+.media-gallery__preview {
+    background: #777;
+}
