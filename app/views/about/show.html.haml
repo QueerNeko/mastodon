@@ -8,8 +8,7 @@
 .landing
   .landing__brand
     = link_to root_url, class: 'brand' do
-      = image_pack_tag 'logo_full.svg', alt: 'Mastodon'
-      %span.brand__tagline=t 'about.tagline'
+      =image_tag "https://colorid.es/styles/banners/banner_colorides.png", style: "width: 100%; max-width: 960px; height: auto;", alt: "Colorid.es"
 
   .landing__grid
     .landing__grid__column.landing__grid__column-registration

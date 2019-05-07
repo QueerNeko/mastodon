@@ -1141,3 +1141,36 @@ body.lighter {
 .compose-form .compose-form__warning {
     border-radius: 0px;
 }
+
+//07/05/2019
+
+.media-gallery__preview {
+    background: #3a277d;
+}
+
+.account-gallery__item {
+    border-radius: 0px;
+}
+
+.media-gallery__item {
+    border-radius: 0px;
+}
+
+.media-gallery {
+    border-radius: 0px;
+}
+
+.spoiler-button__overlay__label {
+    background: rgba(23,9,65,.8);
+    border-radius: 0px;
+}
+
+.spoiler-button__overlay:active .spoiler-button__overlay__label, .spoiler-button__overlay:focus .spoiler-button__overlay__label, .spoiler-button__overlay:hover .spoiler-button__overlay__label {
+    background: rgb(23, 9, 65);
+}
+
+//13/05/2019
+
+.status__wrapper--filtered {
+    color: #b4adcb;
+}
