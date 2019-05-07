@@ -693,7 +693,8 @@ $small-breakpoint: 960px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
     svg {
       fill: $primary-text-color;
