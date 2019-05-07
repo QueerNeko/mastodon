@@ -4620,3 +4620,35 @@ a.table-action-link:hover, button.table-action-link:hover {
 .account__header__extra__links a {
     color: #ae8cd1;
 }
+
+//13/05/2019
+
+.actions-modal, .boost-modal, .confirmation-modal, .mute-modal, .report-modal {
+    background: #322a4f;
+    color: #fff;
+  }
+  
+.boost-modal__action-bar, .confirmation-modal__action-bar, .mute-modal__action-bar {
+    background: #4d417a;
+}
+
+.boost-modal__action-bar > div, .confirmation-modal__action-bar > div, .mute-modal__action-bar > div {
+    color: #9bcbed;
+}
+
+.status.light .status__content {
+    color: #fff;
+}
+
+.actions-modal .status__content__spoiler-link, .boost-modal .status__content__spoiler-link, .confirmation-modal .status__content__spoiler-link, .mute-modal .status__content__spoiler-link, .report-modal .status__content__spoiler-link {
+    color: #322a4f;
+}
+
+.status.light .display-name strong, .status.light .status__display-name {
+    color: #fff;
+}
+
+.dropdown-menu__item a:active, .dropdown-menu__item a:focus, .dropdown-menu__item a:hover {
+    background: #cc7aff;
+    color: #322a4f;
+}
