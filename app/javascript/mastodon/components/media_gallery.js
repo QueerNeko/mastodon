@@ -6,7 +6,7 @@ import IconButton from './icon_button';
 import { defineMessages, injectIntl, FormattedMessage } from 'react-intl';
 import { isIOS } from '../is_mobile';
 import classNames from 'classnames';
-import { autoPlayGif, displayMedia } from '../initial_state';
+import { autoPlayGif, displayMedia, blurhashDisabled } from '../initial_state';
 import { decode } from 'blurhash';
 
 const messages = defineMessages({
@@ -317,7 +317,7 @@ class MediaGallery extends React.PureComponent {
       spoilerButton = <IconButton title={intl.formatMessage(messages.toggle_visible)} icon='eye-slash' overlay onClick={this.handleOpen} />;
     } else {
       spoilerButton = (
-        <button type='button' onClick={this.handleOpen} className='spoiler-button__overlay'>
+        <button type='button' onClick={this.handleOpen} className={`spoiler-button__overlay ${blurhashDisabled ? 'spoiler-button__overlay__bluhash-disabled' : ''}`}>
           <span className='spoiler-button__overlay__label'>{sensitive ? <FormattedMessage id='status.sensitive_warning' defaultMessage='Sensitive content' /> : <FormattedMessage id='status.media_hidden' defaultMessage='Media hidden' />}</span>
         </button>
       );
