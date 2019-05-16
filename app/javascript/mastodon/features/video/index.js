@@ -5,7 +5,7 @@ import { fromJS, is } from 'immutable';
 import { throttle } from 'lodash';
 import classNames from 'classnames';
 import { isFullscreen, requestFullscreen, exitFullscreen } from '../ui/util/fullscreen';
-import { displayMedia } from '../../initial_state';
+import { displayMedia, blurhashDisabled } from '../../initial_state';
 import Icon from 'mastodon/components/icon';
 import { decode } from 'blurhash';
 
@@ -444,7 +444,7 @@ class Video extends React.PureComponent {
         />}
 
         <div className={classNames('spoiler-button', { 'spoiler-button--hidden': revealed })}>
-          <button type='button' className='spoiler-button__overlay' onClick={this.toggleReveal}>
+          <button type='button' className={`spoiler-button__overlay ${blurhashDisabled ? 'spoiler-button__overlay__bluhash-disabled' : ''}`} onClick={this.toggleReveal}>
             <span className='spoiler-button__overlay__label'>{warning}</span>
           </button>
         </div>

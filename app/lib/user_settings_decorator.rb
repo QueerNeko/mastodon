@@ -47,6 +47,7 @@ class UserSettingsDecorator
     user.settings['bbcode_i']            = bbcode_i_preference if change?('setting_bbcode_i')
     user.settings['bbcode_u']            = bbcode_u_preference if change?('setting_bbcode_u')
     user.settings['bbcode_s']            = bbcode_s_preference if change?('setting_bbcode_s')
+    user.settings['blurhash_disabled']   = blurhash_disabled_preference if change?('setting_blurhash_disabled')
   end
 
   def merged_notification_emails
@@ -177,6 +178,10 @@ class UserSettingsDecorator
   
   def bbcode_s_preference
     boolean_cast_setting 'setting_bbcode_s'
+  end
+  
+  def blurhash_disabled_preference
+    boolean_cast_setting 'setting_blurhash_disabled'
   end
 
   def default_language_preference

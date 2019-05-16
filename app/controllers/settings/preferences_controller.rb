@@ -67,6 +67,7 @@ class Settings::PreferencesController < Settings::BaseController
       :setting_bbcode_i,
       :setting_bbcode_u,
       :setting_bbcode_s,
+      :setting_blurhash_disabled,
       notification_emails: %i(follow follow_request reblog favourite mention digest report pending_account),
       interactions: %i(must_be_follower must_be_following must_be_following_dm)
     )
