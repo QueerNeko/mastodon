@@ -32,6 +32,7 @@ class InitialStateSerializer < ActiveModel::Serializer
       store[:expand_spoilers] = object.current_account.user.setting_expand_spoilers
       store[:reduce_motion]   = object.current_account.user.setting_reduce_motion
       store[:is_staff]        = object.current_account.user.staff?
+      store[:blurhash_disabled] = object.current_account.user.setting_blurhash_disabled
     end
 
     store
