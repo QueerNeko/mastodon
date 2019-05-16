@@ -100,6 +100,7 @@ pt:
         setting_bbcode_i: 'BBCode [i]'
         setting_bbcode_u: 'BBCode [u]'
         setting_bbcode_s: 'BBCode [s]'
+        setting_blurhash_disabled: 'Desabilitar blurhash para mídia escondida'
         setting_auto_play_gif: Reproduzir GIFs automaticamente
         setting_boost_modal: Solicitar confirmação antes de partilhar uma publicação
         setting_default_language: Língua de publicação

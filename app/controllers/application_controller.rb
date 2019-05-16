@@ -27,6 +27,7 @@ class ApplicationController < ActionController::Base
   helper_method :current_bbcode_b
   helper_method :current_bbcode_s
   helper_method :current_bbcode_u
+  helper_method :current_blurhash_disabled
   helper_method :single_user_mode?
   helper_method :use_seamless_external_login?
 
@@ -166,6 +167,10 @@ class ApplicationController < ActionController::Base
   
   def current_bbcode_u
     return current_user&.setting_bbcode_u
+  end
+  
+  def current_blurhash_disabled
+    return current_user&.setting_blurhash_disabled
   end
   
   def current_bbcode_s
