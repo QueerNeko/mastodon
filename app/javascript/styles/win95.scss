@@ -3428,3 +3428,95 @@ button.icon-button i.fa-retweet {
     padding: 1px;
     background: #bfbfbf;
 }
+
+//20/05/2019
+
+.actions-modal .status__content__spoiler-link, .boost-modal .status__content__spoiler-link, .confirmation-modal .status__content__spoiler-link, .mute-modal .status__content__spoiler-link, .report-modal .status__content__spoiler-link {
+    color: #000;
+}
+
+.notification__filter-bar button.active {
+border-color: #404040 #efefef #efefef #404040;
+border-style: solid;
+border-width: 1px;
+border-radius: 0;
+background: #dfdfdf;
+color: #7f7f7f;
+}
+
+.compose-form .compose-form__modifiers .compose-form__upload-description textarea::placeholder {
+    color: #dfdfdf;
+}
+
+.compose-form .compose-form__modifiers .compose-form__upload__actions .icon-button {
+    color: #000;
+}
+
+.compose-form__sensitive-button .checkbox {
+    display: none;
+}
+
+.compose-form__sensitive-button .active {
+    color: #000;
+}
+
+.compose-form__sensitive-button .icon-button {
+  padding: 4px 10px;
+}
+  
+.compose-form__sensitive-button .icon-button.active {
+border-color: #404040 #efefef #efefef #404040;
+border-style: solid;
+border-width: 2px;
+border-radius: 0;
+background: #dfdfdf;
+color: #7f7f7f;
+ font-weight: 700;
+  padding: 4px 7px;
+}
+
+.poll__input.checkbox {
+    border-radius: 0px;
+}
+
+.poll__input.checkbox.active {
+    background-image: none;
+}
+
+.poll__input.checkbox.active::after {
+    display: inline-block;
+    width: 4.5px;
+    height: 10px;
+    border: solid #000;
+    border-width: 0 4px 4px 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    content: " ";
+    left: 4.5px;
+    position: relative;
+}
+
+.compose-form .compose-form__modifiers .compose-form__upload-thumbnail {
+    border-radius: 0px; }
+
+.spoiler-button__overlay__bluhash-disabled {
+    background: #bfbfbf;
+}
+
+
+element {
+
+}
+.nothing-here--under-tabs {
+
+    border-radius: 0 0 4px 4px;
+
+}
+.nothing-here {
+    background: #bfbfbf;
+    box-shadow: none;
+    color: #000;
+    border-radius: 0px;
+    border-left: 2px solid #fff;
+}
