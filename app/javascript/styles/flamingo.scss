@@ -1937,3 +1937,19 @@ border-radius: 2px;
 .media-gallery__preview {
     background: #777;
 }
+
+//20/05/2019
+
+.compose-form__sensitive-button .icon-button:hover, .compose-form__sensitive-button .icon-button:focus, .compose-form__sensitive-button .icon-button:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.compose-form__sensitive-button .checkbox {
+    border: 1px solid #f09;
+  }
+  
+.compose-form__sensitive-button .checkbox.active {
+    border-color: #f09;
+    background: #f09;
+}
