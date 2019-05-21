@@ -1174,3 +1174,32 @@ body.lighter {
 .status__wrapper--filtered {
     color: #b4adcb;
 }
+
+//20/05/2019
+
+.upload-progress__tracker {
+    background: #58d9ba;
+    border-radius: 0px;
+}
+
+.upload-progress {
+  color: #f8f8f8;
+}
+
+.upload-progress__backdrop {
+    border-radius: 0px;
+    background: #c5c5c5;
+}
+
+.poll__input.checkbox {
+    border-radius: 0px;
+}
+
+.compose-form__sensitive-button .checkbox {
+    border-radius: 0px;
+}
+
+.compose-form__sensitive-button .checkbox.active {
+    border-color: #58d9ba;
+    background: #58d9ba;
+}

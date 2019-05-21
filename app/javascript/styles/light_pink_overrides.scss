@@ -120,3 +120,57 @@ button.icon-button i.fa-retweet {
 .compose-form .compose-form__modifiers .compose-form__upload-description textarea::placeholder {
     color: #fbdae8;
 }
+
+//20/05/2019
+
+.poll__input {
+    border: 1px solid #a81f56;
+  }
+  
+.poll__input.active {
+    border-color: #d93074;
+    background: #d93074;
+}
+
+.compose-form__sensitive-button .checkbox {
+    border: 1px solid #a81f56;
+  }
+  
+.button.button-secondary {
+    border: 1px solid #d93074;
+}
+
+.compose-form__buttons-wrapper .compose-form__buttons .text-icon-button.active {
+    background-color: #7d1740;
+    color: #fff;
+    border-radius: 4px;
+    margin-left: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.admin-wrapper .sidebar ul li a.selected {
+    color: #382833;
+}
+
+//28/05/2018
+
+.admin-wrapper .sidebar ul li .simple-navigation-active-leaf a {
+    color: #fff;
+}
+
+.status-card__actions button {
+    color: #f9c8dc;
+}
+
+.status__content a .fa {
+    color: #f9c8dc;
+}
+
+.status-card__actions a:active, .status-card__actions a:focus, .status-card__actions a:hover, .status-card__actions button:active, .status-card__actions button:focus, .status-card__actions button:hover {
+    color: #fff;
+}
+
+.reply-indicator__content a:hover .fa, .status__content a:hover .fa {
+    color: #fff;
+}
