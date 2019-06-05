@@ -118,6 +118,7 @@ class Video extends React.PureComponent {
     link: PropTypes.node,
     autoPlay: PropTypes.bool,
     defaultVolume: PropTypes.number,
+    parentHidden: PropTypes.bool,
   };
 
   state = {
@@ -306,8 +307,12 @@ class Video extends React.PureComponent {
   }
 
   componentDidUpdate (prevProps, prevState) {
-    if (prevState.revealed && !this.state.revealed && this.video) {
+    if (((prevState.revealed && !this.state.revealed) || (!prevProps.parentHidden && this.props.parentHidden)) && this.video) {
       this.video.pause();
+    }
+
+    if (!this.props.parentHidden && this.player && this.player.offsetWidth != 0 && this.player.offsetWidth != this.state.containerWidth) {
+      this._setDimensions()
     }
   }
 
