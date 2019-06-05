@@ -300,6 +300,7 @@ class Status extends ImmutablePureComponent {
                 sensitive={status.get('sensitive')}
                 onOpenVideo={this.handleOpenVideo}
                 cacheWidth={this.props.cacheMediaWidth}
+                parentHidden={status.get('hidden')}
               />
             )}
           </Bundle>

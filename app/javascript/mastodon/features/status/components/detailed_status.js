@@ -124,6 +124,7 @@ export default class DetailedStatus extends ImmutablePureComponent {
             inline
             onOpenVideo={this.handleOpenVideo}
             sensitive={status.get('sensitive')}
+            parentHidden={status.get('hidden')}
           />
         );
         mediaIcon = 'video-camera';

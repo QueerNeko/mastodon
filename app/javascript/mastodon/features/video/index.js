@@ -105,6 +105,7 @@ class Video extends React.PureComponent {
     intl: PropTypes.object.isRequired,
     blurhash: PropTypes.string,
     link: PropTypes.node,
+    parentHidden: PropTypes.bool,
   };
 
   state = {
@@ -132,7 +133,7 @@ class Video extends React.PureComponent {
   setPlayerRef = c => {
     this.player = c;
 
-    if (c) {
+    if (c && c.offsetWidth != 0) {
       if (this.props.cacheWidth) this.props.cacheWidth(this.player.offsetWidth);
       this.setState({
         containerWidth: c.offsetWidth,
@@ -280,7 +281,16 @@ class Video extends React.PureComponent {
     document.removeEventListener('MSFullscreenChange', this.handleFullscreenChange, true);
   }
 
-  componentDidUpdate (prevProps) {
+  componentDidUpdate (prevProps, prevState) {
+    if (((prevState.revealed && !this.state.revealed) || (!prevProps.parentHidden && this.props.parentHidden)) && this.video) {
+      this.video.pause();
+    }
+    if (!this.props.parentHidden && this.player && this.player.offsetWidth != 0 && this.player.offsetWidth != this.state.containerWidth) {
+      if (this.props.cacheWidth) this.props.cacheWidth(this.player.offsetWidth);
+      this.setState({
+        containerWidth: this.player.offsetWidth,
+      });
+    }
     if (prevProps.blurhash !== this.props.blurhash && this.props.blurhash) {
       this._decode();
     }
