@@ -141,6 +141,7 @@ export default class DetailedStatus extends ImmutablePureComponent {
             sensitive={status.get('sensitive')}
             visible={this.props.showMedia}
             onToggleVisibility={this.props.onToggleMediaVisibility}
+            parentHidden={status.get('hidden')}
           />
         );
         mediaIcon = 'video-camera';
