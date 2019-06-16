@@ -236,6 +236,7 @@ class MediaGallery extends React.PureComponent {
     visible: PropTypes.bool,
     autoplay: PropTypes.bool,
     onToggleVisibility: PropTypes.func,
+    parentHidden: PropTypes.bool,
   };
 
   static defaultProps = {
@@ -270,6 +271,12 @@ class MediaGallery extends React.PureComponent {
   }, 250, {
     trailing: true,
   });
+
+  componentDidUpdate () {
+    if (!this.props.parentHidden && this.elementRef && this.elementRef.offsetWidth && this.elementRef.offsetWidth !== this.state.containerWidth) {
+      this._setDimensions()
+    }
+  }
 
   handleOpen = () => {
     if (this.props.onToggleVisibility) {
