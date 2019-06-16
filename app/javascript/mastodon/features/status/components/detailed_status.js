@@ -142,6 +142,7 @@ export default class DetailedStatus extends ImmutablePureComponent {
             onOpenMedia={this.props.onOpenMedia}
             visible={this.props.showMedia}
             onToggleVisibility={this.props.onToggleMediaVisibility}
+            parentHidden={status.get('hidden')}
           />
         );
         mediaIcon = 'picture-o';
