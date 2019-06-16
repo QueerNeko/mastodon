@@ -411,6 +411,7 @@ class Status extends ImmutablePureComponent {
                 defaultWidth={this.props.cachedMediaWidth}
                 visible={this.state.showMedia}
                 onToggleVisibility={this.handleToggleMediaVisibility}
+                parentHidden={status.get('hidden')}
               />
             )}
           </Bundle>
