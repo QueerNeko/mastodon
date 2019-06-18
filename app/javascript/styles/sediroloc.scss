@@ -1357,3 +1357,90 @@ button.icon-button i.fa-retweet:hover {
 .simple_form .block-button:hover, .simple_form .button:hover, .simple_form button:hover {
     background-color: #e8f6be;
 }
+
+//18/06/2019
+
+.simple_form .recommended, .table-form .recommended {
+
+    border-color: #a72645;
+    color: #a72645;
+    background-color: rgba(167, 38, 69, 0.1);
+    border-radius: 0px;
+
+}
+
+.compose-form__autosuggest-wrapper, .poll__text input[type="text"], .compose-form .spoiler-input__input, .compose-form__poll-wrapper select, .search__input, .setting-text, .box-widget input[type="text"], .box-widget input[type="email"], .box-widget input[type="password"], .box-widget textarea, .statuses-grid .detailed-status {
+
+    border: 0px;
+
+}
+
+.compose-form .compose-form__buttons-wrapper {
+    border: 0px;
+}
+
+.column > .scrollable, .getting-started, .column-inline-form {
+    border: 0px;
+}
+
+.column-back-button, .column-header {
+    border: 0px;
+}
+
+.column-link--transparent.active {
+    color: #a72645;
+}
+
+.navigation-panel hr {
+    border-top: 1px solid #a72645;
+}
+
+.getting-started__footer a {
+    color: #cf2210;
+}
+
+.tabs-bar__link.active:hover, .tabs-bar__link.active:active, .tabs-bar__link.active:focus {
+
+    background: transparent;
+    border-bottom-color: #a72645;
+
+}
+
+.tabs-bar {
+    border: 0px;
+}
+
+.tabs-bar__link:hover, .tabs-bar__link:active, .tabs-bar__link:focus {
+    background: #e8f6be;
+}
+
+.tabs-bar__link:hover, .tabs-bar__link:focus, .tabs-bar__link:active {
+    border-bottom-color: #a72645;
+}
+
+div.quote {
+    border: 0px;
+    border-left: 4px solid #a72645;
+    padding: 5px 0px 5px 10px;
+    margin-left: 10px;
+}
+
+pre {
+    border: solid #a72645 1px;
+    padding: 5px;
+    font-family: consolas,monospace,courier;
+}
+
+.admin-wrapper .content hr {
+    border-bottom: 1px solid #c5d882;
+}
+
+.batch-table__toolbar, .batch-table__row, .batch-table .nothing-here {
+    border-color: transparent;
+}
+
+.batch-table__toolbar {
+    border: 0px;
+    background: #c5d882;
+    border-radius: 0;
+}
