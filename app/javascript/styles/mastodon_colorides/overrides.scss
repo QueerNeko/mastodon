@@ -1203,3 +1203,56 @@ body.lighter {
     border-color: #58d9ba;
     background: #58d9ba;
 }
+
+//18/06/2019
+
+.column-link--transparent.active {
+    color: #58d9ba;
+}
+
+.column-link--transparent {
+    color: #f8f8f8;
+}
+
+.navigation-panel hr {
+    border-top: 1px solid #c5c5c5;
+}
+
+.getting-started__footer p {
+    color: #c5c5c5;
+}
+
+.getting-started__footer p a {
+    color: #30ddef;
+}
+
+.getting-started__footer a {
+    color: #30ddef;
+}
+
+.simple_form .recommended {
+    color: #58d9ba;
+    background-color: #170941;
+    border: 1px solid rgba(88, 217, 186, 0.5);
+    border-radius: 0px;
+}
+
+.flash-message.notice {
+    border: 0px;
+}
+
+.simple_form .input.boolean .recommended {
+    margin-left: 10px;
+}
+
+div.quote {
+    border: 0px;
+    border-left: 4px solid #58d9ba;
+    padding: 5px 0px 5px 10px;
+    margin-left: 10px;
+}
+
+pre {
+    padding: 5px;
+    font-family: consolas,monospace,courier;
+}
