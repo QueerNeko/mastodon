@@ -14,6 +14,12 @@ class Auth::RegistrationsController < Devise::RegistrationsController
     super(&:build_invite_request)
   end
 
+  def create
+    super do |resource|
+      UserSettingsDecorator.new(resource).update(params.require(:user).permit(:setting_advanced_layout).to_h) unless resource.id.nil?
+    end
+  end
+
   def destroy
     not_found
   end
