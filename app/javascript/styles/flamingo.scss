@@ -1953,3 +1953,65 @@ border-radius: 2px;
     border-color: #f09;
     background: #f09;
 }
+
+//19/06/2019
+
+.account-role, .simple_form .recommended {
+    border-radius: 0px;
+    color: #fff;
+    background-color: #333;
+    border: 0px;
+}
+
+.admin-wrapper .content h4 {
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: none;
+}
+
+.column-link--transparent.active {
+    color: #f09;
+}
+
+.compose-form .autosuggest-textarea__textarea {
+    border-radius: 0px;
+}
+
+.compose-panel .compose-form__autosuggest-wrapper {
+    background-color: transparent;
+    border-radius: 0px;
+}
+
+.compose-form .compose-form__buttons-wrapper {
+    border-radius: 0px;
+}
+
+.getting-started__footer p {
+    color: #ccc;
+}
+
+.getting-started__footer p a {
+    color: #f09;
+}
+
+.getting-started__footer a {
+    color: #f09;
+}
+
+.navigation-panel hr {
+    border-top: 0px;
+    margin: 10px;
+}
+
+pre {
+    border: 0px;
+    background: #333;
+    padding: 5px;
+    font-family: consolas,monospace,courier;
+}
+
+div.quote {
+    border: 0px;
+    border-left: 4px solid #f09;
+    padding: 5px 0px 5px 10px;
+}
