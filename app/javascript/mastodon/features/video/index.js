@@ -108,6 +108,7 @@ class Video extends React.PureComponent {
     blurhash: PropTypes.string,
     link: PropTypes.node,
     parentHidden: PropTypes.bool,
+    forceBlurhashDisabled: PropTypes.bool,
   };
 
   state = {
@@ -380,7 +381,7 @@ class Video extends React.PureComponent {
   }
 
   render () {
-    const { preview, src, inline, startTime, onOpenVideo, onCloseVideo, intl, alt, detailed, sensitive, link } = this.props;
+    const { preview, src, inline, startTime, onOpenVideo, onCloseVideo, intl, alt, detailed, sensitive, link, forceBlurhashDisabled } = this.props;
     const { containerWidth, currentTime, duration, volume, buffer, dragging, paused, fullscreen, hovered, muted, revealed } = this.state;
     const progress = (currentTime / duration) * 100;
 
@@ -451,7 +452,7 @@ class Video extends React.PureComponent {
         />}
 
         <div className={classNames('spoiler-button', { 'spoiler-button--hidden': revealed })}>
-          <button type='button' className={`spoiler-button__overlay ${blurhashDisabled ? 'spoiler-button__overlay__bluhash-disabled' : ''}`} onClick={this.toggleReveal}>
+          <button type='button' className={`spoiler-button__overlay ${blurhashDisabled || forceBlurhashDisabled ? 'spoiler-button__overlay__bluhash-disabled' : ''}`} onClick={this.toggleReveal}>
             <span className='spoiler-button__overlay__label'>{warning}</span>
           </button>
         </div>
