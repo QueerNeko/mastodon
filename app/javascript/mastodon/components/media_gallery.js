@@ -247,6 +247,7 @@ class MediaGallery extends React.PureComponent {
     visible: PropTypes.bool,
     onToggleVisibility: PropTypes.func,
     parentHidden: PropTypes.bool,
+    forceBlurhashDisabled: PropTypes.bool,
   };
 
   static defaultProps = {
@@ -305,7 +306,7 @@ class MediaGallery extends React.PureComponent {
   }
 
   render () {
-    const { media, intl, sensitive, height, defaultWidth } = this.props;
+    const { media, intl, sensitive, height, defaultWidth, forceBlurhashDisabled } = this.props;
     const { visible } = this.state;
 
     const width = this.state.width || defaultWidth;
@@ -336,7 +337,7 @@ class MediaGallery extends React.PureComponent {
       spoilerButton = <IconButton title={intl.formatMessage(messages.toggle_visible)} icon='eye-slash' overlay onClick={this.handleOpen} />;
     } else {
       spoilerButton = (
-        <button type='button' onClick={this.handleOpen} className={`spoiler-button__overlay ${blurhashDisabled ? 'spoiler-button__overlay__bluhash-disabled' : ''}`}>
+        <button type='button' onClick={this.handleOpen} className={`spoiler-button__overlay ${blurhashDisabled || forceBlurhashDisabled ? 'spoiler-button__overlay__bluhash-disabled' : ''}`}>
           <span className='spoiler-button__overlay__label'>{sensitive ? <FormattedMessage id='status.sensitive_warning' defaultMessage='Sensitive content' /> : <FormattedMessage id='status.media_hidden' defaultMessage='Media hidden' />}</span>
         </button>
       );
