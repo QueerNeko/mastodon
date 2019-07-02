@@ -4638,60 +4638,74 @@ a.table-action-link:hover, button.table-action-link:hover {
   color: #9c77c2;
   background-color: #9c77c210;
   border: 1px solid #9c77c277;
-  }
-  
-  .compose-form {
-      background: #fbf6ff;
-  }
-  
-  .getting-started__footer {
-      background: #fbf6ff;
-      margin-bottom: 10px;
-      border-radius: 0px 0px 4px 4px;
-  }
-  
-  .tabs-bar__link {
-      color: #ae8cd1;
-      border-bottom: 2px solid rgba(112, 84, 128, 0.5);
-  }
-  
-  .tabs-bar__link:hover, .tabs-bar__link:focus, .tabs-bar__link:active {
-      background: #fbf6ff;
-  }
-  
-  .tabs-bar__link:hover, .tabs-bar__link:focus, .tabs-bar__link:active {
-      border-bottom-color: #966dad;
-  }
-  
-  .tabs-bar__link.active {
-      border-bottom: 2px solid rgba(112, 84, 128, 0.5);
-      color: #966dad;
-  }
-  
-  .column-link--transparent.active {
-      color: #705480;
-  }
-  
-  .navigation-panel {
-      background: #fbf6ff;
-      border-radius: 4px;
-  }
-  
-  .navigation-panel hr {
-      border-top: 1px solid #b5a5bf;
-  }
-  
-  div.quote {
-      border: 0px;
-      border-left: 4px solid #dfc9f2;
-      padding: 5px 0px 5px 10px;
-      border-radius: 4px;
-      margin-left: 10px;
-  }
-  
-  pre {
-      border-radius: 4px;
-      padding: 5px;
-      font-family: courier new,monospace,consolas;
-      background: #f7efff;
-  }
+}
+
+.compose-form {
+    background: #fbf6ff;
+}
+
+.getting-started__footer {
+    background: #fbf6ff;
+    margin-bottom: 10px;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.tabs-bar__link {
+    color: #ae8cd1;
+    border-bottom: 2px solid rgba(112, 84, 128, 0.5);
+}
+
+.tabs-bar__link:hover, .tabs-bar__link:focus, .tabs-bar__link:active {
+    background: #fbf6ff;
+}
+
+.tabs-bar__link:hover, .tabs-bar__link:focus, .tabs-bar__link:active {
+    border-bottom-color: #966dad;
+}
+
+.tabs-bar__link.active {
+    border-bottom: 2px solid rgba(112, 84, 128, 0.5);
+    color: #966dad;
+}
+
+.column-link--transparent.active {
+    color: #705480;
+}
+
+.navigation-panel {
+    background: #fbf6ff;
+    border-radius: 4px;
+}
+
+.navigation-panel hr {
+    border-top: 1px solid #b5a5bf;
+}
+
+div.quote {
+    border: 0px;
+    border-left: 4px solid #dfc9f2;
+    padding: 5px 0px 5px 10px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+pre {
+    border-radius: 4px;
+    padding: 5px;
+    font-family: courier new,monospace,consolas;
+    background: #f7efff;
+}
+
+//13/08/2019
+
+.search-results__info {
+    color: #705480;
+}
+
+.status.muted .quote, .status.muted .pre {
+    color: #a888b8;
+}
+
+.spoiler-button__overlay__bluhash-disabled {
+  background: #ae8cd1;
+}

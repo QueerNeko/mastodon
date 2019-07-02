@@ -1283,3 +1283,109 @@ pre {
 .attachment-list__list a {
     color: #30ddef;
 }
+
+//02/07/2019
+
+.activity-stream .entry:last-child .detailed-status, .activity-stream .entry:last-child .load-more, .activity-stream .entry:last-child .status {
+    border-radius: 0;
+}
+
+.activity-stream .entry:first-child .detailed-status, .activity-stream .entry:first-child .load-more, .activity-stream .entry:first-child .status {
+    border-radius: 0;
+}
+
+.activity-stream--under-tabs {
+    border-radius: 0;
+}
+
+.load-gap {
+    border-bottom: 0px;
+}
+
+.public-layout .footer .brand svg {
+    fill: #f8f8f8;
+}
+
+.public-layout .footer .brand svg:hover {
+    fill: #30ddef;
+}
+
+.batch-table .nothing-here {
+    border: 0px;
+}
+
+.card > a, .card__bar, .card__img {
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+.dashboard__counters > div > a, .dashboard__counters > div > div {
+    border-radius: 0px;
+}
+
+.activity-stream {
+    border-radius: 0px;
+}
+
+//04/08/2019
+
+.setting-text {
+    background: #170941;
+    border-radius: 0px;
+    border-bottom: 0px;
+}
+
+.setting-text:focus, .setting-text:active, .setting-text.focus, .setting-text.active {
+    border-bottom: 2px solid #58d9ba;
+}
+
+.actions-modal, .boost-modal, .confirmation-modal, .mute-modal, .report-modal {
+    background-color: #170941;
+}
+
+.actions-modal, .boost-modal, .confirmation-modal, .mute-modal, .report-modal {
+  color: #f8f8f8;
+  border-radius: 0px;
+}
+
+.actions-modal ul li:not(:empty) a {
+    color: #f8f8f8;
+}
+
+.status.light .status__content {
+    color: #f8f8f8;
+}
+
+.boost-modal__action-bar, .confirmation-modal__action-bar, .mute-modal__action-bar {
+    background-color: #170941;
+}
+
+.list-editor .drawer__inner.backdrop {
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.list-editor .drawer__inner {
+    background: #170941;
+}
+
+.list-editor {
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+//11/08/2019
+
+.status.muted .quote, .status.muted .pre {
+    color: #c5c5c5
+}
+
+.column .getting-started .getting-started__wrapper .column-link:hover, .getting-started .getting-started__wrapper .column-link:active {
+    background-color: #170941 !important;
+}
+
+//13/08/2019
+
+.search-results__info {
+    color: #f8f8f8;
+}
