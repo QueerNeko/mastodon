@@ -1444,3 +1444,91 @@ pre {
     background: #c5d882;
     border-radius: 0;
 }
+
+//24/10/2019
+
+.drawer__header, .drawer__inner {
+    border: 0px;
+}
+
+.getting-started .column-link, .scrollable .column-link {
+    background: #e8f6be;
+    border-bottom: 0px;
+}
+
+.column-subheading {
+    border-bottom: 0px;
+}
+
+.getting-started__trends h4 {
+    border-bottom: 1px solid #c5d882;
+}
+
+.trends__item__sparkline path:first-child {
+    fill: rgba(167,38,69,.25) !important;
+}
+
+.trends__item__sparkline path:last-child {
+    stroke: #a72c4c !important;
+}
+
+.getting-started .column-link:active, .getting-started .column-link:focus, .getting-started .column-link:hover, .scrollable .column-link:active, .scrollable .column-link:focus, .scrollable .column-link:hover {
+    background: #c5d882;
+}
+
+.report-modal__container {
+    border-top-color: transparent;
+}
+
+.report-modal__comment {
+    border-right-color: transparent;
+}
+
+.link-button {
+    color: #cf2210;
+}
+
+.button.disabled, .button:disabled {
+    background-color: #e8f6be;
+}
+
+.compose-form .compose-form__modifiers .compose-form__upload__actions .icon-button:active, .compose-form .compose-form__modifiers .compose-form__upload__actions .icon-button:focus, .compose-form .compose-form__modifiers .compose-form__upload__actions .icon-button:hover {
+    color: #000;
+}
+
+.load-gap {
+    border-bottom: 0px;
+}
+
+.admin-wrapper .sidebar-wrapper__inner {
+    background: transparent;
+}
+
+.admin-wrapper .sidebar__toggle {
+    background: #c5d882;
+}
+
+.admin-wrapper .sidebar__toggle a:active, .admin-wrapper .sidebar__toggle a:focus, .admin-wrapper .sidebar__toggle a:hover {
+    background: #e8f6be;
+}
+
+.admin-wrapper .sidebar ul a, .admin-wrapper .sidebar ul ul a {
+    border-bottom: 0px;
+}
+
+.batch-table__row {
+    border: 0px;
+    background: transparent;
+}
+
+.batch-table__row:nth-child(2n) {
+    background: transparent;
+}
+
+.batch-table__row:nth-child(2n):hover {
+    background: #c5d882;
+}
+
+.batch-table__row:hover {
+    background: #c5d882;
+}
