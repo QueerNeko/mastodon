@@ -2015,3 +2015,144 @@ div.quote {
     border-left: 4px solid #f09;
     padding: 5px 0px 5px 10px;
 }
+
+//13/08/2019
+
+.spoiler-button__overlay__bluhash-disabled {
+    background: #333;
+}
+
+//24/10/2019
+
+.admin-wrapper .sidebar-wrapper__inner {
+    background: #222;
+}
+
+.getting-started__trends h4 {
+    color: #777;
+  border-bottom: 0px;
+}
+
+.getting-started__trends .trends__item__current {
+    color: #ddd;
+}
+
+.trends__item__sparkline path:first-child {
+    fill: transparent !important;
+}
+
+.trends__item__sparkline path:last-child {
+    stroke: #f09 !important;
+}
+
+.compose-form .autosuggest-textarea__textarea::placeholder, .compose-form .spoiler-input__input::placeholder {
+    color: #999;
+}
+
+.search__input::placeholder {
+    color: #999;
+}
+
+.load-gap {
+    border-bottom: 0px;
+}
+
+.actions-modal, .block-modal, .boost-modal, .confirmation-modal, .mute-modal, .report-modal {
+    background: #111;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.block-modal__action-bar, .boost-modal__action-bar, .confirmation-modal__action-bar, .mute-modal__action-bar {
+    background: #333;
+}
+
+.compose-form .compose-form__modifiers .compose-form__upload__actions .icon-button {
+    color: #ddd;
+}
+
+.domain, .report-modal__comment, .report-modal__comment .setting-text, .report-modal__comment:active, .report-modal__comment:focus, .report-modal__container, .status-check-box {
+    border: 0px;
+}
+
+.report-modal__comment .setting-text-label {
+    color: #ddd;
+}
+
+.character-counter {
+    color: #777;
+}
+
+.link-button {
+    color: #f09;
+}
+
+.upload-progress {
+    background: #111;
+    color: #ddd;
+}
+
+.upload-progress__backdrop {
+    background: #777;
+}
+
+.batch-table__toolbar {
+    border: 0px;
+    background: #111;
+    border-radius: 0;
+}
+
+.batch-table__row {
+    border: 0px;
+    background: #222;
+}
+
+.simple_form input[type="email"]::placeholder, .simple_form input[type="number"]::placeholder, .simple_form input[type="password"]::placeholder, .simple_form input[type="text"]::placeholder, .simple_form textarea::placeholder {
+    color: #ddd;
+}
+
+.batch-table__row__content__extra {
+    color: #ddd;
+}
+
+.batch-table__row:nth-child(2n) {
+    background: #333;
+}
+
+.batch-table__row:nth-child(2n):hover {
+    background: #111;
+}
+
+.batch-table__row:hover {
+    background: #111;
+}
+
+.batch-table__form {
+    border: 0px;
+    background: #111;
+}
+
+.audio-player__waveform::before {
+    border-top: 1px solid #333;
+}
+
+.audio-player .video-player__controls {
+    background: #111;
+    border-top: 1px solid #333;
+}
+
+.audio-player__wave-placeholder {
+    background-color: #555;
+}
+
+.audio-player {
+    background: #111;
+}
+
+.audio-player__progress-placeholder {
+    background-color: #ff009999;
+}
+
+.text-icon-button:active, .text-icon-button:focus, .text-icon-button:hover {
+    background-color: #7773;
+}
