@@ -188,3 +188,28 @@ button.icon-button i.fa-retweet {
 .compose-form__autosuggest-wrapper {
     border-radius: 4px 4px 0px 0px;
 }
+
+//13/08/2019
+
+.list-editor .drawer__inner {
+    background: #fff;
+}
+
+div.quote {
+    border-top: 0px;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-left: 4px solid #a81f56;
+    padding-left: 10px;
+    margin-left: 15px;
+}
+
+pre {
+    font-family: Consolas, Monospace, Courier;
+    padding: 5px;
+    border-color: #a81f56;
+}
+
+.status.muted .quote, .status.muted .pre {
+  color: #5b4353
+}
