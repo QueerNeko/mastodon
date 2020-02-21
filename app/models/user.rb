@@ -77,7 +77,7 @@ class User < ApplicationRecord
   has_many :markers, inverse_of: :user, dependent: :destroy
 
   has_one :invite_request, class_name: 'UserInviteRequest', inverse_of: :user, dependent: :destroy
-  accepts_nested_attributes_for :invite_request, reject_if: ->(attributes) { attributes['text'].blank? }
+  accepts_nested_attributes_for :invite_request, reject_if: :allow_empty_invite_request?
 
   validates :locale, inclusion: I18n.available_locales.map(&:to_s), if: :locale?
   validates_with BlacklistedEmailValidator, on: :create
@@ -318,6 +318,14 @@ class User < ApplicationRecord
 
   def open_registrations?
     Setting.registrations_mode == 'open'
+  end
+
+  def approved_registrations?
+    Setting.registrations_mode == 'approved'
+  end
+
+  def allow_empty_invite_request?(attributes)
+    attributes['text'].blank? && (!approved_registrations? || invited?)
   end
 
   def external?

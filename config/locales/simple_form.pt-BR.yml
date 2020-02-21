@@ -60,7 +60,7 @@ pt-BR:
       imports:
         data: Arquivo CSV exportado de outra instância Mastodon
       invite_request:
-        text: Isso nos ajudará a revisar seu aplicativo
+        text: Como você soube desta instância? Você leu e concorda com nossas regras? Você entende que nos importamos mais com ter pessoas que não perpetuam discriminações do que com ter uma grande quantidade de registros? Você poderia se introduzir? Quanto mais detalhes você der, maior a chance de você ser aceite. Mínimo de 5 palavras e 20 caracteres.
       sessions:
         otp: 'Digite o código de dois fatores gerado pelo aplicativo no seu celular ou use um dos códigos de recuperação:'
       tag:
@@ -112,6 +112,7 @@ pt-BR:
         fields: Metadados do perfil
         header: Cabeçalho
         inbox_url: Link da caixa de entrada do repetidor
+        invite_request: Escreva sua aplicação aqui.
         irreversible: Ignorar ao invés de ocultar
         locale: Idioma da interface
         locked: Trancar conta
