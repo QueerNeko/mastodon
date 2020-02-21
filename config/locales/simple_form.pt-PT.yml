@@ -60,7 +60,7 @@ pt-PT:
       imports:
         data: Arquivo CSV exportado de outro servidor do Mastodon
       invite_request:
-        text: Isto vai ajudar-nos a rever o seu pedido
+        text:  Como você soube desta instância? Você leu e concorda com nossas regras? Você entende que nos importamos mais com ter pessoas que não perpetuam discriminações do que com ter uma grande quantidade de registros? Você poderia se introduzir? Quanto mais detalhes você der, maior a chance de você ser aceite. Mínimo de 5 palavras e 20 caracteres.
       sessions:
         otp: 'Insere o código de autenticação em dois passos gerado pelo teu telemóvel ou usa um dos teus códigos de recuperação:'
       tag:

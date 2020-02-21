@@ -112,6 +112,7 @@ en:
         fields: Profile metadata
         header: Header
         inbox_url: URL of the relay inbox
+        invite_request: Escreva sua aplicação aqui.
         irreversible: Drop instead of hide
         locale: Interface language
         locked: Lock account
