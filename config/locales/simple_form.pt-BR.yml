@@ -64,7 +64,7 @@ pt-BR:
       imports:
         data: Arquivo CSV exportado de outra instância Mastodon
       invite_request:
-        text: Isso vai nos ajudar a revisar sua aplicação
+        text: Como você soube desta instância? Você leu e concorda com nossas regras? Você entende que nos importamos mais com ter pessoas que não perpetuam discriminações do que com ter uma grande quantidade de registros? Você poderia se introduzir? Quanto mais detalhes você der, maior a chance de você ser aceite. Mínimo de 5 palavras e 20 caracteres.
       ip_block:
         comment: Opcional. Lembrar de por que você adicionou esta regra.
         expires_in: Endereços IP são um recurso limitado, algumas vezes são compartilhados e muitas vezes mudam de mãos. Por esse motivo, blocos de IP indefinidos não são recomendados.
@@ -128,6 +128,7 @@ pt-BR:
         header: Cabeçalho
         honeypot: "%{label} (não preencher)"
         inbox_url: Link da caixa de entrada do repetidor
+        invite_request: Escreva sua aplicação aqui.
         irreversible: Ignorar ao invés de ocultar
         locale: Idioma da interface
         locked: Trancar conta
