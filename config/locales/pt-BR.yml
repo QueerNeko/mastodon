@@ -990,8 +990,8 @@ pt-BR:
       subject: "%{name} te mencionou"
       title: Nova menção
     reblog:
-      body: "%{name} deu boost no seu toot:"
-      subject: "%{name} deu boost no seu toot"
+      body: "%{name} compartilhou seu toot:"
+      subject: "%{name} compartilhou seu toot"
       title: Novo boost
   notifications:
     email_events: Eventos para notificações por e-mail
