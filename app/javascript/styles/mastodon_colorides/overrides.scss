@@ -1461,3 +1461,7 @@ pre {
   background: #170941;
   border-radius: 0px;
 }
+
+.layout-multiple-columns .app-holder, .layout-multiple-columns .app-holder > div {
+    z-index: 0;
+}
