@@ -209,7 +209,7 @@ const expandMentions = status => {
 const expiresInFromExpiresAt = expires_at => {
   if (!expires_at) return 24 * 3600;
   const delta = (new Date(expires_at).getTime() - Date.now()) / 1000;
-  return [300, 1800, 3600, 21600, 86400, 259200, 604800].find(expires_in => expires_in >= delta) || 24 * 3600;
+  return [300, 900, 1800, 3600, 10800, 21600, 43200, 86400, 172800, 259200, 604800, 1209600, 2592000].find(expires_in => expires_in >= delta) || 24 * 3600;
 };
 
 const mergeLocalHashtagResults = (suggestions, prefix, tagHistory) => {
