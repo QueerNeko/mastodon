@@ -35,6 +35,7 @@ class InitialStateSerializer < ActiveModel::Serializer
       store[:reduce_motion]     = object.current_account.user.setting_reduce_motion
       store[:advanced_layout]   = object.current_account.user.setting_advanced_layout
       store[:use_blurhash]      = object.current_account.user.setting_use_blurhash
+      store[:show_cw_box]       = object.current_account.user.setting_show_cw_box
       store[:use_pending_items] = object.current_account.user.setting_use_pending_items
       store[:is_staff]          = object.current_account.user.staff?
       store[:trends]            = Setting.trends && object.current_account.user.setting_trends
