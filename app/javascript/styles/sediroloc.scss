@@ -1532,3 +1532,7 @@ pre {
 .batch-table__row:hover {
     background: #c5d882;
 }
+
+.layout-multiple-columns .app-holder, .layout-multiple-columns .app-holder > div {
+    z-index: 0;
+}
