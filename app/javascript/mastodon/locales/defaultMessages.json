@@ -928,7 +928,7 @@
         "id": "compose_form.placeholder"
       },
       {
-        "defaultMessage": "Write your warning here",
+        "defaultMessage": "Write your warning here (optional)",
         "id": "compose_form.spoiler_placeholder"
       },
       {
