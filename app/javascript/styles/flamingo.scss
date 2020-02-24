@@ -2166,3 +2166,7 @@ div.quote {
 .trends__item {
     border-bottom-color: #777;
 }
+
+.layout-multiple-columns .app-holder, .layout-multiple-columns .app-holder > div {
+    z-index: 0;
+}
