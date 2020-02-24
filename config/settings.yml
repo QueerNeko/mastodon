@@ -33,6 +33,7 @@ defaults: &defaults
   aggregate_reblogs: true
   advanced_layout: false
   use_blurhash: true
+  show_cw_box: true
   use_pending_items: false
   trends: true
   trendable_by_default: false

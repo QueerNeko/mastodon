@@ -137,6 +137,7 @@ en:
         setting_bbcode_i: 'BBCode [i]'
         setting_bbcode_u: 'BBCode [u]'
         setting_bbcode_s: 'BBCode [s]'
+        setting_show_cw_box: Always show content warning field when composing toots
         setting_auto_play_gif: Auto-play animated GIFs
         setting_boost_modal: Show confirmation dialog before boosting
         setting_crop_images: Crop images in non-expanded toots to 16x9

@@ -94,7 +94,7 @@
   "compose_form.sensitive.unmarked": "Mídia não está marcada como sensível",
   "compose_form.spoiler.marked": "O texto está oculto por um aviso de conteúdo",
   "compose_form.spoiler.unmarked": "Sem Aviso de Conteúdo",
-  "compose_form.spoiler_placeholder": "Aviso de Conteúdo aqui",
+  "compose_form.spoiler_placeholder": "Aviso de conteúdo aqui (opcional)",
   "confirmation_modal.cancel": "Cancelar",
   "confirmations.block.block_and_report": "Bloquear e denunciar",
   "confirmations.block.confirm": "Bloquear",

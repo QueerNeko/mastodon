@@ -94,7 +94,7 @@
   "compose_form.sensitive.unmarked": "Média não está marcada como sensível",
   "compose_form.spoiler.marked": "Texto escondido atrás de aviso",
   "compose_form.spoiler.unmarked": "O texto não está escondido",
-  "compose_form.spoiler_placeholder": "Escreve o teu aviso aqui",
+  "compose_form.spoiler_placeholder": "Escreve o teu aviso aqui (opcional)",
   "confirmation_modal.cancel": "Cancelar",
   "confirmations.block.block_and_report": "Bloquear e denunciar",
   "confirmations.block.confirm": "Bloquear",
