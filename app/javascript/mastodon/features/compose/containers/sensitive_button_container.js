@@ -18,7 +18,7 @@ const messages = defineMessages({
 
 const mapStateToProps = state => ({
   active: state.getIn(['compose', 'sensitive']),
-  disabled: state.getIn(['compose', 'spoiler']),
+  disabled: state.getIn(['compose', 'spoiler']) && state.getIn(['compose', 'spoiler_text']),
   mediaCount: state.getIn(['compose', 'media_attachments']).size,
 });
 
