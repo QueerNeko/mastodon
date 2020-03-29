@@ -149,7 +149,7 @@ class Request
   end
 
   module ClientLimit
-    def body_with_limit(limit = 1.megabyte)
+    def body_with_limit(limit = 2.megabyte)
       raise Mastodon::LengthValidationError if content_length.present? && content_length > limit
 
       if charset.nil?
