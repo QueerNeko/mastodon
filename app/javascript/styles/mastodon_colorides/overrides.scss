@@ -1465,3 +1465,38 @@ pre {
 .layout-multiple-columns .app-holder, .layout-multiple-columns .app-holder > div {
     z-index: 0;
 }
+
+//22/05/2020
+
+.column-settings__hashtags .column-select__input, .column-settings__hashtags .column-select__multi-value__label {
+    color: #f8f8f8;
+}
+
+.column-settings__hashtags .column-select__dropdown-indicator:active, .column-settings__hashtags .column-select__dropdown-indicator:focus, .column-settings__hashtags .column-select__dropdown-indicator:hover {
+    color: #30ddef;
+}
+
+.css-19bqh2r:focus {
+    stroke-width: 1px;
+}
+
+.placeholder-widget {
+    border-color: #58d9ba;
+    color: #f8f8f8;
+}
+
+.notice-widget a, .placeholder-widget a {
+    color: #30ddef;
+}
+
+.column-settings__hashtags .column-select__menu {
+    background: #3a277d;
+}
+
+.column-settings__hashtags .column-select__option {
+    color: #f8f8f8;
+}
+
+.column-settings__hashtags .column-select__option--is-focused, .column-settings__hashtags .column-select__option--is-selected {
+    background: #1d0b53;
+}
