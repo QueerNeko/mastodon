@@ -2170,3 +2170,114 @@ div.quote {
 .layout-multiple-columns .app-holder, .layout-multiple-columns .app-holder > div {
     z-index: 0;
 }
+
+//22/05/2020
+
+.announcements {
+    background: #222;
+}
+
+.reactions-bar .emoji-button {
+    color: #fff;
+}
+
+.reactions-bar .emoji-button:active, .reactions-bar .emoji-button:hover {
+    color: #fff;
+}
+
+.reactions-bar .emoji-button:focus {
+    color: #f09;
+}
+
+.reactions-bar__item {
+  border-radius: 2px;
+  background-color: #111;
+}
+
+.reactions-bar__item:hover {
+  background-color: #444;
+}
+
+.reactions-bar__item:focus {
+  background-color: #f09;
+}
+
+.reactions-bar__item__count {
+    color: #ddd;
+}
+
+.column-header__wrapper.active {
+    box-shadow: none;
+}
+
+.filter-form {
+    background: #222;
+}
+
+.radio-button__input.checked {
+    border-color: #f09;
+    background: #f09;
+}
+
+.radio-button__input {
+    border: 1px solid #fff;
+}
+
+.directory__card__bar {
+    background: #222;
+}
+
+.directory__card__bar .display-name span {
+    color: #777;
+}
+
+.directory__card__extra .account__header__content {
+    border-bottom: 1px solid #777;
+}
+
+.directory__card__extra {
+    background: #222;
+}
+
+.floating-action-button:active, .floating-action-button:focus, .floating-action-button:hover {
+    background: #f09;
+}
+
+.conversation--unread {
+    background: #222;
+}
+
+.conversation {
+    border-bottom: 1px solid #777;
+}
+
+.conversation__unread {
+    background: #f09;
+}
+
+.conversation__content__names {
+    color: #fff;
+}
+
+.muted .status__content, .muted .status__content a, .muted .status__content p, .muted .status__display-name strong {
+    color: #ddd;
+}
+
+.conversation__content__relative-time {
+    color: #777;
+}
+.flash-message a {
+    color: #f09;
+}
+
+.admin-wrapper .sidebar__toggle {
+    background: #333;
+}
+
+.admin-wrapper .sidebar__toggle__icon {
+    color: #fff;
+}
+
+.admin-wrapper .sidebar__toggle a:active, .admin-wrapper .sidebar__toggle a:focus, .admin-wrapper .sidebar__toggle a:hover {
+    background: #f09;
+}
