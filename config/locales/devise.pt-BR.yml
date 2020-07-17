@@ -6,8 +6,8 @@ pt-BR:
       send_instructions: Você receberá um e-mail com instruções sobre como confirmar o endereço de e-mail dentro de alguns minutos. Por favor, verifique sua pasta de spam caso ainda não o tenha recebido.
       send_paranoid_instructions: Se o seu endereço de e-mail já existir em nosso banco de dados, você receberá um e-mail com instruções para confirmá-lo dentro de alguns minutos. Por favor, verifique sua pasta de spam caso ainda não o tenha recebido.
     failure:
-      already_authenticated: Você entrou na sua conta.
-      inactive: Sua conta não foi confirmada ainda.
+      already_authenticated: Você já entrou em sua conta.
+      inactive: A sua conta ainda não foi confirmada.
       invalid: "%{authentication_keys} ou senha inválida."
       last_attempt: Você tem mais uma tentativa antes de sua conta ser trancada.
       locked: Sua conta está trancada.
@@ -23,43 +23,43 @@ pt-BR:
         explanation: Você criou uma conta em %{host} com esse endereço de e-mail. Se não foi você, por favor, ignore este e-mail.
         explanation_when_pending: Você solicitou um convite para %{host} com esse endereço de e-mail. Após você confirmar o seu endereço de e-mail, espere o resultado da revisão de sua solicitação. Se sua conta por vetada, seus dados serão excluídos e nenhuma ação será necessária de sua parte. Se você não solicitou nada, por favor, ignore este e-mail.
         extra_html: Por favor confira também <a href="%{terms_path}">as regras da instância</a> e <a href="%{policy_path}">nossos termos de serviço</a>.
-        subject: 'Mastodon: Instruções de confirmação para %{instance}'
+        subject: 'Colorides: Instruções de confirmação'
         title: Confirme o endereço de e-mail
       email_changed:
-        explanation: 'O e-mail vinculado à sua conta será alterado para:'
-        extra: Se você não alterou seu email, é provável que alguém tenha ganhado acesso a sua conta. Por favor altere sua senha imediatamente ou entre em contato com o administrador do servidor se você está trancado fora de sua conta.
-        subject: 'Mastodon: Endereço de e-mail alterado'
+        explanation: 'O e-mail vinculado à sua conta será mudado para:'
+        extra: Se você não mudou seu e-mail é possível que alguém tenha conseguido acesso à sua conta. Por favor mude sua senha imediatamente ou entre em contato com a administração de colorid.es se você ficou sem acesso à sua conta.
+        subject: 'Colorides: Email alterado'
         title: Novo endereço de e-mail
       password_change:
-        explanation: A senha da sua conta foi alterada.
-        extra: Se você não alterou sua senha, é provável que alguém tenha ganhado acesso a sua conta. Por favor altere sua senha imediatamente ou entre em contato com o administrador do servidor se você está trancado fora de sua conta.
-        subject: 'Mastodon: Senha alterada'
+        explanation: A senha da sua conta foi mudada.
+        extra: Se você não mudou a sua senha, é possível que alguém tenha conseguido acesso à sua conta. Por favor mude sua senha imediatamente ou entre em contato com a administração de colorid.es se você ficou sem acesso à sua conta.
+        subject: 'Colorides: Senha modificada'
         title: Senha alterada
       reconfirmation_instructions:
-        explanation: Confirme seu novo endereço para alterar seu e-mail.
-        extra: Se essa alteração não foi feita por você, por favor, ignore este e-mail. O endereço de e-mail para essa conta do Mastodon não será alterado até que você entre no link acima.
-        subject: 'Mastodon: Confirmar endereço de e-mail para %{instance}'
-        title: Confirmar endereço de e-mail
+        explanation: Confirme o seu novo endereço para mudar seu e-mail.
+        extra: Se essa mudança não foi iniciada por você, por favor ignore esse e-mail. O endereço de e-mail para essa conta de colorid.es não irá mudar até que você acesse o link acima.
+        subject: 'Colorides: Confirmar e-mail'
+        title: Confirmar o endereço de e-mail
       reset_password_instructions:
         action: Alterar senha
-        explanation: Você solicitou uma nova senha para sua conta.
-        extra: Se você não solicitou nada, por favor, ignore este e-mail. Sua senha não será alterada até que você entre no link acima e crie uma nova.
-        subject: 'Mastodon: Instruções para alterar senha'
+        explanation: Você pediu uma nova senha para sua conta.
+        extra: Se você não fez esse pedido, por favor ignore esse e-mail. Sua senha não irá mudar até que você acesse o link acima e crie uma nova.
+        subject: 'Colorides: Instruções para alterar senha'
         title: Redefinir senha
       two_factor_disabled:
         explanation: A autenticação de dois fatores para sua conta foi desativada. Agora é possível acessar apenas com seu endereço de e-mail e senha.
-        subject: 'Mastodon: Autenticação de dois fatores desativada'
+        subject: 'Colorides: Autenticação de dois fatores desativada'
         title: 2FA desativada
       two_factor_enabled:
         explanation: A autenticação de dois fatores foi ativada para sua conta. Um código gerado no aplicativo TOTP pareado será necessário para entrar.
-        subject: 'Mastodon: Autenticação de dois fatores desativada'
+        subject: 'Colorides: Autenticação de dois fatores desativada'
         title: 2FA ativada
       two_factor_recovery_codes_changed:
         explanation: Os códigos de recuperação anteriores foram invalidados e novos códigos foram gerados.
-        subject: 'Mastodon: Novos códigos de recuperação de dois fatores'
+        subject: 'Colorides: Novos códigos de recuperação de dois fatores'
         title: Códigos de recuperação de dois fatores alterados
       unlock_instructions:
-        subject: 'Mastodon: Instruções de desbloqueio'
+        subject: 'Colorides: Instruções de desbloqueio'
       webauthn_credential:
         added:
           explanation: A seguinte chave de segurança foi adicionada à sua conta
@@ -79,21 +79,21 @@ pt-BR:
         title: Chaves de segurança habilitadas
     omniauth_callbacks:
       failure: Não foi possível entrar como %{kind} porque "%{reason}".
-      success: Entrou como %{kind}.
+      success: Você entrou como %{kind}.
     passwords:
-      no_token: Você não pode acessar esta página sem vir de um e-mail de alteração de senha. Se este for o caso, por favor, verifique se o link fornecido está completo.
-      send_instructions: Se o seu endereço de e-mail já existir em nosso banco de dados, você receberá um e-mail com instruções para alterar a senha dentro de alguns minutos. Por favor, verifique sua pasta de spam caso ainda não o tenha recebido.
-      send_paranoid_instructions: Se o seu endereço de e-mail já existir em nosso banco de dados, você receberá um e-mail com instruções para alterar a senha dentro de alguns minutos. Por favor, verifique sua pasta de spam caso ainda não o tenha recebido.
+      no_token: Você não pode acessar esta página se ela não estiver vindo de um e-mail de mudança de senha. Se este for o caso, por favor verifique se a URL utilizada está completa.
+      send_instructions: Se o seu endereço de e-mail já estiver cadastrado em nossa base de dados, você receberá um e-mail com um link para realizar a mudança de senha em alguns minutos. Por favor, verifique sua pasta de spam caso não o tenha recebido.
+      send_paranoid_instructions: Se o seu endereço de e-mail já estiver cadastrado em nossa base de dados, você receberá um e-mail com um link para realizar a mudança de senha em alguns minutos. Por favor, verifique sua pasta de spam caso não tenha recebido o e-mail ainda.
       updated: Sua senha foi alterada e você entrou na sua conta.
       updated_not_active: Sua senha foi alterada com sucesso.
     registrations:
-      destroyed: Adeus! Sua conta foi cancelada. Talvez um dia possamos nos ver de novo.
-      signed_up: Boas vindas! Conta criada.
-      signed_up_but_inactive: Conta criada! Agora você deve confirmá-la.
-      signed_up_but_locked: Você se cadastrou com sucesso. Contudo, não pudemos fazer login porque sua conta está trancada.
-      signed_up_but_pending: Um e-mail com um link de confirmação foi enviado para o seu endereço de e-mail. Após você entrar no link, revisaremos sua solicitação e você será notificado caso seja aprovado.
-      signed_up_but_unconfirmed: Um e-mail com instruções para confirmar o seu endereço de e-mail foi enviado. Por favor, verifique sua pasta de spam caso ainda não o tenha recebido.
-      update_needs_confirmation: Você alterou seu endereço de e-mail ou sua senha, porém é preciso confirmar a alteração. Por favor, entre no link que foi enviado para o seu novo endereço de e-mail e verifique sua pasta de spam caso ainda não o tenha recebido.
+      destroyed: Adeus! Sua conta foi cancelada. Talvez um dia possamos te ver de novo.
+      signed_up: Boas vindas! Sua conta foi registrada com sucesso.
+      signed_up_but_inactive: Sua conta foi registrada. No entanto, você precisa confirmá-la.
+      signed_up_but_locked: Sua conta foi registrada. No entanto, você não tem como entrar porque sua conta está bloqueada.
+      signed_up_but_pending: Um e-mail com um link de confirmação foi enviado para o seu endereço de e-mail. Após você entrar no link, revisaremos sua solicitação e você será notificade caso seja aprovade.
+      signed_up_but_unconfirmed: Um e-mail com um link de confirmação foi enviada para o seu endereço de e-mail. Por favor, siga o link para ativar a sua conta e, caso não tenha recebido tal e-mail, verifique sua pasta de spam.
+      update_needs_confirmation: Você mudou o seu endereço de e-mail ou a sua senha, mas é necessário confirmar a mudança. Por favor siga o link que foi enviado para o seu novo endereço de e-mail e, caso não tenha recebido tal e-mail, verifique sua pasta de spam.
       updated: Sua conta foi alterada com sucesso.
     sessions:
       already_signed_out: Você saiu de sua conta.
@@ -105,11 +105,11 @@ pt-BR:
       unlocked: Sua conta foi destrancada com sucesso. Por favor entre na sua conta para continuar.
   errors:
     messages:
-      already_confirmed: confirmado, agora tente entrar na sua conta
+      already_confirmed: a conta já está confirmada, por favor tente entrar em sua conta
       confirmation_period_expired: precisa ser confirmada em até %{period}, por favor, solicite novo link de confirmação
       expired: expirou, por favor solicite uma nova
       not_found: não encontrado
       not_locked: não foi trancada
       not_saved:
-        one: '1 erro impediu este %{resource} de ser salvo(a):'
-        other: "%{count} erros impediram este %{resource} de ser salvo(a):"
+        one: '1 erro impediu que o dado %{resource} fosse salvo:'
+        other: "%{count} erros impediram que o dado %{resource} fosse salvo:"

@@ -3,16 +3,16 @@ pt-BR:
   simple_form:
     hints:
       account_alias:
-        acct: Especifique o usuário@domínio da conta da qual você deseja se mudar
+        acct: Especifique o nome@domínio da conta da qual você deseja se mudar
       account_migration:
-        acct: Especifique o usuário@domínio da conta para a qual você deseja se mudar
+        acct: Especifique o nome@domínio da conta para a qual você deseja se mudar
       account_warning_preset:
-        text: Você pode usar a sintaxe do toot, como links, hashtags e menções
+        text: Você pode usar a sintaxe de brilhos, como links, hashtags e menções
         title: Opcional. Não visível para o destinatário
       admin_account_action:
-        include_statuses: O usuário verá quais toots causaram o aviso ou ação da moderação
-        send_email_notification: O usuário receberá uma explicação do que aconteceu com a própria conta
-        text_html: Opcional. Você pode usar a sintaxe do toot e também pode <a href="%{path}">adicionar avisos pré-definidos</a> para poupar tempo
+        include_statuses: E usuárie verá quais brilhos causaram o aviso ou ação da moderação
+        send_email_notification: E usuárie receberá uma explicação do que aconteceu com a própria conta
+        text_html: Opcional. Você pode usar a sintaxe de brilhos e também pode <a href="%{path}">adicionar avisos pré-definidos</a> para poupar tempo
         type_html: Decida o que fazer com <strong>%{acct}</strong>
         types:
           disable: Impedir o usuário de usar sua conta, porém sem deletá-la ou escondê-la.
@@ -23,49 +23,49 @@ pt-BR:
         ends_at: Opcional. O anúncio será automaticamente não publicado no momento
         scheduled_at: Deixe em branco para publicar o anúncio imediatamente
         starts_at: Opcional. Caso seu anúncio esteja vinculado a um período específico
-        text: Você pode usar a sintaxe toot. Esteja ciente do espaço que o anúncio ocupará na tela do usuário
+        text: Você pode usar a sintaxe de brilhos. Esteja ciente do espaço que o anúncio ocupará na tela de usuárie
       defaults:
-        autofollow: Pessoas que criarem conta através de seu convite te seguirão automaticamente
-        avatar: PNG, GIF or JPG. Arquivos de até %{size}. Serão redimensionados para %{dimensions}px
-        bot: Essa conta executa principalmente ações automatizadas e pode não ser monitorada
-        context: Um ou mais contextos onde o filtro deve atuar
+        autofollow: Pessoas que se cadastrarem através de seu convite acompanharão sua conta automaticamente
+        avatar: PNG, GIF ou JPG. Arquivos de até %{size}. Eles serão redimensionados para %{dimensions}px
+        bot: Esta conta executa principalmente ações automatizadas e pode não ser monitorada
+        context: Um ou mais contextos onde o filtro deve ser aplicado
         current_password: Para fins de segurança, por favor, digite a senha da conta atual
-        current_username: Para confirmar, por favor, digite o nome de usuário da conta atual
-        digest: Enviado apenas após um longo período de inatividade com um resumo das menções recebidas durante ausência
-        discoverable: O diretório de perfis é outra maneira de sua conta alcançar um público maior
+        current_username: Para confirmar, por favor, digite o nome (@) da conta atual
+        digest: Enviado após um longo período de inatividade com um resumo das menções que você recebeu em sua ausência
+        discoverable: Permite que a conta apareça em sugestões de perfis recomendados e em diretórios de perfis
         email: Você receberá um e-mail de confirmação
         fields: Você pode ter até 4 itens mostrados em forma de tabela no seu perfil
-        header: PNG, GIF or JPG. Arquivos de até %{size}. Serão redimensionados para %{dimensions}px
-        inbox_url: Copie o link da página inicial do repetidor que você deseja usar
-        irreversible: Toots filtrados desaparecerão irreversivelmente, mesmo se o filtro for removido depois
-        locale: O idioma da interface do usuário, e-mails e notificações
-        locked: Requer aprovação manual de seguidores
+        header: PNG, GIF or JPG. Arquivos de até %{size}. Eles serão redimensionados para %{dimensions}px
+        inbox_url: Copie a URL da página inicial do repetidor que você quer usar
+        irreversible: Os brilhos filtrados vão desaparecer irreversivelmente, mesmo se o filtro for removido depois
+        locale: O idioma das informações sobre contas, e-mails e notificações
+        locked: Requer aprovação manual para quem quiser acompanhar sua conta
         password: Use pelo menos 8 caracteres
-        phrase: Corresponderá independente de maiúsculas ou minúsculas, no texto ou no aviso de conteúdo de um toot
-        scopes: Quais APIs o aplicativo vai ter permissão de acessar. Se você selecionar uma autorização de alto nível, você não precisa selecionar individualmente os outros.
-        setting_aggregate_reblogs: Não mostra novos boosts para toots que receberam boost recentemente (afeta somente os boosts mais recentes)
+        phrase: Vai coincidir, independente de maiúsculas ou minúsculas, com texto ou aviso de conteúdo de um brilho
+        scopes: Quais APIs a aplicação vai ter permissão de acessar. Se você selecionar uma autorização de alto nível, você não precisa selecionar individualmente as outras.
+        setting_aggregate_reblogs: Não mostra novos reflexos para brilhos que foram refletidos recentemente (afeta somente os reflexos mais recentes)
         setting_default_sensitive: Mídia sensível está oculta por padrão e pode ser revelada com um clique
         setting_display_media_default: Sempre ocultar mídia sensível
         setting_display_media_hide_all: Sempre ocultar todas as mídias
         setting_display_media_show_all: Sempre mostrar mídia sensível
-        setting_hide_network: Quem você segue e seus seguidores não serão mostrados no seu perfil
-        setting_noindex: Afeta seu perfil público e as páginas dos seus toots
-        setting_show_application: O aplicativo que você usar para tootar será mostrado na visão detalhada dos seus toots
+        setting_hide_network: As contas que você acompanha e que acompanham sua conta não serão mostradas em seu perfil
+        setting_noindex: Afeta seu perfil público e as páginas de seus brilhos
+        setting_show_application: O aplicativo que você usar para publicar brilhos será mostrado na visão detalhada dos seus brilhos
         setting_use_blurhash: O blur é baseado nas cores da imagem oculta, ofusca a maioria dos detalhes
         setting_use_pending_items: Ocultar atualizações da linha do tempo atrás de um clique ao invés de rolar automaticamente
-        username: Seu nome de usuário será único em %{domain}
-        whole_word: Quando a palavra-chave ou frase é inteiramente alfanumérica, ela será aplicada somente se corresponder a palavra inteira
+        username: O nome da sua conta será único em %{domain}
+        whole_word: Quando a palavra ou frase é inteiramente alfanumérica, ela será aplicada somente se corresponder à palavra inteira
       domain_allow:
         domain: Este domínio poderá obter dados deste servidor e os dados recebidos dele serão processados e armazenados
       email_domain_block:
-        domain: Este pode ser o nome de domínio que aparece no endereço de e-mail, o registro MX para o qual o domínio resolve, ou o IP do servidor para o qual o registro MX resolve. Esses vão ser verificados no momento de registro do usuário e o registro será rejeitado.
-        with_dns_records: Será feita uma tentativa de resolver os registros DNS do domínio em questão e os resultados também serão colocados na lista negra
+        domain: Este pode ser o nome de domínio que aparece no endereço de e-mail, o registro MX para o qual o domínio resolve, ou o IP do servidor para o qual o registro MX resolve. Esses vão ser verificados no momento de registro da conta e o registro será rejeitado.
+        with_dns_records: Será feita uma tentativa de resolver os registros DNS do domínio em questão e os resultados também serão colocados na lista de bloqueios
       featured_tag:
-        name: 'Você pode querer usar um destes:'
+        name: 'Você pode querer usar uma destas:'
       form_challenge:
         current_password: Você está entrando em uma área segura
       imports:
-        data: Arquivo CSV exportado de outra instância Mastodon
+        data: Arquivo CSV exportado de outra instância/outro servidor Mastodon
       invite_request:
         text: Como você soube desta instância? Você leu e concorda com nossas regras? Você entende que nos importamos mais com ter pessoas que não perpetuam discriminações do que com ter uma grande quantidade de registros? Você poderia se introduzir? Quanto mais detalhes você der, maior a chance de você ser aceite. Mínimo de 5 palavras e 20 caracteres.
       ip_block:
@@ -84,22 +84,22 @@ pt-BR:
       tag:
         name: Você pode mudar a capitalização das letras, por exemplo, para torná-la mais legível
       user:
-        chosen_languages: Apenas toots dos idiomas selecionados serão mostrados nas linhas públicas
+        chosen_languages: Ao marcar, apenas brilhos dos idiomas selecionados serão exibidos nas linhas do tempo públicas
     labels:
       account:
         fields:
           name: Rótulo
           value: Conteúdo
       account_alias:
-        acct: Nome de usuário da conta antiga
+        acct: Nome da conta antiga
       account_migration:
-        acct: Nome de usuário da nova conta
+        acct: Nome da nova conta
       account_warning_preset:
         text: Aviso pré-definido
         title: Título
       admin_account_action:
-        include_statuses: Incluir toots denunciados no e-mail
-        send_email_notification: Notificar o usuário por e-mail
+        include_statuses: Incluir brilhos denunciados no e-mail
+        send_email_notification: Notificar e usuárie por e-mail
         text: Aviso personalizado
         type: Ação
         types:
@@ -116,16 +116,16 @@ pt-BR:
         starts_at: Início do evento
         text: Anúncio
       defaults:
-        autofollow: Convite para seguir a sua conta
-        avatar: Imagem de perfil
-        bot: Esta é uma conta-robô
+        autofollow: Convite para acompanhar sua conta
+        avatar: Imagem de perfil/Avatar
+        bot: Esta é uma conta robô
         chosen_languages: Filtro de idiomas
         confirm_new_password: Confirmar nova senha
         confirm_password: Confirmar senha
         context: Contextos do filtro
         current_password: Senha atual
         data: Dados
-        discoverable: Mostrar conta no diretório de perfis
+        discoverable: Sugerir conta a outres
         display_name: Nome de exibição
         email: Endereço de e-mail
         expires_in: Expira em
@@ -136,7 +136,7 @@ pt-BR:
         invite_request: Escreva sua aplicação aqui.
         irreversible: Ignorar ao invés de ocultar
         locale: Idioma da interface
-        locked: Trancar conta
+        locked: Requerer pedidos de acompanhamento
         max_uses: Número máximo de usos
         new_password: Nova senha
         note: Biografia
@@ -144,9 +144,9 @@ pt-BR:
         password: Senha
         phrase: Palavra-chave ou frase
         setting_advanced_layout: Ativar interface web avançada
-        setting_aggregate_reblogs: Agrupar boosts nas linhas
-        setting_emoji_size_simple: "Tamanho de emoji em toots simples (padrão: 20)"
-        setting_emoji_size_detailed: "Tamanho de emoji em toots detalhados (padrão: 24)"
+        setting_aggregate_reblogs: Agrupar reflexos nas linhas do tempo
+        setting_emoji_size_simple: "Tamanho de emoji em brilhos simples (padrão: 20)"
+        setting_emoji_size_detailed: "Tamanho de emoji em brilhos detalhados (padrão: 24)"
         setting_emoji_size_name: "Tamanho de emoji em nome de exibição (padrão: 16)"
         setting_bbcode_spin: 'BBCode [spin]'
         setting_bbcode_pulse: 'BBCode [pulse]'
@@ -158,42 +158,42 @@ pt-BR:
         setting_bbcode_i: 'BBCode [i]'
         setting_bbcode_u: 'BBCode [u]'
         setting_bbcode_s: 'BBCode [s]'
-        setting_show_cw_box: Sempre mostrar o campo de aviso de conteúdo ao escrever toots
+        setting_show_cw_box: Sempre mostrar o campo de aviso de conteúdo ao escrever brilhos
         setting_auto_play_gif: Reproduzir GIFs automaticamente
-        setting_boost_modal: Solicitar confirmação antes de dar boost
-        setting_crop_images: Cortar imagens no formato 16x9 em toots não expandidos
-        setting_default_language: Idioma dos toots
-        setting_default_privacy: Privacidade dos toots
+        setting_boost_modal: Mostrar diálogo de confirmação antes de refletir brilho
+        setting_crop_images: Cortar imagens no formato 16x9 em brilhos não expandidos
+        setting_default_language: Idioma de seus brilhos
+        setting_default_privacy: Privacidade padrão de seus brilhos
         setting_default_sensitive: Sempre marcar mídia como sensível
-        setting_delete_modal: Solicitar confirmação antes de excluir toot
+        setting_delete_modal: Solicitar confirmação antes de apagar brilho
         setting_disable_swiping: Desabilitar movimentos deslizantes
         setting_display_media: Exibição das mídias
         setting_display_media_default: Padrão
         setting_display_media_hide_all: Ocultar tudo
         setting_display_media_show_all: Mostrar tudo
-        setting_expand_spoilers: Sempre expandir toots com Aviso de Conteúdo
-        setting_hide_network: Ocultar suas relações
-        setting_noindex: Não quero ser indexado por mecanismos de pesquisa
-        setting_reduce_motion: Reduzir animações
-        setting_show_application: Mostrar o aplicativo usado para enviar os toots
-        setting_system_font_ui: Usar fonte padrão do sistema
-        setting_theme: Tema do site
+        setting_expand_spoilers: Sempre expandir brilhos com aviso de conteúdo
+        setting_hide_network: Esconder suas redes
+        setting_noindex: Não quero ser indexade por mecanismos de busca
+        setting_reduce_motion: Reduzir movimento em animações
+        setting_show_application: Mostrar o aplicativo usado para enviar brilhos
+        setting_system_font_ui: Usar a fonte padrão de seu sistema
+        setting_theme: Tema
         setting_trends: Mostrar em alta hoje
-        setting_unfollow_modal: Solicitar confirmação antes de deixar de seguir alguém
-        setting_use_blurhash: Mostrar blur em mídias ocultas
+        setting_unfollow_modal: Solicitar confirmação antes de deixar de acompanhar uma conta
+        setting_use_blurhash: Mostrar blur (borrão) em mídias ocultas
         setting_use_pending_items: Modo lento
         severity: Gravidade
         sign_in_token_attempt: Código de segurança
         type: Tipo de importação
-        username: Nome de usuário
-        username_or_email: Nome de usuário ou e-mail
+        username: Nome da conta
+        username_or_email: Nome da conta ou e-mail
         whole_word: Palavra inteira
       email_domain_block:
         with_dns_records: Incluir registros MX e IPs do domínio
       interactions:
-        must_be_follower: Bloquear notificações de não-seguidores
-        must_be_following: Bloquear notificações de pessoas que você não segue
-        must_be_following_dm: Bloquear mensagens diretas de pessoas que você não segue
+        must_be_follower: Bloquear notificações de quem não acompanha sua conta
+        must_be_following: Bloquear notificações de contas que você não acompanha
+        must_be_following_dm: Bloquear mensagens diretas de contas que você não acompanha
       invite:
         comment: Comentário
       invite_request:
@@ -206,12 +206,12 @@ pt-BR:
         severity: Regra
       notification_emails:
         digest: Enviar e-mails de resumo
-        favourite: Enviar e-mail quando alguém favoritar seus toots
-        follow: Enviar e-mail quando alguém te seguir
-        follow_request: Enviar e-mail quando alguém solicitar ser seu seguidor
-        mention: Enviar e-mail quando alguém te mencionar
+        favourite: Enviar um e-mail quando alguém favoritar seus brilhos
+        follow: Enviar um e-mail quando alguém acompanhar sua conta
+        follow_request: Enviar um e-mail quando alguém pedir para acompanhar sua conta
+        mention: Enviar um e-mail quando alguém te mencionar
         pending_account: Enviar e-mail quando uma nova conta precisar ser revisada
-        reblog: Enviar e-mail quando alguém der boost nos seus toots
+        reblog: Enviar um e-mail quando alguém refletir seus brilhos
         report: Enviar e-mail quando uma nova denúncia for enviada
         trending_tag: Uma hashtag não-revisada está em alta
       rule:
@@ -219,7 +219,7 @@ pt-BR:
       tag:
         listable: Permitir que esta hashtag apareça em pesquisas e no diretório de perfis
         trendable: Permitir que esta hashtag fique em alta
-        usable: Permitir que toots usem esta hashtag
+        usable: Permitir que brilhos usem esta hashtag
     'no': Não
     recommended: Recomendado
     required:

@@ -51,12 +51,12 @@ pt-BR:
         application_id: Chave do cliente
         callback_urls: Links de retorno
         scopes: Autorizações
-        secret: Segredo do cliente
+        secret: Segredo de cliente
         title: 'Aplicativo: %{name}'
     authorizations:
       buttons:
         authorize: Autorizar
-        deny: Negar
+        deny: Rejeitar
       error:
         title: Ocorreu um erro
       new:
@@ -78,21 +78,21 @@ pt-BR:
         title: Aplicativos autorizados
     errors:
       messages:
-        access_denied: O proprietário ou servidor de autorização negou a solicitação.
-        credential_flow_not_configured: Cadeira de Credenciais de Senha do Proprietário falhou porque Doorkeeper.configure.resource_owner_from_credentials não foram configuradas.
+        access_denied: A solicitação foi rejeitada por ume proprietárie ou servidor de autorização.
+        credential_flow_not_configured: Cadeira de Credenciais de Senha de Proprietárie falhou porque Doorkeeper.configure.resource_owner_from_credentials não foram configuradas.
         invalid_client: Autenticação do cliente falhou por causa de um cliente desconhecido, nenhum cliente de autenticação foi incluído ou o método de autenticação não é suportado.
         invalid_grant: A garantia de autorização está inválida, expirou ou foi revogada, não é equivalente ao link de redirecionamento usado na solicitação de autorização ou foi emitido por outro cliente.
         invalid_redirect_uri: O link de redirecionamento não é válido.
         invalid_resource_owner: As credenciais do proprietário informadas não são válidas ou o proprietário não pôde ser encontrado
         invalid_scope: A autorização requirida é inválida, desconhecida ou está mal formatada.
         invalid_token:
-          expired: O código de acesso expirou
-          revoked: O código de acesso foi revogado
-          unknown: O código de acesso é inválido
-        resource_owner_authenticator_not_configured: A procura pelo Proprietário do Recurso falhou porque Doorkeeper.configure.resource_owner_authenticator não foi configurado.
+          expired: O token de acesso expirou
+          revoked: O token de acesso foi revogado
+          unknown: O token de acesso é inválido
+        resource_owner_authenticator_not_configured: Procura por proprietárie falhou porque o item Doorkeeper.configure.resource_owner_authenticator não foi configurado.
         server_error: O servidor de autorização encontrou uma condição inesperada que preveniu a solicitação de ser respondida.
-        temporarily_unavailable: O servidor de autorização é incapaz de lidar com a solicitação no momento devido à múltiplas requisições ou manutenção programada.
-        unauthorized_client: O cliente não possui autorização para executar esta solicitação usando este método.
+        temporarily_unavailable: O servidor de autorização é incapaz de lidar com a solicitação no momento por causa de múltiplas requisições ou manutenção programada.
+        unauthorized_client: O cliente não possui autorização para performar esta solicitação usando este método.
         unsupported_grant_type: O tipo de garantia de autorização não é suportado pelo servidor de autorização.
         unsupported_response_type: O servidor de autorização não suporta este tipo de resposta.
     flash:
@@ -128,23 +128,23 @@ pt-BR:
       read:bookmarks: ver seus salvos
       read:favourites: ver seus favoritos
       read:filters: ver seus filtros
-      read:follows: ver quem você segue
+      read:follows: ver quem você acompanha
       read:lists: ver suas listas
-      read:mutes: ver seus silenciamentos
+      read:mutes: ver quem você silenciou
       read:notifications: ver suas notificações
       read:reports: ver suas denúncias
-      read:search: pesquisar em seu nome
-      read:statuses: ver todos os toots
+      read:search: buscar em seu nome
+      read:statuses: ver todos os brilhos
       write: alterar todos os dados da sua conta
       write:accounts: alterar seu perfil
       write:blocks: bloquear contas e domínios
-      write:bookmarks: salvar toots
-      write:favourites: favoritar toots
+      write:bookmarks: guardar brilhos
+      write:favourites: favoritar
       write:filters: criar filtros
-      write:follows: seguir pessoas
+      write:follows: acompanhar pessoas
       write:lists: criar listas
       write:media: enviar arquivos de mídia
       write:mutes: silenciar pessoas e conversas
-      write:notifications: limpar notificações
-      write:reports: denunciar outras pessoas
-      write:statuses: postar toots
+      write:notifications: limpar suas notificações
+      write:reports: denunciar outras contas
+      write:statuses: publicar brilhos
