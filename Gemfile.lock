@@ -383,7 +383,7 @@ GEM
       concurrent-ruby (~> 1.0, >= 1.0.2)
       sidekiq (>= 3.5)
       statsd-ruby (~> 1.4, >= 1.4.0)
-    oj (3.10.6)
+    oj (3.10.8)
     omniauth (1.9.1)
       hashie (>= 3.4.6)
       rack (>= 1.6.2, < 3)
@@ -775,8 +775,8 @@ DEPENDENCIES
   rspec_junit_formatter (~> 0.4)
   rubocop (~> 0.86)
   rubocop-rails (~> 2.6)
-  ruby-progressbar (~> 1.10)
   ruby-bbcode
+  ruby-progressbar (~> 1.10)
   sanitize (~> 5.2)
   sidekiq (~> 6.0)
   sidekiq-bulk (~> 0.2.0)
