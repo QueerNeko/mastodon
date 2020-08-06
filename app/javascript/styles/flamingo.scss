@@ -2281,3 +2281,58 @@ div.quote {
 .admin-wrapper .sidebar__toggle a:active, .admin-wrapper .sidebar__toggle a:focus, .admin-wrapper .sidebar__toggle a:hover {
     background: #f09;
 }
+
+//07/08/2020
+
+.notification__relative_time, .status__relative-time, .status__visibility-icon {
+    color: #777;
+}
+
+.announcements__item__content a.unhandled-link {
+    color: #f09;
+}
+
+.account__header__account-note label {
+    color: #fff;
+}
+
+.account__header__account-note textarea {
+    color: #eee;
+}
+
+.account__header__account-note textarea::placeholder {
+    color: #777;
+}
+
+.account__header__account-note textarea:focus {
+    background: #333;
+    border-radius: 0;
+}
+
+.account__header__account-note {
+    border-bottom: 1px solid #777;
+}
+
+.announcements__item__content a {
+    color: #f09;
+}
+
+.account {
+    background: transparent;
+}
+
+.admin-wrapper .content h4 {
+    background: transparent;
+}
+
+.trends__item__current {
+  background: transparent;
+}
+
+.admin-wrapper .content h3 {
+    color: #fff;
+}
+
+.admin-wrapper .content-heading {
+    border-bottom: 0px;
+}

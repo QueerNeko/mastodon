@@ -1536,3 +1536,78 @@ pre {
 .layout-multiple-columns .app-holder, .layout-multiple-columns .app-holder > div {
     z-index: 0;
 }
+
+//07/08/2020
+
+.announcements {
+    background: #e8f6be;
+}
+
+.column-header__button.active {
+    color: #070707;
+}
+
+.column-header__button, .column-header__button.active {
+    background: #e8f6be;
+}
+
+.reactions-bar__item {
+    background: #c5d882;
+}
+
+.reactions-bar__item:active, .reactions-bar__item:focus, .reactions-bar__item:hover {
+    background: #cf2210;
+}
+
+.announcements__item__content a.unhandled-link {
+    color: #cf2210;
+}
+
+.announcements__item__content a {
+    color: #cf2210;
+}
+
+.admin-wrapper .content-heading {
+    border-bottom: 1px solid #c5d882;
+}
+
+.admin-wrapper .content h2 {
+    border-bottom: 0;
+}
+
+.status-card__actions a, .status-card__actions button {
+    color: hsla(0,0%,20%,.8);
+}
+
+.column-header__wrapper.active {
+    box-shadow: none;
+}
+
+.column-header__collapsible-inner {
+    border: 0;
+}
+
+.react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track {
+    background: #c5d882;
+}
+
+.react-toggle-thumb {
+    background-color: #a72645;
+}
+
+.column-settings__hashtags .column-select__control {
+    background: #c5d882;
+    color: #080808;
+}
+
+.column-settings__hashtags .column-select__option--is-focused, .column-settings__hashtags .column-select__option--is-selected{
+    background: #e8f6be;
+}
+
+.column-settings__hashtags .column-select__menu {
+    background: #c5d882;
+}
+
+.column-settings__hashtags .column-select__option {
+    color: #080808;
+}
