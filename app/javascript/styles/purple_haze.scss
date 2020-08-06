@@ -4757,3 +4757,138 @@ pre {
 .pagination .current {
   background: #e4d0f5;
 }
+
+//07/08/2020
+
+.flash-message {
+  background: #efdfff;
+}
+
+.admin-wrapper .content-heading {
+  border-bottom: 0;
+}
+
+
+.admin-wrapper .sidebar-wrapper__inner {
+  background: #efdfff;
+}
+
+.batch-table__toolbar {
+  border-radius: 4px 4px 0 0;
+  border: 1px solid #ceacf1;
+  background: #f7efff;
+}
+
+.batch-table__row {
+  border-top: 0px;
+}
+
+.getting-started__trends {
+  background: #fcf8ff;
+  border-radius: 4px;
+}
+
+.getting-started__trends h4 {
+  color: #705480;
+  background-color: #dfc9f2;
+  border-radius: 4px 4px 0px 0px;
+border-bottom: 0px;
+}
+
+.getting-started {
+  border-radius: 0px 0px 4px 4px;
+}
+
+.getting-started__trends .trends__item__current {
+  color: #ae8cd1;
+}
+
+.trends__item__sparkline path:last-child {
+  stroke: #ae8cd1 !important;
+  fill: none !important;
+}
+
+.trends__item__sparkline path:first-child {
+  fill: #ae8cd140 !important;
+}
+
+.account__header__account-note label {
+  color: #ae8cd1;
+}
+
+.account__header__account-note textarea::placeholder {
+  color: #d8d8d8;
+}
+
+.account__header__account-note textarea:focus {
+  background: #72607c;
+}
+
+.account__header__account-note textarea {
+  color: #fff;
+}
+
+.account__header__account-note {
+  border-bottom: 1px solid #dfc9f2;
+}
+
+.announcements {
+  background: #fcf8ff;
+}
+
+.announcements__item__content a {
+  color: #ae8cd1;
+}
+
+.reactions-bar__item__count {
+  color: #fff;
+}
+
+.reactions-bar__item {
+  background: #ae8cd1;
+}
+
+.search__input::placeholder {
+  color: #606984;
+}
+
+.search__icon .fa, .search__icon .fa-times-circle {
+  color: #4c3b5c;
+}
+
+.reactions-bar__item:active, .reactions-bar__item:focus, .reactions-bar__item:hover {
+  background: #4c3b5c;
+}
+
+.reactions-bar .emoji-button {
+  color: #ae8cd1;
+}
+
+.timeline-hint {
+  color: #705480;
+}
+
+.status__visibility-icon {
+  color: #694e78;
+}
+
+.column-settings__hashtags .column-select__control {
+  background: #dfc9f2;
+  color: #705480;
+}
+
+.column-settings__hashtags .column-select__option--is-focused, .column-settings__hashtags .column-select__option--is-selected{
+  background: #fcf8ff;
+}
+
+.column-settings__hashtags .column-select__menu {
+  background: #dfc9f2;
+}
+
+.column-settings__hashtags .column-select__option {
+  color: #705480;
+}
+
+.column-settings__hashtags .column-select__input, .column-settings__hashtags .column-select__multi-value__label {
+color: #705480;
+}
