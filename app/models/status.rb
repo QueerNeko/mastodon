@@ -276,7 +276,7 @@ class Status < ApplicationRecord
 
   class << self
     def selectable_visibilities
-      visibilities.keys - %w(direct limited)
+      [:public, :local, :unlisted, :private]
     end
 
     def favourites_map(status_ids, account_id)

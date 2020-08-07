@@ -28,7 +28,13 @@ class ReblogService < BaseService
       end
     end
 
-    reblog = account.statuses.create!(reblog: reblogged_status, text: '', visibility: visibility, rate_limit: options[:with_rate_limit])
+    public_in_local = false
+    if visibility == 'local'
+      visibility = 'unlisted'
+      public_in_local = true
+    end
+
+    reblog = account.statuses.create!(reblog: reblogged_status, text: '', visibility: visibility, rate_limit: options[:with_rate_limit], public_in_local: public_in_local)
 
     DistributionWorker.perform_async(reblog.id)
     ActivityPub::DistributionWorker.perform_async(reblog.id)
