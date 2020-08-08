@@ -1,0 +1,174 @@
+@import 'colorwave_variables';
+@import 'application';
+
+@font-face {
+  font-family: 'galyon';
+  src: local('Galyon'),
+    url('../fonts/galyon/Galyon-Regular.otf') format('otf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'galyon';
+  src: local('Galyon Italic'),
+    url('../fonts/galyon/Galyon-Italic.otf') format('otf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'galyon';
+  src: local('Galyon Bold'),
+    url('../fonts/galyon/Galyon-Bold.otf') format('otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'vcr';
+  src: local("VCR OSD Mono"), 
+    url('../fonts/VCR_OSD_MONO.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, .ui {
+    background: linear-gradient(45deg,rgb(255,198,222) 0%, rgb(198,198,255) 50%, rgb(198,255,222) 100%);
+    font-family: galyon, Helvetica, sans-serif;
+}
+
+.drawer__header, .search__input, .drawer__inner, .column-header, .column-header__button, .column > .scrollable, .notification__filter-bar button, .column-back-button, .column-header__button.active, .column-header__back-button, .empty-column-indicator, .error-column, .account__header__image, .account__header__bar, .account__header__fields dt, .getting-started__wrapper, .getting-started, .flex-spacer, .account__header__bar .avatar .account__avatar, .notification__filter-bar, .account__section-headline, .column-header__collapsible-inner, .column-subheading, .column-link, .drawer__inner__mastodon, .table-of-contents, .grid-4 .column-1, .nothing-here, .grid-4 .column-3, .landing-page__call-to-action, .public-layout .header, .public-layout .public-account-bio, .activity-stream .entry, .hero-widget__text, .public-layout .public-account-header__image, .public-layout .public-account-header__bar::before, .admin-wrapper .sidebar-wrapper__inner, .admin-wrapper .sidebar-wrapper, .batch-table__toolbar, .regeneration-indicator, .card__img, .card__bar, .card__bar .avatar img, .column-inline-form, .filter-form, .box-widget, .landing .hero-widget__footer, .page-header {
+    background: transparent;
+}
+
+body.admin {
+    background: linear-gradient(45deg,rgb(255,198,222) 0%, rgb(198,198,255) 50%, rgb(198,255,222) 100%);
+}
+
+.admin-wrapper .sidebar ul ul, .detailed-status, .reply-indicator, .detailed-status__action-bar, .directory__tag > a, .directory__tag > div {
+    background: #00000011;
+}
+
+.tabs-bar, .tabs-bar__wrapper, .admin-wrapper .sidebar ul a.selected {
+    background: #00000022;
+    backdrop-filter: blur(10px);
+}
+
+.tabs-bar__link.active, .filters .filter-subset a.selected {
+    border-bottom: 2px solid #40177d;
+    color: #40177d;
+}
+
+.admin-wrapper .sidebar ul .simple-navigation-active-leaf a {
+background: #77f;
+}
+
+.notification__filter-bar, .account__section-headline, .detailed-status__action-bar {
+	border: 0;
+}
+
+.column-back-button {
+    color: #000;
+    background: #77f;
+}
+
+.status__content__spoiler-link, .public-layout .header .nav-button, .flash-message {
+    background: #00000011;
+}
+
+.account__header__bar .avatar .account__avatar {
+    border: 2px groove #fff;
+}
+
+.status {
+    border-width: 1px 1px 0px 1px;
+    border-color: #ffffff90;
+    border-style: solid;
+}
+
+
+div.quote {
+    border: groove #fff 2px;
+    margin-left: 15px;
+    padding: 5px;
+}
+
+pre {
+    border: groove #fff 2px;
+    font-family: monospace;
+    padding: 5px;
+}
+
+
+@media screen and (min-height: 640px) {
+  .drawer__inner__mastodon {
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  content: url("/colorwave_mascot.png");
+  width: 200px; 
+  height: 282px; 
+  padding-left: 0px; 
+  }
+}
+
+.public-layout .public-account-header__bar .avatar img {
+    border-radius: 0;
+    border: 4px groove #fff;
+    background: transparent;
+}
+
+.public-layout .public-account-header__image::after, .page-header {
+    box-shadow: none;
+}
+
+.public-layout .public-account-header__tabs__name h1 {
+    text-shadow: 3px 3px 0px #fff;
+    letter-spacing: 3px;
+}
+
+.admin-wrapper .content-wrapper, .dashboard__counters > div > div, .dashboard__counters > div > a {
+    background: #00000011;
+}
+
+body .muted-hint a, .admin-wrapper .content .muted-hint a {
+    color: #40177d;
+}
+
+.flash-message.notice {
+    background: rgba(166, 230, 185, 0.25);
+}
+
+.account-role, .simple_form .recommended {
+    background-color: #ffffff44;
+    border: 0;
+}
+
+.dropdown-menu, .dropdown-menu__item a {
+    background: #bebebe;
+}
+
+.dropdown-menu__arrow.bottom {
+    border-bottom-color: #bebebe;
+}
+
+.button {
+    font-family: vcr, Consolas, monospace;
+    font-size: 1.3em;
+}
+
+.button.logo-button {
+    font-size: 1.1em;
+}
+
+.column-header, .column-header > button {
+    font-size: 1.2em;
+    font-family: vcr, Consolas, monospace;
+}
+
+.batch-table__row, .table > thead > tr > th, .table th, .table td, .table > tbody > tr:nth-child(2n+1) > td, .table > tbody > tr:nth-child(2n+1) > th {
+   background-color: transparent;
+    border-width: 1px 1px 1px 1px;
+    border-color: #ffffff90;
+    border-style: solid;
+}
