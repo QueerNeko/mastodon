@@ -10,3 +10,4 @@ flamingo: styles/flamingo.scss
 sediroloc: styles/sediroloc.scss
 rosaceae: styles/pink.scss
 quartzo: styles/light_pink.scss
+colorwave: styles/colorwave.scss
