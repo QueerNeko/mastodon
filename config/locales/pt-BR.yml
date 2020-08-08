@@ -1328,6 +1328,7 @@ pt-BR:
       <p>Adaptado originalmente a partir da <a href="https://github.com/discourse/discourse">política de privacidade Discourse</a>.</p>
     title: "%{instance} Termos de Serviço e Política de Privacidade"
   themes:
+    colorwave: Colorwave
     contrast: Mastodon  (Alto contraste)
     default: Colorides
     mastodon-light: Mastodon (Diurno)
