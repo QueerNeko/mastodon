@@ -81,11 +81,8 @@ background: #77f;
 }
 
 .status {
-    border-width: 1px 1px 0px 1px;
-    border-color: #ffffff90;
-    border-style: solid;
+    border-width: 0px;
 }
-
 
 div.quote {
     border: groove #fff 2px;
@@ -99,16 +96,17 @@ pre {
     padding: 5px;
 }
 
-
 @media screen and (min-height: 640px) {
-  .drawer__inner__mastodon {
-  display: block;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  content: url("/colorwave_mascot.png");
-  width: 200px; 
-  height: 282px; 
-  padding-left: 0px; 
+  .drawer__inner__mastodon > img {
+  //display: block;
+  //-moz-box-sizing: border-box;
+  //box-sizing: border-box;
+  background: url("/colorwave_mascot.png") no-repeat;
+  //width: 372px; 
+  height: 80%; 
+  padding-left: 372px;
+  background-size: contain;
+  margin-top: 20%;
   }
 }
 
@@ -171,4 +169,93 @@ body .muted-hint a, .admin-wrapper .content .muted-hint a {
     border-width: 1px 1px 1px 1px;
     border-color: #ffffff90;
     border-style: solid;
+}
+
+.compose-form .compose-form__modifiers .compose-form__upload__actions .icon-button {
+    color: #bebebe;
+}
+
+.actions-modal, .block-modal, .boost-modal, .confirmation-modal, .mute-modal, .report-modal {
+    background: linear-gradient(315deg,rgb(255,198,222) 0%, rgb(198,198,255) 50%, rgb(198,255,222) 100%);
+  border-radius: 0px;
+  border: 2px groove #fff;
+}
+
+.compose-form .autosuggest-textarea__suggestions.autosuggest-textarea__suggestions--visible {
+  background: #bebebe;
+}
+
+.report-modal__container {
+    border-top: 1px solid #ffffff90;
+}
+
+.focal-point, .focal-point canvas, .focal-point img, .focal-point video {
+    background: transparent;
+}
+
+.report-modal__comment {
+    border-right: 1px solid #ffffff90;
+}
+
+.emoji-mart-bar:first-child, .emoji-mart-search input {
+    background: #fff;
+}
+
+.emoji-mart-category .emoji-mart-emoji:hover::before {
+    background: linear-gradient(45deg,rgb(255,198,222) 0%, rgb(198,198,255) 50%, rgb(198,255,222) 100%);
+}
+
+.autosuggest-textarea__suggestions--visible:active, .autosuggest-textarea__suggestions--visible.active, .autosuggest-textarea__suggestions:active, .compose-form .autosuggest-textarea__suggestions__item.selected, .compose-form .autosuggest-textarea__suggestions__item:active, .compose-form .autosuggest-textarea__suggestions__item:focus, .compose-form .autosuggest-textarea__suggestions__item:hover
+  {
+    background-color: #77f;
+  }
+  
+.compose-form .compose-form__warning, .status.status-direct:not(.read) {
+    background: #ffffff40;
+}
+
+.directory__card__extra, .status-card__image {
+    background: transparent;
+}
+
+.directory__card__bar {
+    background: #00000011;
+}
+
+.directory__card {
+    border: 2px groove #fff;
+}
+
+.directory__card__extra .account__header__content, .status.status-direct:not(.read) {
+    border-bottom: 1px solid #ffffff90;
+}
+
+.account__header__fields .verified {
+    background: rgba(166, 230, 185,.25);
+}
+
+.status-card.compact {
+    border: 2px groove #fff;
+}
+
+.block-modal__action-bar, .boost-modal__action-bar, .confirmation-modal__action-bar, .mute-modal__action-bar {
+    background: transparent;
+}
+
+.conversation--unread {
+    background: #00000011;
+}
+
+.conversation {
+border-bottom: 1px solid #ffffff90;
+}
+
+.status__wrapper {
+    border-width: 1px 1px 0px 1px;
+    border-color: #ffffff90;
+    border-style: solid;
+}
+
+.batch-table__row:nth-child(2n) {
+    background: transparent;
 }
