@@ -187,7 +187,7 @@ export function submitCompose(routerHistory) {
         insertIfOnline('community');
         insertIfOnline('public');
         insertIfOnline(`account:${response.data.account.id}`);
-      } else if (response.data.visibility === 'unlisted' && response.data.public_in_local === true) {
+      } else if (response.data.in_reply_to_id === null && response.data.visibility === 'unlisted' && response.data.public_in_local === true) {
         insertIfOnline('community');
       }
     }).catch(function (error) {
