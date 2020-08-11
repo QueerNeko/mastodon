@@ -2336,3 +2336,19 @@ div.quote {
 .admin-wrapper .content-heading {
     border-bottom: 0px;
 }
+
+//26/08/2020
+
+.block-modal .setting-toggle__label, .mute-modal .setting-toggle__label {
+    color: var(--textMuted);
+}
+
+.account--panel {
+    background: #111;
+    border-top: 0px;
+    border-bottom: 1px solid #333;
+}
+
+.report-modal__statuses, .report-modal__comment {
+    background: var(--bg);
+}

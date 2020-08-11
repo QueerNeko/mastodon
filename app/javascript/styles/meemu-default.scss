@@ -53,3 +53,30 @@ $ui-highlight-color: #CC7AFF;
 .focal-point-modal__content .status__content, .focal-point-modal__content .status__content p, .report-modal__statuses .status__content, .report-modal__statuses .status__content p {
     color: #fff;
 }
+
+//27/08/2020
+
+.ui.is-composing .modal-root .modal-root__container .modal-root__modal.actions-modal {
+    background: #322a4f;
+}
+
+.ui.is-composing .modal-root .modal-root__container .modal-root__modal.actions-modal li {
+    color: #fff;
+}
+
+.ui.is-composing .modal-root .modal-root__container .modal-root__modal.actions-modal .fa {
+    color: #fff;
+}
+
+.actions-modal .status, .block-modal, .boost-modal, .confirmation-modal, .mute-modal, .report-modal {
+    background: #322a4f;
+    color: #fff;
+}
+
+.actions-modal div {
+    color: #fff;
+}
+
+.block-modal .setting-toggle__label, .mute-modal .setting-toggle__label {
+    color: #ba8d98;
+}

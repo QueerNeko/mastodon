@@ -4892,3 +4892,53 @@ border-bottom: 0px;
 .column-settings__hashtags .column-select__input, .column-settings__hashtags .column-select__multi-value__label {
 color: #705480;
 }
+
+// 26/08/2020
+
+.batch-table .nothing-here {
+  border: 1px solid #ceacf1;
+}
+
+.table-action-link:hover, .table-action-link:focus, .table-action-link:active {
+  text-shadow: 1px 1px 1px #9c77c2;
+}
+
+//29/08/2020
+
+// consertos em capas de conteúdo sensível sem blurhash
+
+.spoiler-button__overlay__label {
+  background: rgba(255,255,255,.8);
+  color: #705480;
+}
+
+.media-gallery__preview {
+  background: #dfc9f2;
+}
+
+.spoiler-button__overlay:active .spoiler-button__overlay__label, .spoiler-button__overlay:focus .spoiler-button__overlay__label, .spoiler-button__overlay:hover .spoiler-button__overlay__label {
+  background: #72607ccc;
+  color: #fcf8ff;
+}
+
+// consertos nas mensagens diretas
+
+.conversation__unread {
+  background: #694e78;
+}
+
+.conversation__content__names {
+  color: #606984;
+}
+
+.conversation__content__names a {
+  color: #705480;
+}
+
+.conversation--unread {
+  background: #fff;
+}
+
+.conversation {
+  border-bottom: 1px solid #b6a6bf;
+}

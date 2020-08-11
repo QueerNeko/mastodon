@@ -4,14 +4,16 @@
 @font-face {
   font-family: 'galyon';
   src: local('Galyon'),
-    url('../fonts/galyon/Galyon-Regular.otf') format('otf');
+    url('../fonts/galyon/Galyon-Regular.woff') format("woff"),
+    url('../fonts/galyon/Galyon-Regular.otf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'galyon';
   src: local('Galyon Italic'),
-    url('../fonts/galyon/Galyon-Italic.otf') format('otf');
+    url('../fonts/galyon/Galyon-Italic.woff') format("woff"),
+    url('../fonts/galyon/Galyon-Italic.otf');
   font-weight: normal;
   font-style: italic;
 }
@@ -19,7 +21,8 @@
 @font-face {
   font-family: 'galyon';
   src: local('Galyon Bold'),
-    url('../fonts/galyon/Galyon-Bold.otf') format('otf');
+    url('../fonts/galyon/Galyon-Bold.woff') format("woff"),
+    url('../fonts/galyon/Galyon-Bold.otf');
   font-weight: bold;
   font-style: normal;
 }
@@ -104,7 +107,7 @@ pre {
   background: url("/colorwave_mascot.png") no-repeat;
   //width: 372px; 
   height: 80%; 
-  padding-left: 372px;
+  padding-left: 100%;
   background-size: contain;
   margin-top: 20%;
   }
@@ -353,4 +356,79 @@ border-bottom: 1px solid #ffffff90;
 
 .layout-multiple-columns .dropdown-menu {
     position: fixed;
+}
+
+//11/08/2020
+
+.admin-account-bio .account__header__content, .admin-account-bio .account__header__fields {
+    background: #ffffff40;
+}
+
+.account__header__fields dl {
+    border-bottom: 1px solid hsla(0,0%,100%,.56);
+}
+
+.poll__input {
+    border: 1px solid #fff;
+}
+
+.poll__input:hover {
+    border-color: #ffffff90;
+}
+
+.poll__input.active {
+    border: 0;
+    background: linear-gradient(180deg, rgba(246,64,255,1) 0%, rgba(255,177,56,1) 30%, transparent 30%, transparent 40%, rgba(255,177,56,1) 40%, rgba(255,177,56,1) 50%, transparent 50%, transparent 60%, rgba(255,177,56,1) 60%, rgba(255,246,198,1) 70%, transparent 70%, transparent 80%, rgba(255,246,198,1) 80%, rgba(255,246,198,1) 100%);
+}
+
+.button.button-secondary {
+    background: #00000011;
+    border: 0px;
+}
+
+.poll__chart {
+    background: #ffffff90;
+}
+
+//13/08/2020
+
+.account__header__bio .account__header__fields, .account__header__fields, .account__header__bar, .account, .admin-wrapper .content hr {
+    border-color: #ffffff90;
+}
+
+.account__section-headline a.active::after, .account__section-headline a.active::before, .account__section-headline button.active::after, .account__section-headline button.active::before, .notification__filter-bar a.active::after, .notification__filter-bar a.active::before, .notification__filter-bar button.active::after, .notification__filter-bar button.active::before {
+    border-color: transparent transparent #ffffff90;
+}
+
+.star-icon.active .fa-star:before, .notification__favourite-icon-wrapper .star-icon, .star-icon.active {
+    text-shadow: 2px 2px 1px magenta;
+}
+
+.admin-wrapper .content-heading {
+    border-bottom: 1px solid #ffffff40;
+}
+
+//15/08/2020
+
+.notification {
+    border: 1px solid #ffffff90;
+    border-bottom: 0px;
+}
+
+.notification .status__wrapper {
+    border: 0;
+}
+
+.batch-table__form {
+    background: transparent;
+}
+
+//20/08/2020
+
+.compose-form__poll-wrapper {
+    background: #c3c3c3;
+}
+
+.poll__input:active, .poll__input:focus {
+    border-color: #40177d;
 }
