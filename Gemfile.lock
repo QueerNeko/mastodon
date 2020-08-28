@@ -775,6 +775,7 @@ DEPENDENCIES
   rubocop-rails (~> 2.10)
   ruby-progressbar (~> 1.11)
   ruby-bbcode
+  ruby-progressbar (~> 1.10)
   sanitize (~> 5.2)
   scenic (~> 1.5)
   sidekiq (~> 6.2)
