@@ -769,8 +769,8 @@ DEPENDENCIES
   rspec_junit_formatter (~> 0.4)
   rubocop (~> 0.86)
   rubocop-rails (~> 2.6)
-  ruby-progressbar (~> 1.10)
   ruby-bbcode
+  ruby-progressbar (~> 1.10)
   sanitize (~> 5.2)
   sidekiq (~> 6.0)
   sidekiq-bulk (~> 0.2.0)
