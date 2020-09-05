@@ -19,6 +19,7 @@ class ApplicationController < ActionController::Base
   helper_method :current_emoji_size_simple
   helper_method :current_emoji_size_detailed
   helper_method :current_emoji_size_name
+  helper_method :current_column_size
   helper_method :current_bbcode_spin
   helper_method :current_bbcode_flip
   helper_method :current_bbcode_size
@@ -164,6 +165,10 @@ class ApplicationController < ActionController::Base
   
   def current_emoji_size_name
     return current_user&.setting_emoji_size_name
+  end
+
+  def current_column_size
+    return current_user&.setting_column_size
   end
   
   def current_bbcode_spin

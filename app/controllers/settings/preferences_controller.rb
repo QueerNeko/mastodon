@@ -58,6 +58,7 @@ class Settings::PreferencesController < Settings::BaseController
       :setting_emoji_size_simple,
       :setting_emoji_size_detailed,
       :setting_emoji_size_name,
+      :setting_column_size,
       :setting_bbcode_spin,
       :setting_bbcode_pulse,
       :setting_bbcode_flip,

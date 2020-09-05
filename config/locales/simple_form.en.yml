@@ -143,6 +143,7 @@ en:
         setting_emoji_size_simple: "Simple toot emoji size (default: 20)"
         setting_emoji_size_detailed: "Detailed toot emoji size (default: 24)"
         setting_emoji_size_name: "Display name emoji size (default: 16)"
+        setting_column_size: "Column width in multiple column/advanced layout (default: 350)"
         setting_bbcode_spin: 'BBCode [spin]'
         setting_bbcode_pulse: 'BBCode [pulse]'
         setting_bbcode_flip: 'BBCode [flip]'
