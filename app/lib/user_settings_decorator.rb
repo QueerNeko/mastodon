@@ -41,6 +41,7 @@ class UserSettingsDecorator
     user.settings['emoji_size_simple']   = emoji_size_simple_preference if change?('setting_emoji_size_simple')
     user.settings['emoji_size_detailed'] = emoji_size_detailed_preference if change?('setting_emoji_size_detailed')
     user.settings['emoji_size_name']     = emoji_size_name_preference if change?('setting_emoji_size_name')
+    user.settings['column_size']         = column_size_preference if change?('setting_column_size')
     user.settings['bbcode_spin']         = bbcode_spin_preference if change?('setting_bbcode_spin')
     user.settings['bbcode_pulse']        = bbcode_pulse_preference if change?('setting_bbcode_pulse')
     user.settings['bbcode_flip']         = bbcode_flip_preference if change?('setting_bbcode_flip')
@@ -144,6 +145,24 @@ class UserSettingsDecorator
     ActiveModel::Type::Integer.new.cast(value)
   end
   
+  def column_size_preference
+    coerce_column_size 'setting_column_size'
+  end
+
+  def coerce_column_size(key)
+    value = settings[key].to_i
+
+    if value < 350
+      return nil
+    end
+
+    if value > 1500
+      return 1500
+    end
+
+    ActiveModel::Type::Integer.new.cast(value)
+  end
+
   def bbcode_spin_preference
     boolean_cast_setting 'setting_bbcode_spin'
   end

@@ -132,6 +132,7 @@ pt-BR:
         setting_emoji_size_simple: "Tamanho de emoji em brilhos simples (padrão: 20)"
         setting_emoji_size_detailed: "Tamanho de emoji em brilhos detalhados (padrão: 24)"
         setting_emoji_size_name: "Tamanho de emoji em nome de exibição (padrão: 16)"
+        setting_column_size: "Largura da coluna em interface avançada/de múltiplas colunas (padrão: 350)"
         setting_bbcode_spin: 'BBCode [spin]'
         setting_bbcode_pulse: 'BBCode [pulse]'
         setting_bbcode_flip: 'BBCode [flip]'
