@@ -1,0 +1,213 @@
+// Dependent colors
+$black: #000000;
+$white: #ffffff;
+
+$classic-base-color: #283832;
+$classic-primary-color: #99c6b5;
+$classic-secondary-color: #c7f9e6;
+$classic-highlight-color: #2bd8b3;
+
+// Differences
+$success-green: #3c754d;
+
+$base-overlay-background: $white !default;
+$valid-value-color: $success-green !default;
+
+$ui-base-color: $classic-secondary-color !default;
+$ui-base-lighter-color: #afcec2;
+$ui-primary-color: #9aedcd;
+$ui-secondary-color: $classic-base-color !default;
+$ui-highlight-color: #00827D;
+
+$primary-text-color: $black !default;
+$darker-text-color: $classic-base-color !default;
+$dark-text-color: #435b52;
+$action-button-color: #60847e;
+
+$inverted-text-color: $black !default;
+$lighter-text-color: $classic-base-color !default;
+$light-text-color: #435b57;
+
+//Newly added colors
+$account-background-color: $white !default;
+
+//Invert darkened and lightened colors
+@function darken($color, $amount) {
+  @return hsl(hue($color), saturation($color), lightness($color) + $amount);
+}
+
+@function lighten($color, $amount) {
+  @return hsl(hue($color), saturation($color), lightness($color) - $amount);
+}
+
+$emojis-requiring-inversion: 'chains';
+@import 'application';
+@import 'mastodon-light/diff';
+
+// tons (hues) usados neste tema: 157, 169
+
+// deixar cor de mídia escondida sem blurhash diferente do fundo, mas sem deixar muito escura
+
+.spoiler-button__overlay, .media-gallery__preview {
+    background: #e0f4eb;
+}
+
+.ui {
+  background-image: repeating-linear-gradient(180deg, #e5fffa 0px, #e5fffa 65px, #b8efe5 65px, #b8efe5 130px);
+  background-attachment: fixed;
+}
+
+.drawer__inner {
+    background: transparent;
+    border: 0;
+}
+
+.drawer__inner__mastodon {
+    background: transparent;
+}
+
+.search__input, .announcements, .status.status-direct:not(.read) {
+    background: #eff9f5;
+}
+
+pre {
+    border-radius: 4px;
+    padding: 5px;
+    font-family: monospace;
+}
+
+div.quote {
+	border: 0px;
+    border-left: 3px solid #00827d;
+    padding: 5px 0px 5px 7px;
+    margin-left: 10px;
+}
+
+
+// borda em botões de reação de anúncios e avisos de conteúdo, pra aumentar visibilidade
+
+.reply-indicator__content .status__content__spoiler-link, .status__content .status__content__spoiler-link, .reactions-bar__item {
+    border: 1px solid #283832aa;
+}
+
+
+// melhoras no menu da interface de somente uma coluna
+
+.navigation-panel {
+    background: #f7fcfa;
+}
+
+.column-link--transparent:hover, .column-link--transparent:focus, .column-link--transparent:active {
+    background: #00827D;
+    color: #fff;
+}
+
+// cópia modificada de footer.scss pra mudar cores dos links
+
+.public-layout {
+    .grid {
+      .column-2 {
+        h4 a {
+          color: inherit;
+        }
+      }
+
+    ul a {
+      color: lighten($ui-base-color, 58%);
+    }
+
+    .brand {
+      svg {
+        display: block;
+        height: 36px;
+        width: auto;
+        margin: 0 auto;
+        fill: lighten($ui-base-color, 58%);
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        svg {
+          fill: lighten($ui-base-color, 48%);
+        }
+      }
+    }
+  }
+}
+
+// Aumentar legibilidade do seletor de tempo de enquetes
+
+.compose-form__poll-wrapper select {
+	border-color: #60847e;
+}
+
+.compose-form__poll-wrapper select {
+    background: #fff url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14.933 18.467' height='19.698' width='15.929'><path d='M3.467 14.967l-3.393-3.5H14.86l-3.392 3.5c-1.866 1.925-3.666 3.5-4 3.5-.335 0-2.135-1.575-4-3.5zm.266-11.234L7.467 0 11.2 3.733l3.733 3.734H0l3.733-3.734z' fill='%2360847e'/></svg>") no-repeat right 8px center/auto 16px;
+}
+
+// Aumentar legibilidade em outros menus
+
+.simple_form select {
+    background: #f5fefb url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14.933 18.467' height='19.698' width='15.929'><path d='M3.467 14.967l-3.393-3.5H14.86l-3.392 3.5c-1.866 1.925-3.666 3.5-4 3.5-.335 0-2.135-1.575-4-3.5zm.266-11.234L7.467 0 11.2 3.733l3.733 3.734H0l3.733-3.734z' fill='%2360847e'/></svg>") no-repeat right 8px center/auto 16px;
+}
+
+// Aumentar legibilidade do campo de busca
+
+.search__input:focus {
+    background: #fff;
+    border-color: #60847e;
+}
+
+// Coluna de hashtags, como sempre
+
+.column-settings__hashtags .column-select__control {
+    background: #eff9f5;
+}
+
+.column-settings__hashtags .column-select__control:focus {
+    background: #fff;
+}
+
+.column-settings__hashtags .column-select__option--is-focused, .column-settings__hashtags .column-select__option--is-selected {
+    background: #00827d;
+    color: #fff;
+}
+
+.column-settings__hashtags .column-select__menu {
+    background: #e3fcf2;
+}
+
+// Aumentar legibilidade da barra de rolagem
+
+::-webkit-scrollbar-thumb {
+    background: #2bd8b3;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #60847e;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #435b52;
+}
+
+html {
+    scrollbar-color: #2bd8b3 rgba(199, 249, 230, 0.5);
+}
+
+// Aumentar legibilidade de autocomplete de hashtags/emojis
+
+.autosuggest-textarea__suggestions--visible:active, .autosuggest-textarea__suggestions--visible.active, .autosuggest-textarea__suggestions:active, .compose-form .autosuggest-textarea__suggestions__item.selected, .compose-form .autosuggest-textarea__suggestions__item:active, .compose-form .autosuggest-textarea__suggestions__item:focus, .compose-form .autosuggest-textarea__suggestions__item:hover
+{
+    background-color: #00827d;
+    color: #fff;
+}
+
+.compose-form .autosuggest-textarea__suggestions__item.selected .autosuggest-account .display-name__account  {
+        color: #d9fbee;
+}
+
+.compose-form .autosuggest-textarea__suggestions__item:hover .autosuggest-account .display-name__account, .compose-form .autosuggest-textarea__suggestions__item:active .autosuggest-account .display-name__account, .compose-form .autosuggest-textarea__suggestions__item:focus .autosuggest-account .display-name__account  {
+        color: #d9fbee;
+}
