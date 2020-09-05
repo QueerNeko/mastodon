@@ -57,6 +57,12 @@
             height: #{current_emoji_size_name}px;
             margin: 0ex .1em 0ex;
           }
+
+    - unless current_column_size.nil?
+      :css
+         @media (min-width: 640px) {
+          .layout-multiple-columns .column, .layout-multiple-columns #mastodon-timeline {min-width: #{current_column_size}px;}
+        }
     
     - unless current_bbcode_spin
       %style{nonce: request.content_security_policy_nonce}

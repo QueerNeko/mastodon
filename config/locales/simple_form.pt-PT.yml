@@ -150,6 +150,7 @@ pt-PT:
         setting_emoji_size_simple: "Tamanho de emoji em toots simples (padrão: 20)"
         setting_emoji_size_detailed: "Tamanho de emoji em toots detalhados (padrão: 24)"
         setting_emoji_size_name: "Tamanho de emoji em nome público (padrão: 16)"
+        setting_column_size: "Largura da coluna em interface avançada (padrão: 350)"
         setting_bbcode_spin: 'BBCode [spin]'
         setting_bbcode_pulse: 'BBCode [pulse]'
         setting_bbcode_flip: 'BBCode [flip]'
