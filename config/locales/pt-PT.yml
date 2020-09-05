@@ -1260,6 +1260,16 @@ pt-PT:
     default: Mastodon Colorides
     mastodon-light: Mastodon (Leve)
     mastodon: Mastodon
+    purple-haze: Neblina Roxa
+    win95: Windows 95
+    meemu-purple: Meemu Roxo
+    meemu-vaporwave: Meemu Vaporwave
+    flamingo: Flamingo
+    sediroloc: Sediroloc
+    sunset: Pôr do Sol
+    rosaceae: Rosaceae
+    quartzo: Quartzo
+    teal: Linha 10
   time:
     formats:
       default: "%H:%M em %d de %b de %Y"
