@@ -1285,6 +1285,7 @@ pt-BR:
     sunset: Pôr-do-sol
     rosaceae: Rosaceae
     quartzo: Quartzo
+    teal: Linha 10
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
