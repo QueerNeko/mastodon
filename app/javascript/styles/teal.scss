@@ -211,3 +211,36 @@ html {
 .compose-form .autosuggest-textarea__suggestions__item:hover .autosuggest-account .display-name__account, .compose-form .autosuggest-textarea__suggestions__item:active .autosuggest-account .display-name__account, .compose-form .autosuggest-textarea__suggestions__item:focus .autosuggest-account .display-name__account  {
         color: #d9fbee;
 }
+
+// Aumentar contraste de elementos originalmente verde claros em fundo claro
+
+.block-modal__cancel-button, .confirmation-modal__cancel-button, .confirmation-modal__secondary-button, .mute-modal__cancel-button {
+  color: #666;
+}
+
+.poll__chart {
+  box-shadow: 1px 1px 1px #666;
+}
+
+.compose-form .compose-form__warning {
+  background-color: rgba(255,255,255,.9);
+}
+
+// Deixar ícones ativos mais distintos de inativos
+
+.icon-button.active {
+  background: linear-gradient(135deg, #BCF0E4, #BCF0E4 20%, #e5fffa 20%, #e5fffa 40%, #BCF0E4 40%, #BCF0E4 60%, #e5fffa 60%, #e5fffa 80%, #BCF0E4 80%, #BCF0E4 100%);
+}
+
+// Não colocar esse fundo no texto de marcar mídia como sensível
+
+.compose-form__sensitive-button .icon-button.active {
+  background: transparent;
+}
+
+// Modificações no negócio de notificações novas no modo pra celular (padrão é texto escuro no fundo escuro e borda colorida clara)
+
+.icon-with-badge__badge {
+  background: #a2f5d6;
+  border: 1px solid #fff;
+}
