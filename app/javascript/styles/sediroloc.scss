@@ -1611,3 +1611,91 @@ pre {
 .column-settings__hashtags .column-select__option {
     color: #080808;
 }
+
+//21/11/2020
+
+.icon-button:active, .icon-button:focus, .icon-button:hover {
+    background-color: #e7f5be90;
+}
+
+
+.column-header__button.active:active, .column-header__button.active:focus, .column-header__button.active:hover {
+    color: #a72645;
+    background: #e7f5be;
+}
+
+.column-header__button:hover, .column-header__button:active {
+    color: #070707;
+    background-color: #e7f5be;
+}
+
+.column-header__button {
+    background-color: #c5d882;
+}
+
+.react-toggle-track-x svg path, .react-toggle-track-check svg path {
+  fill: #070707;
+}
+
+.react-toggle.react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track .react-toggle-track-check svg path {
+  fill: #fff;
+}
+
+.conversation--unread {
+    background: #e7f5be;
+}
+
+.conversation__unread {
+  background-color: #a72645;
+}
+
+.conversation {
+    border-bottom: 0px;
+}
+
+.actions-modal, .block-modal, .boost-modal, .confirmation-modal, .embed-modal, .error-modal, .mute-modal, .onboarding-modal, .report-modal, .report-modal__comment .setting-text, .report-modal__comment .setting-text__wrapper {
+    border: 0px;
+}
+
+.status .icon-button:active, .status .icon-button:focus, .status .icon-button:hover {
+    background-color: transparent;
+    border: 1px solid #cf2210;
+    border-radius: 0px;
+}
+
+.status .icon-button:focus {
+    background-color: transparent;
+    border-color: #3a3a3a;
+}
+
+.compose-form .compose-form__modifiers .compose-form__upload__actions.active .icon-button:hover, .compose-form .compose-form__modifiers .compose-form__upload__actions.active .icon-button:focus {
+  background-color: #e7f5be;
+}
+
+.notification__filter-bar {
+    border: 0px;
+}
+
+.report-modal__target {
+    color: #070707;
+}
+
+
+.link-button:disabled {
+    color: #3a3a3a;
+}
+
+.icon-with-badge__badge {
+    background: #e7f5be;
+    border: 2px solid #c5d882;
+    padding: 1px 4px;
+    border-radius: 50%;
+}
+
+.getting-started .navigation-bar {
+  border-width: 0px;
+}
+
+.tabs-bar__wrapper {
+    background: transparent;
+}
