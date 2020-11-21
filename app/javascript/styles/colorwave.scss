@@ -432,3 +432,31 @@ border-bottom: 1px solid #ffffff90;
 .poll__input:active, .poll__input:focus {
     border-color: #40177d;
 }
+
+//21/11/2020
+
+.batch-table__toolbar {
+    border: 1px solid hsla(0,0%,100%,.56);
+    border-radius: 0px;
+}
+
+.batch-table__row:first-child {
+    border-top: 0px;
+}
+
+.batch-table__row:nth-child(2n) {
+    border-top: 0px;
+    border-bottom: 0px;
+}
+
+.batch-table__row:last-child {
+    border-bottom: 1px solid hsla(0,0%,100%,.56);
+}
+
+.batch-table .nothing-here {
+    border-color: hsla(0,0%,100%,.56);
+}
+
+.icon-with-badge__badge {
+    border: 0px solid transparent;
+}

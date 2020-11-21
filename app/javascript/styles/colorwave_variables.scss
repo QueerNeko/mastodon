@@ -31,6 +31,8 @@ $light-text-color: #4c4c4c;
 //Newly added colors
 $account-background-color: $white !default;
 
+$emojis-requiring-inversion: 'chains';
+
 //Invert darkened and lightened colors
 @function darken($color, $amount) {
   @return hsl(hue($color), saturation($color), lightness($color) + $amount);
