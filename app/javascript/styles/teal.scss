@@ -244,3 +244,23 @@ html {
   background: #a2f5d6;
   border: 1px solid #fff;
 }
+
+//28/12/2020
+
+.video-player__download__icon.player-button.status-link.unhandled-link i.fa.fa-download.fa-fw {
+  color: #a2f5d6;
+}
+
+.video-player__download__icon.player-button.status-link.unhandled-link i.fa.fa-download.fa-fw:hover, .video-player__download__icon.player-button.status-link.unhandled-link i.fa.fa-download.fa-fw:focus {
+  color: #fff;
+}
+
+.picture-in-picture-placeholder {
+   border-color: #00827d;
+   color: #00827d;
+}
+
+.picture-in-picture-placeholder:active, .picture-in-picture-placeholder:focus, .picture-in-picture-placeholder:hover {
+   border-color: #004f4c;
+   color: #000;
+}

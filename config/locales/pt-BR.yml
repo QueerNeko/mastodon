@@ -566,11 +566,11 @@ pt-BR:
       enable_bootstrap_timeline_accounts:
         title: Ativar seguides por padrão por novas contas
       hero:
-        desc_html: Aparece na página inicial. Ao menos 600x100px é recomendado. Se não estiver definida, a miniatura da instância é usado no lugar
+        desc_html: Aparece na página inicial. Recomenda-se ao menos 600x100px. Se não estiver definida, a miniatura da instância é usada no lugar
         title: Imagem de capa
       mascot:
-        desc_html: Mostrado em diversas páginas. Recomendado ao menos 293×205px. Quando não está definido, o mascote padrão é mostrado
-        title: Imagem do mascote
+        desc_html: Mostrada em diversas páginas. Recomenda-se ao menos 293×205px. Quando não está definida, mascote padrão é mostrade
+        title: Imagem de mascote
       peers_api_enabled:
         desc_html: Nomes de domínio que essa instância encontrou no fediverso
         title: Publicar lista de instâncias descobertas
@@ -592,7 +592,7 @@ pt-BR:
           title: Permitir convites de
         require_invite_text:
           desc_html: Quando o cadastro de novas contas exigir aprovação manual, tornar obrigatório, ao invés de opcional, o texto de solicitação de convite em "Por que você deseja criar uma conta aqui?"
-          title: Exigir que novos usuários preencham um texto de solicitação de convite
+          title: Exigir que noves usuáries preencham um texto de solicitação de convite
       registrations_mode:
         modes:
           approved: Aprovação necessária para criar conta
@@ -1087,9 +1087,9 @@ pt-BR:
       unrecognized_emoji: não é um emoji reconhecido
   relationships:
     activity: Atividade da conta
-    dormant: Inative
+    dormant: Inativa
     follow_selected_followers: Acompanhar estas contas que te acompanham
-    followers: Acompanham você
+    followers: Acompanha você
     following: Acompanhando
     invited: Convidade
     last_active: Última atividade

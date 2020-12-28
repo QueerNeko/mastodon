@@ -1575,3 +1575,9 @@ button.icon-button i.fa-retweet:hover {
 .timeline-hint a {
     color: #30ddef;
 }
+
+//28/12/2020
+
+.notification.unread::before, .status__wrapper.unread::before {
+    border-color: #58D9BA;
+}
