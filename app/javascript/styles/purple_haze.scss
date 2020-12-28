@@ -4942,3 +4942,51 @@ color: #705480;
 .conversation {
   border-bottom: 1px solid #b6a6bf;
 }
+
+//28/12/2020
+
+.tabs-bar__wrapper {
+  background: #72607c;
+}
+
+.flash-message a {
+  color: #694E78;
+}
+
+.flash-message a:hover, .flash-message a:focus {
+  color: #AE8CD1;
+}
+
+.notification.unread::before, .status__wrapper.unread::before {
+  border-left: 3px solid #72607C;
+}
+
+.icon-button.bookmark-icon.active {
+  color: #694E78;
+}
+
+.picture-in-picture__footer, .picture-in-picture__header {
+  background: #efdfff;
+}
+
+.picture-in-picture__header .display-name {
+  color: #705480;
+}
+
+.picture-in-picture__header .display-name span {
+  color: #606984;
+}
+
+.picture-in-picture-placeholder:active, .picture-in-picture-placeholder:focus, .picture-in-picture-placeholder:hover {
+  border-color: #694E78;
+}
+
+.picture-in-picture-placeholder {
+  border: 2px dashed #AE8CD1;
+  background: #fff;
+  color: #694E78;
+}
+
+.column-link--transparent .icon-with-badge__badge {
+  border-color: #f7efff;
+}

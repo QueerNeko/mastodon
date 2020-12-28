@@ -460,3 +460,43 @@ border-bottom: 1px solid #ffffff90;
 .icon-with-badge__badge {
     border: 0px solid transparent;
 }
+
+//28/12/2020
+
+.admin-wrapper .content h4 {
+    border-color: hsla(0,0%,100%,.56);
+}
+
+.icon-button.bookmark-icon.active {
+    color: #fff;
+    text-shadow: 2px 2px 1px #00f;
+}
+
+.icon-button.star-icon.active, .notification__favourite-icon-wrapper .star-icon {
+    color: #fff;
+}
+
+.notification.unread::before, .status__wrapper.unread::before {
+    border-left-style: groove;
+}
+
+.picture-in-picture__footer, .picture-in-picture__header {
+  border-radius: 0;
+}
+
+.picture-in-picture {
+    border: 2px groove #dfdfdf;
+}
+
+.picture-in-picture__header {
+    background: linear-gradient(90deg, #ffc6de,#c6c6ff,#c6ffde);
+}
+
+.picture-in-picture-placeholder {
+    border: 2px groove #fff;
+    background: transparent;
+}
+
+.picture-in-picture-placeholder:active, .picture-in-picture-placeholder:focus, .picture-in-picture-placeholder:hover {
+    border: 2px dashed hsla(0,0%,100%,.56);
+}

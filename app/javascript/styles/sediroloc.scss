@@ -1699,3 +1699,31 @@ pre {
 .tabs-bar__wrapper {
     background: transparent;
 }
+
+//28/12/2020
+
+.notification.unread::before, .status__wrapper.unread::before {
+    border-left: 2px solid #A72645;
+}
+
+.picture-in-picture__header .display-name span {
+    color: #070707;
+}
+
+.picture-in-picture__footer, .picture-in-picture__header, .picture-in-picture .audio-player, .picture-in-picture .video-player, .audio-player, .video-player {
+    border: 0;
+  border-radius: 0;
+}
+
+.picture-in-picture__footer, .picture-in-picture__header, .picture-in-picture .audio-player, .picture-in-picture .video-player {
+    background: #e8f6be;
+}
+
+.picture-in-picture-placeholder {
+    border-color: #c5d882;
+    color: #070707;
+}
+
+.picture-in-picture-placeholder:active, .picture-in-picture-placeholder:focus, .picture-in-picture-placeholder:hover {
+    border-color: #cf2210;
+}
