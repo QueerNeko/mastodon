@@ -4,7 +4,7 @@
   .ui, body
   {
     background-color: #171717;
-    background-image: url('/styles/background/fundo3plus.png');
+    background-image: url('~images/background/fundo3plus.png');
     background-position: bottom right;
     background-repeat: repeat-x;
     background-attachment: fixed;
@@ -14,7 +14,7 @@
 body.about-body, body.tag-body, body.admin
 {
     background-color: #171717;
-    background-image: url('/styles/background/fundo3plus.png');
+    background-image: url('~images/background/fundo3plus.png');
     background-position: bottom right;
     background-repeat: repeat-x;
     background-attachment: fixed;
@@ -952,7 +952,7 @@ border-radius: 0px;
 body.lighter {
     background: #222;
     background: linear-gradient(to right, rgb(23,9,65), #4b1dd5);
-    background-image: url(/styles/background/fundo3plus.png);
+    background-image: url('~images/background/fundo3plus.png');
     background-position: 100% 100%;
     background-repeat: repeat-x;
     background-attachment: fixed;
