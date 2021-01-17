@@ -1581,3 +1581,14 @@ button.icon-button i.fa-retweet:hover {
 .notification.unread::before, .status__wrapper.unread::before {
     border-color: #58D9BA;
 }
+
+//16/01/2021
+
+.column-back-button {
+    text-align: right;
+}
+
+.status__wrapper--filtered {
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
