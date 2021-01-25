@@ -568,7 +568,7 @@ GEM
       railties (>= 4.0.0)
     securecompare (1.0.0)
     semantic_range (2.3.0)
-    sidekiq (6.1.2)
+    sidekiq (6.1.3)
       connection_pool (>= 2.2.2)
       rack (~> 2.0)
       redis (>= 4.2.0)
@@ -785,7 +785,6 @@ DEPENDENCIES
   rspec_junit_formatter (~> 0.4)
   rubocop (~> 1.3)
   rubocop-rails (~> 2.8)
-  ruby-progressbar (~> 1.10)
   ruby-bbcode
   ruby-progressbar (~> 1.10)
   sanitize (~> 5.2)
