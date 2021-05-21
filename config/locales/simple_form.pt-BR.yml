@@ -191,6 +191,8 @@ pt-BR:
         whole_word: Palavra inteira
       email_domain_block:
         with_dns_records: Incluir registros MX e IPs do domínio
+      featured_tag:
+        name: Hashtag
       interactions:
         must_be_follower: Bloquear notificações de quem não acompanha sua conta
         must_be_following: Bloquear notificações de contas que você não acompanha
